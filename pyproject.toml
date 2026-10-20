@@ -1,0 +1,21 @@
+[project]
+name = "sanctions-and-violence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "country-converter>=1.3.2",
+    "countrycode>=0.6.0",
+    "geopandas>=1.1.3",
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "linearmodels>=7.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pathlib>=1.0.1",
+    "pycountry>=26.2.16",
+    "scikit-learn>=1.9.0",
+    "statsmodels>=0.14.6",
+]

@@ -1,0 +1,17 @@
+---
+title: "Conflict and Sanctions Regressions"
+output: html_notebook
+---
+
+
+```{r}
+
+library(panelvar)
+library(plm)
+library(data.table)
+```
+
+```{r}
+
+```
+

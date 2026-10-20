@@ -1,0 +1,259 @@
+CountryCode,CountryName,iso3c,gwcode,gw_name,note
+AF,Afghanistan,AFG,700,Afghanistan,
+AL,Albania,ALB,339,Albania,
+AG,Algeria,DZA,615,Algeria,
+AQ,American Samoa,ASM,,,not a GW state (territory); dropped
+AN,Andorra,AND,232,Andorra,
+AO,Angola,AGO,540,Angola,
+AV,Anguilla,AIA,,,not a GW state (territory); dropped
+AY,Antarctica,ATA,,,not a GW state (territory); dropped
+AC,Antigua and Barbuda,ATG,58,Antigua & Barbuda,
+AR,Argentina,ARG,160,Argentina,
+AM,Armenia,ARM,371,Armenia,
+AA,Aruba,ABW,,,not a GW state (territory); dropped
+AS,Australia,AUS,900,Australia,
+AU,Austria,AUT,305,Austria,
+AJ,Azerbaijan,AZE,373,Azerbaijan,
+BF,"Bahamas, The",BHS,31,Bahamas,
+BA,Bahrain,BHR,692,Bahrain,
+FQ,Baker Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+BG,Bangladesh,BGD,771,Bangladesh,
+BB,Barbados,BRB,53,Barbados,
+BO,Belarus,BLR,370,Belarus (Byelorussia),
+BE,Belgium,BEL,211,Belgium,
+BH,Belize,BLZ,80,Belize,
+BN,Benin,BEN,434,Benin,
+BD,Bermuda,BMU,,,not a GW state (territory); dropped
+BT,Bhutan,BTN,760,Bhutan,
+BL,Bolivia,BOL,145,Bolivia,
+BK,Bosnia and Herzegovina,BIH,346,Bosnia-Herzegovina,
+BC,Botswana,BWA,571,Botswana,
+BV,Bouvet Island,BVT,,,not a GW state (territory); dropped
+BR,Brazil,BRA,140,Brazil,
+IO,British Indian Ocean Territory,IOT,,,not a GW state (territory); dropped
+BX,Brunei,BRN,835,Brunei,
+BU,Bulgaria,BGR,355,Bulgaria,
+UV,Burkina Faso,BFA,439,Burkina Faso (Upper Volta),
+BM,Burma,MMR,775,Myanmar (Burma),
+BY,Burundi,BDI,516,Burundi,
+CB,Cambodia,KHM,811,Cambodia (Kampuchea),
+CM,Cameroon,CMR,471,Cameroon,
+CA,Canada,CAN,20,Canada,
+CV,Cape Verde,CPV,402,Cape Verde,
+CJ,Cayman Islands,CYM,,,not a GW state (territory); dropped
+CT,Central African Republic,CAF,482,Central African Republic,
+CD,Chad,TCD,483,Chad,
+CI,Chile,CHL,155,Chile,
+CH,China,CHN,710,China,
+KT,Christmas Island,CXR,,,not a GW state (territory); dropped
+IP,Clipperton Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+CO,Colombia,COL,100,Colombia,
+CN,Comoros,COM,581,Comoros,
+CG,"Congo, Democratic Republic of the",COD,490,"Congo, Democratic Republic of (Zaire)",
+CF,"Congo, Republic of the",COG,484,Congo,
+CW,Cook Islands,COK,,,not a GW state (territory); dropped
+CR,Coral Sea Islands,,,,no ISO3 (uninhabited/disputed islands); dropped
+CS,Costa Rica,CRI,94,Costa Rica,
+IV,Cote d'Ivoire,CIV,437,Ivory Coast,
+HR,Croatia,HRV,344,Croatia,
+CU,Cuba,CUB,40,Cuba,
+CY,Cyprus,CYP,352,Cyprus,
+EZ,Czech Republic,CZE,316,Czech Republic,country_converter gives 315 (Czechoslovakia); set to 316
+DA,Denmark,DNK,390,Denmark,
+DJ,Djibouti,DJI,522,Djibouti,
+DO,Dominica,DMA,54,Dominica,
+DR,Dominican Republic,DOM,42,Dominican Republic,
+EC,Ecuador,ECU,130,Ecuador,
+EG,Egypt,EGY,651,Egypt,
+ES,El Salvador,SLV,92,El Salvador,
+EK,Equatorial Guinea,GNQ,411,Equatorial Guinea,
+ER,Eritrea,ERI,531,Eritrea,
+EN,Estonia,EST,366,Estonia,
+ET,Ethiopia,ETH,530,Ethiopia,
+EU,Europa Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+FK,Falkland Islands (Islas Malvinas),FLK,,,not a GW state (territory); dropped
+FO,Faroe Islands,FRO,,,not a GW state (territory); dropped
+FJ,Fiji,FJI,950,Fiji,
+FI,Finland,FIN,375,Finland,
+FR,France,FRA,220,France,
+FG,French Guiana,GUF,,,not a GW state (territory); dropped
+FP,French Polynesia,PYF,,,not a GW state (territory); dropped
+GB,Gabon,GAB,481,Gabon,
+GA,"Gambia, The",GMB,420,Gambia,
+GZ,Gaza Strip,PSE,,,not a GW state (territory); dropped
+GG,Georgia,GEO,372,Georgia,
+GM,Germany,DEU,260,German Federal Republic,
+GH,Ghana,GHA,452,Ghana,
+GI,Gibraltar,GIB,,,not a GW state (territory); dropped
+GR,Greece,GRC,350,Greece,
+GL,Greenland,GRL,,,not a GW state (territory); dropped
+GJ,Grenada,GRD,55,Grenada,
+GP,Guadeloupe,GLP,,,not a GW state (territory); dropped
+GQ,Guam,GUM,,,not a GW state (territory); dropped
+GT,Guatemala,GTM,90,Guatemala,
+GK,Guernsey,GGY,,,not a GW state (territory); dropped
+GV,Guinea,GIN,438,Guinea,
+PU,Guinea-Bissau,GNB,404,Guinea-Bissau,
+GY,Guyana,GUY,110,Guyana,
+HA,Haiti,HTI,41,Haiti,
+HM,Heard Island and McDonald Islands,HMD,,,not a GW state (territory); dropped
+HO,Honduras,HND,91,Honduras,
+HK,Hong Kong,HKG,,,not a GW state (territory); dropped
+HQ,Howland Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+HU,Hungary,HUN,310,Hungary,
+IC,Iceland,ISL,395,Iceland,
+IN,India,IND,750,India,
+ID,Indonesia,IDN,850,Indonesia,
+IR,Iran,IRN,630,Iran (Persia),
+IZ,Iraq,IRQ,645,Iraq,
+EI,Ireland,IRL,205,Ireland,
+IM,Isle of Man,IMN,,,not a GW state (territory); dropped
+IS,Israel,ISR,666,Israel,
+IT,Italy,ITA,325,Italy/Sardinia,
+JM,Jamaica,JAM,51,Jamaica,
+JN,Jan Mayen,,,,no ISO3 (uninhabited/disputed islands); dropped
+JA,Japan,JPN,740,Japan,
+DQ,Jarvis Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+JE,Jersey,JEY,,,not a GW state (territory); dropped
+JQ,Johnston Atoll,,,,no ISO3 (uninhabited/disputed islands); dropped
+JO,Jordan,JOR,663,Jordan,
+KZ,Kazakhstan,KAZ,705,Kazakhstan,
+KE,Kenya,KEN,501,Kenya,
+KR,Kiribati,KIR,970,Kiribati,
+KN,"Korea, North",PRK,731,"Korea, People's Republic of",
+KS,"Korea, South",KOR,732,"Korea, Republic of",
+KV,Kosovo,XKX,347,Kosovo,
+KU,Kuwait,KWT,690,Kuwait,
+KG,Kyrgyzstan,KGZ,703,Kyrgyz Republic,
+LA,Laos,LAO,812,Laos,
+LG,Latvia,LVA,367,Latvia,
+LE,Lebanon,LBN,660,Lebanon,
+LT,Lesotho,LSO,570,Lesotho,
+LI,Liberia,LBR,450,Liberia,
+LY,Libya,LBY,620,Libya,
+LS,Liechtenstein,LIE,223,Liechtenstein,
+LH,Lithuania,LTU,368,Lithuania,
+LU,Luxembourg,LUX,212,Luxembourg,
+MC,Macau,MAC,,,not a GW state (territory); dropped
+MK,Macedonia,MKD,343,Macedonia (Former Yugoslav Republic of),
+MA,Madagascar,MDG,580,Madagascar,
+MI,Malawi,MWI,553,Malawi,
+MY,Malaysia,MYS,820,Malaysia,
+MV,Maldives,MDV,781,Maldives,
+ML,Mali,MLI,432,Mali,
+MT,Malta,MLT,338,Malta,
+RM,Marshall Islands,MHL,983,Marshall Islands,
+MB,Martinique,MTQ,,,not a GW state (territory); dropped
+MR,Mauritania,MRT,435,Mauritania,
+MP,Mauritius,MUS,590,Mauritius,
+MF,Mayotte,MYT,,,not a GW state (territory); dropped
+MX,Mexico,MEX,70,Mexico,
+FM,"Micronesia, Federated States of",FSM,987,Federated States of Micronesia,
+MQ,Midway Islands,,,,no ISO3 (uninhabited/disputed islands); dropped
+MD,Moldova,MDA,359,Moldova,
+MN,Monaco,MCO,221,Monaco,
+MG,Mongolia,MNG,712,Mongolia,
+MJ,Montenegro,MNE,341,Montenegro,
+MH,Montserrat,MSR,,,not a GW state (territory); dropped
+MO,Morocco,MAR,600,Morocco,
+MZ,Mozambique,MOZ,541,Mozambique,
+BM,Myanmar,,,,"exact duplicate of 'Burma' (same CountryCode BM, identical rows); removed by de-duplication"
+WA,Namibia,NAM,565,Namibia,
+NR,Nauru,NRU,971,Nauru,
+BQ,Navassa Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+NP,Nepal,NPL,790,Nepal,
+NL,Netherlands,NLD,210,Netherlands,
+NC,New Caledonia,NCL,,,not a GW state (territory); dropped
+NZ,New Zealand,NZL,920,New Zealand,
+NU,Nicaragua,NIC,93,Nicaragua,
+NG,Niger,NER,436,Niger,
+NI,Nigeria,NGA,475,Nigeria,
+NE,Niue,NIU,,,not a GW state (territory); dropped
+NF,Norfolk Island,NFK,,,not a GW state (territory); dropped
+CQ,Northern Mariana Islands,MNP,,,not a GW state (territory); dropped
+NO,Norway,NOR,385,Norway,
+MU,Oman,OMN,698,Oman,
+PK,Pakistan,PAK,770,Pakistan,
+PS,Palau,PLW,986,Palau,
+LQ,Palmyra Atoll,,,,no ISO3 (uninhabited/disputed islands); dropped
+PM,Panama,PAN,95,Panama,
+PP,Papua New Guinea,PNG,910,Papua New Guinea,
+PF,Paracel Islands,,,,no ISO3 (uninhabited/disputed islands); dropped
+PA,Paraguay,PRY,150,Paraguay,
+PE,Peru,PER,135,Peru,
+RP,Philippines,PHL,840,Philippines,
+PC,Pitcairn Islands,PCN,,,not a GW state (territory); dropped
+PL,Poland,POL,290,Poland,
+PO,Portugal,PRT,235,Portugal,
+RQ,Puerto Rico,PRI,,,not a GW state (territory); dropped
+QA,Qatar,QAT,694,Qatar,
+RE,Reunion,REU,,,not a GW state (territory); dropped
+RO,Romania,ROU,360,Rumania,
+RS,Russia,RUS,365,Russia (Soviet Union),
+RW,Rwanda,RWA,517,Rwanda,
+SH,Saint Helena,SHN,,,not a GW state (territory); dropped
+SC,Saint Kitts and Nevis,KNA,60,Saint Kitts and Nevis,
+ST,Saint Lucia,LCA,56,Saint Lucia,
+RN,Saint Martin,MAF,,,not a GW state (territory); dropped
+SB,Saint Pierre and Miquelon,SPM,,,not a GW state (territory); dropped
+VC,Saint Vincent and the Grenadines,VCT,57,Saint Vincent and the Grenadines,
+WS,Samoa,WSM,990,Samoa/Western Samoa,
+SM,San Marino,SMR,331,San Marino,
+TP,Sao Tome and Principe,STP,403,Sao Tome and Principe,
+SA,Saudi Arabia,SAU,670,Saudi Arabia,
+SG,Senegal,SEN,433,Senegal,
+RI,Serbia,SRB,340,Serbia,
+SE,Seychelles,SYC,591,Seychelles,
+SL,Sierra Leone,SLE,451,Sierra Leone,
+SN,Singapore,SGP,830,Singapore,
+LO,Slovakia,SVK,317,Slovakia,
+SI,Slovenia,SVN,349,Slovenia,
+BP,Solomon Islands,SLB,940,Solomon Islands,
+SO,Somalia,SOM,520,Somalia,
+SF,South Africa,ZAF,560,South Africa,
+OD,South Sudan,SSD,626,South Sudan,
+SP,Spain,ESP,230,Spain,
+PG,Spratly Islands,,,,no ISO3 (uninhabited/disputed islands); dropped
+CE,Sri Lanka,LKA,780,Sri Lanka (Ceylon),
+SU,Sudan,SDN,625,Sudan,
+NS,Suriname,SUR,115,Surinam,
+SV,Svalbard,SJM,,,not a GW state (territory); dropped
+WZ,Swaziland,SWZ,572,Swaziland,
+SW,Sweden,SWE,380,Sweden,
+SZ,Switzerland,CHE,225,Switzerland,
+SY,Syria,SYR,652,Syria,
+TW,Taiwan,TWN,713,Taiwan,
+TI,Tajikistan,TJK,702,Tajikistan,
+TZ,Tanzania,TZA,510,Tanzania/Tanganyika,
+TH,Thailand,THA,800,Thailand,
+TT,Timor-Leste,TLS,860,East Timor,
+TO,Togo,TGO,461,Togo,
+TL,Tokelau,TKL,,,not a GW state (territory); dropped
+TN,Tonga,TON,972,Tonga,
+TD,Trinidad and Tobago,TTO,52,Trinidad and Tobago,
+TE,Tromelin Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+TS,Tunisia,TUN,616,Tunisia,
+TU,Turkey,TUR,640,Turkey (Ottoman Empire),
+TX,Turkmenistan,TKM,701,Turkmenistan,
+TK,Turks and Caicos Islands,TCA,,,not a GW state (territory); dropped
+TV,Tuvalu,TUV,973,Tuvalu,
+UG,Uganda,UGA,500,Uganda,
+UP,Ukraine,UKR,369,Ukraine,
+AE,United Arab Emirates,ARE,696,United Arab Emirates,
+UK,United Kingdom,GBR,200,United Kingdom,
+US,United States,USA,2,United States of America,
+UY,Uruguay,URY,165,Uruguay,
+UZ,Uzbekistan,UZB,704,Uzbekistan,
+NH,Vanuatu,VUT,935,Vanuatu,
+VT,Vatican City,VAT,,,not a GW state (territory); dropped
+VE,Venezuela,VEN,101,Venezuela,
+VM,Vietnam,VNM,816,"Vietnam, Democratic Republic of","country_converter gives 817 (South Vietnam, ended 1975); set to 816"
+VI,"Virgin Islands, British",VGB,,,not a GW state (territory); dropped
+VQ,"Virgin Islands, U.S.",VIR,,,not a GW state (territory); dropped
+WQ,Wake Island,,,,no ISO3 (uninhabited/disputed islands); dropped
+WF,Wallis and Futuna,WLF,,,not a GW state (territory); dropped
+WE,West Bank,PSE,,,not a GW state (territory); dropped
+WI,Western Sahara,ESH,,,not a GW state (territory); dropped
+YM,Yemen,YEM,678,Yemen (Arab Republic of Yemen),country_converter gives 680 (South Yemen); set to 678 (GW: Yemen continues North Yemen)
+ZA,Zambia,ZMB,551,Zambia,
+ZI,Zimbabwe,ZWE,552,Zimbabwe (Rhodesia),

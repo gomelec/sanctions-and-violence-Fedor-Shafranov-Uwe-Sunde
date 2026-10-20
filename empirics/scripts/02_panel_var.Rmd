@@ -1,0 +1,285 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+df <- fread(here("data", "processed", "sanctions_violence", "sanctions_violence_panel.csv"))
+```
+
+
+```{r}
+View(df)
+```
+
+
+```{r}
+df <- df %>%
+  mutate(year = as.integer(format(as.Date(year), "%Y"))) %>%   # convert FIRST
+  filter(year >= 1989) %>%                                      # then filter on real years
+  group_by(gw_name) %>%
+  mutate(
+    mrgdppc_detrended = if (sum(!is.na(mrgdppc)) >= 3) {
+      residuals(lm(mrgdppc ~ year, na.action = na.exclude))
+    } else {
+      NA_real_
+    }
+  ) %>%
+  ungroup()
+```
+
+
+```{r}
+
+
+# variables going into the PVAR — adjust this list to match your final model
+pvar_vars <- c("num_sanctioners", 
+               "cumulative_total_deaths_parties_in_orgvio_pc", 
+               "v2x_polyarchy", 
+               "mrgdppc_detrended")
+
+# check variance of each variable, by country
+var_check <- df %>%
+  group_by(gw_name) %>%
+  summarise(across(all_of(pvar_vars), 
+                    ~ var(.x, na.rm = TRUE), 
+                    .names = "var_{.col}"),
+            across(all_of(pvar_vars), 
+                    ~ sum(!is.na(.x)), 
+                    .names = "n_{.col}"))
+
+# a country is flagged if ANY variable has near-zero variance, is all-NA, or has too few obs
+flagged_units <- var_check %>%
+  filter(
+    if_any(starts_with("n_"), ~ .x < 10)   # insufficient data — a real problem regardless of variance
+  ) %>%
+  pull(gw_name)
+
+
+#flagged_units <- var_check %>%
+#  filter(if_any(starts_with("var_"), ~ is.na(.x) | .x < 1e-8) |
+#       if_any(starts_with("n_"),   ~ .x < 15))%>%
+#  pull(gw_name)
+
+
+# manual exclusions (structural breaks / discontinued units)
+manual_exclusions <- c("German Democratic Republic")
+
+exclude_units <- unique(c(flagged_units, manual_exclusions))
+
+df_clean <- df %>% 
+  filter(!(gw_name %in% exclude_units))
+
+# sanity check: how many countries survived, and who got dropped
+length(unique(df$gw_name))
+length(unique(df_clean$gw_name))
+exclude_units
+```
+
+```{r}
+head(df_clean)
+```
+
+
+
+
+```{r}
+
+
+dep_vars <- c("num_sanctioners", 
+               "cumulative_total_deaths_parties_in_orgvio_pc", 
+               "v2x_polyarchy", 
+               "mrgdppc_detrended")
+  # ---- 1. lag selection: compare candidate lag orders via MMSC ----
+
+
+
+
+lag_results <- list()
+
+for (p in 1:3) {
+  lag_results[[p]] <- pvargmm(
+    dependent_vars = dep_vars,
+    lags = p,
+    transformation = "fod",
+    data =  as.data.frame(df_clean), 
+    panel_identifier = c("gw_name", "year"),
+    steps = c("twostep"),
+    system_instruments = FALSE,
+    max_instr_dependent_vars = 4,
+    min_instr_dependent_vars = 2,
+    collapse = TRUE
+  )
+}
+
+# compare MMSC-BIC across lag orders — pick the lowest
+for (p in 1:3) {
+  cat("Lags =", p, "\n")
+  print(Andrews_Lu_MMSC(lag_results[[p]]))
+  cat("\n")
+}
+```
+
+```{r}
+p1_small <- pvargmm(dependent_vars = c("num_sanctioners", "mrgdppc_detrended"),
+                     lags = 1, transformation = "fod",
+                     data = as.data.frame(df_clean), panel_identifier = c("gw_name", "year"),
+                     steps = c("twostep"), system_instruments = FALSE,
+                     max_instr_dependent_vars = 4, min_instr_dependent_vars = 2, collapse = TRUE)
+
+summary(p1_small)
+```
+```{r}
+p1_small <- pvargmm(dependent_vars = c( "cumulative_total_deaths_parties_in_orgvio_pc", "num_sanctioners", "mrgdppc_detrended"),
+                     lags = 1, transformation = "fod",
+                     data = as.data.frame(df_clean), panel_identifier = c("gw_name", "year"),
+                     steps = c("twostep"), system_instruments = FALSE,
+                     max_instr_dependent_vars = 4, min_instr_dependent_vars = 2, collapse = TRUE)
+
+summary(p1_small)
+```
+
+```{r}
+p1_small <- pvargmm(dependent_vars = c( "cumulative_total_deaths_parties_in_orgvio_pc", "num_sanctioners", "mrgdppc_detrended"),
+                     lags = 1, transformation = "fod",
+                     data = as.data.frame(df_clean), panel_identifier = c("gw_name", "year"),
+                     steps = c("twostep"), system_instruments = FALSE,
+                     max_instr_dependent_vars = 4, min_instr_dependent_vars = 2, collapse = TRUE)
+
+summary(p1_small)
+```
+
+```{r}
+cor(df_clean$v2x_polyarchy, df_clean$mrgdppc_detrended, use = "complete.obs")
+
+df_clean %>%
+  arrange(gw_name, year) %>%
+  group_by(gw_name) %>%
+  mutate(d_v2x = v2x_polyarchy - lag(v2x_polyarchy),
+         d_gdp = mrgdppc_detrended - lag(mrgdppc_detrended)) %>%
+  ungroup() %>%
+  summarise(cor_levels = cor(v2x_polyarchy, mrgdppc_detrended, use = "complete.obs"),
+            cor_diffs = cor(d_v2x, d_gdp, use = "complete.obs"))
+```
+
+
+
+```{r}
+p1_hk <- pvarhk(dependent_vars = c("cumulative_total_deaths_parties_in_orgvio_pc",
+                                    "num_sanctioners",
+                                    "mrgdppc_detrended",
+                                   "v2x_polyarchy"),
+                 transformation = "demean",
+                 data = as.data.frame(df_clean),
+                 panel_identifier = c("gw_name", "year"))
+summary(p1_hk)
+```
+```{r}
+p1_hk <- pvarhk(dependent_vars = c("cumulative_total_deaths_parties_in_orgvio_pc",
+                                    "num_sanctioners",
+                                    "mrgdppc_detrended"),
+                 transformation = "demean",
+                 data = as.data.frame(df_clean),
+                 panel_identifier = c("gw_name", "year"))
+summary(p1_hk)
+```
+
+
+
+```{r}
+p1_lsdv <- pvarfeols(dependent_vars = c("cumulative_total_deaths_parties_in_orgvio_pc",
+                                        "num_sanctioners",
+                                        "mrgdppc_detrended",
+                                        "v2x_polyarchy"),
+                      lags = 1,
+                      transformation = "demean",
+                      data = as.data.frame(df_clean),
+                      panel_identifier = c("gw_name", "year"))
+summary(p1_lsdv)
+```
+
+```{r}
+p1_lsdv_less_dem <- pvarfeols(dependent_vars = c("cumulative_total_deaths_parties_in_orgvio_pc",
+                                        "num_sanctioners",
+                                        "mrgdppc_detrended"),
+                      lags = 1,
+                      transformation = "demean",
+                      data = as.data.frame(df_clean),
+                      panel_identifier = c("gw_name", "year"))
+summary(p1_lsdv_less_dem)
+```
+
+
+
+
+```{r}
+stability(p1_small)   # for pvargmm
+stability(p1_lsdv)     # for pvarfeols
+plot(stability(p1_small))
+```
+
+```{r}
+# Orthogonal IRF
+irf_o <- oirf(p1_lsdv_less_dem, n.ahead = 10)
+
+# Generalized IRF (often preferred — no ordering assumption)
+irf_g <- girf(p1_lsdv_less_dem, n.ahead = 10, ma_approx_steps = 10)
+```
+
+
+```{r}
+irf_bs <- bootstrap_irf(p1_lsdv_less_dem,
+                         typeof_irf = "GIRF",
+                         n.ahead = 10,
+                         nof_Nstar_draws = 500,
+                         confidence.band = 0.95,
+                         mc.cores = 4)   # adjust to your machine
+
+girf_result <- girf(p1_lsdv_less_dem, n.ahead = 10, ma_approx_steps = 10)
+plot(girf_result, irf_bs)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+p_all <- plot(girf_result, irf_bs)
+
+# confirm the structure matches what the source code implies
+head(p_all$data)
+
+df_single <- p_all$data %>%
+  filter(impulse == "cumulative_total_deaths_parties_in_orgvio_pc on num_sanctioners")
+
+ggplot(df_single, aes(x = periods, y = value)) +
+  geom_ribbon(aes(ymin = Lower, ymax = Upper), alpha = 0.2, fill = "steelblue") +
+  geom_line(color = "steelblue", linewidth = 1) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs(title = "Response of in conflict deaths in",
+       x = "Steps ahead", y = "Response") +
+  theme_minimal()
+```
+```{r}
+p_all <- plot(girf_result, irf_bs)
+
+# confirm the structure matches what the source code implies
+head(p_all$data)
+
+df_single <- p_all$data %>%
+  filter(impulse == "num_sanctioners on cumulative_total_deaths_parties_in_orgvio_pc")
+
+ggplot(df_single, aes(x = periods, y = value)) +
+  geom_ribbon(aes(ymin = Lower, ymax = Upper), alpha = 0.2, fill = "steelblue") +
+  geom_line(color = "steelblue", linewidth = 1) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs(title = "Response of in conflict deaths in",
+       x = "Steps ahead", y = "Response") +
+  theme_minimal()
+```
+

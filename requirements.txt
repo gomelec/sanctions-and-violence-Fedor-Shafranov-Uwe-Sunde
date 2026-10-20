@@ -1,0 +1,8 @@
+# Python packages needed to run the replication pipeline (master.py)
+# Python >= 3.11 required by pandas 3 (developed with Python 3.13)
+# Versions pinned to the ones the outputs were verified with.
+pandas==3.0.3
+numpy==2.4.6
+country_converter==1.3.2
+python-dateutil==2.9.0.post0
+tzdata==2026.2

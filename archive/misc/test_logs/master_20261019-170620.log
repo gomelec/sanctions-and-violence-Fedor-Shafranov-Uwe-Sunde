@@ -1,0 +1,4 @@
+master run 20261019-170620 | args: --only clean_base
+[17:06:20] cleaning   clean_base                   ... 
+            -> FAILED (exit 127) in 0.0s, log: data/logs/clean_base_20261019-170620.log
+               could not start 'Rscript' — is it installed and on PATH?

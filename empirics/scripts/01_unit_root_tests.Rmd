@@ -1,0 +1,208 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(plm)
+library(data.table)
+library(panelvar)
+library(here)
+library(dplyr)
+```
+
+```{r}
+df <- fread(here("data", "processed", "sanctions_violence", "sanctions_violence_panel.csv"))
+head(df)
+```
+```{r}
+# assume df has columns: id, year, x
+# decide on a reasonable minimum, e.g. 10 years
+min_obs <- 20
+
+keep_units <- na_check %>%
+  filter(n_valid >= min_obs) %>%
+  pull(gw_name)
+
+df_filtered <- df %>% filter(gw_name %in% keep_units)
+
+pdata_filtered <- pdata.frame(df_filtered, index = c("gw_name", "year"))
+pdim(pdata_filtered)
+```
+
+
+
+
+
+```{r}
+
+
+# Im-Pesaran-Shin — heterogeneous unit root process (most commonly used)
+ips <- purtest(pdata_filtered$num_sanctioners, test = "ips", lags = "AIC", pmax = 8, exo = "intercept")
+summary(ips)
+
+# Maddala-Wu (Fisher-ADF) — combines individual p-values
+mw <- purtest(pdata_filtered$num_sanctioners, test = "madwu", lags = "AIC", exo = "intercept")
+summary(mw)
+
+# Choi's Z-statistic — another Fisher-type combination
+choi <- purtest(pdata_filtered$num_sanctioners, test = "invnormal", lags = "AIC", exo = "intercept")
+summary(choi)
+
+
+```
+
+```{r}
+zero_var_units <- df_filtered %>%
+  group_by(gw_name) %>%
+  summarise(
+    var_sanctioners = var(num_sanctioners, na.rm = TRUE),
+    n_obs = sum(!is.na(num_sanctioners))
+  ) %>%
+  filter(var_sanctioners < 1e-8 | is.na(var_sanctioners) | n_obs < 15) %>%
+  pull(gw_name)
+
+
+zero_var_units <- c(zero_var_units, "German Democratic Republic")
+
+df_filtered3 <- df_filtered %>% filter(!(gw_name %in% zero_var_units))
+pdata_filtered3 <- pdata.frame(df_filtered3, index = c("gw_name", "year"))
+```
+
+
+```{r}
+ips <- purtest(pdata_filtered3$num_sanctioners, test = "ips", lags = "AIC", pmax = 2, exo = "intercept")
+options(digits = 4)
+options(max.print = 100000) 
+summary(ips)
+
+
+```
+
+
+```{r}
+# Maddala-Wu (Fisher-ADF) — combines individual p-values
+mw <- purtest(pdata_filtered3$num_sanctioners, test = "madwu", lags = "AIC", pmax=2, exo = "intercept")
+options(digits = 4)
+summary(mw)
+```
+
+
+
+```{r}
+plot_country <- function(name) {
+  d <- df_filtered3[df_filtered3$gw_name == name, ]
+  plot(d$year, d$num_sanctioners, type = "l",
+       xlab = "Year", ylab = "Num. Sanctioners", main = name)
+  points(d$year, d$num_sanctioners, pch = 16)
+}
+
+plot_country("Turkmenistan")
+plot_country("Slovenia")
+plot_country("Afghanistan")
+plot_country("Argentina")
+plot_country("Cambodia (Kampuchea)")
+plot_country("Guatemala")
+plot_country("Armenia")
+```
+
+
+```{r}
+
+# Maddala-Wu (Fisher-ADF) — combines individual p-values
+mw <- purtest(pdata_filtered3$mrgdppc, test = "madwu", lags = "AIC", pmax=2, exo = "intercept")
+options(digits = 4)
+summary(mw)
+```
+
+
+
+```{r}
+zero_var_units <- df_filtered3 %>%
+  group_by(gw_name) %>%
+  summarise(var_deaths = var(cumulative_total_deaths_parties_in_orgvio_pc, na.rm = TRUE)) %>%
+  filter(var_deaths < 1e-8 | is.na(var_deaths)) %>%
+  pull(gw_name)
+zero_var_units <- c(zero_var_units, "Moldova")
+
+df_filtered5 <- df_filtered3 %>% filter(!(gw_name %in% zero_var_units))
+pdata_filtered5 <- pdata.frame(df_filtered5, index = c("gw_name", "year"))
+
+ips <- purtest(pdata_filtered5$cumulative_total_deaths_parties_in_orgvio_pc, test = "ips", lags = "AIC", pmax = 2, exo = "intercept")
+
+options(digits = 4)
+options(max.print = 100000) 
+summary(ips)
+
+
+```
+
+```{r}
+plot_country <- function(name) {
+  d <- df_filtered3[df_filtered3$gw_name == name, ]
+  plot(d$year, d$cumulative_total_deaths_parties_in_orgvio_pc, type = "l",
+       xlab = "Year", ylab = "deaths in conflict pc", main = name)
+  points(d$year, d$cumulative_total_deaths_parties_in_orgvio_pc, pch = 16)
+}
+
+plot_country("Moldova")
+
+```
+```{r}
+zero_var_units <- df_filtered3 %>%
+  group_by(gw_name) %>%
+  summarise(var_deaths = var(v2x_polyarchy, na.rm = TRUE)) %>%
+  filter(var_deaths < 1e-8 | is.na(var_deaths)) %>%
+  pull(gw_name)
+
+
+df_filtered5 <- df_filtered3 %>% filter(!(gw_name %in% zero_var_units))
+pdata_filtered5 <- pdata.frame(df_filtered5, index = c("gw_name", "year"))
+
+ips <- purtest(pdata_filtered5$v2x_polyarchy, test = "ips", lags = "AIC", pmax = 2, exo = "intercept")
+
+options(digits = 4)
+options(max.print = 100000) 
+summary(ips)
+
+
+```
+
+
+
+```{r}
+# Maddala-Wu (Fisher-ADF) — combines individual p-values
+mw <- purtest(pdata_filtered3$mrgdppc, test = "madwu", lags = "AIC", pmax=2, exo = "trend")
+options(digits = 4)
+summary(mw)
+```
+```{r}
+#create a detrended gdp
+df_filtered3 <- df_filtered3 %>%
+  group_by(gw_name) %>%
+  mutate(
+    mrgdppc_detrended = if (sum(!is.na(mrgdppc)) >= 3) {
+      residuals(lm(mrgdppc ~ year, na.action = na.exclude))
+    } else {
+      NA_real_
+    }
+  ) %>%
+  ungroup()
+```
+
+
+
+```{r}
+pdata_filtered3 <- pdata.frame(df_filtered3, index = c("gw_name", "year"))
+mw_detrended <- purtest(pdata_filtered3$mrgdppc_detrended, test = "madwu", lags = "AIC", pmax = 2, exo = "intercept")
+summary(mw_detrended)
+```
+
+```{r}
+#check NAs
+
+sum(is.na(pdata_filtered3$mrgdppc_detrended))
+length(unique(pdata_filtered3$gw_name[!is.na(pdata_filtered3$mrgdppc_detrended)]))
+length(unique(pdata_filtered3$gw_name))
+```
+

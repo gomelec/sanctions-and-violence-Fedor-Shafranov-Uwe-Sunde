@@ -1,0 +1,16 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(plm)
+library(data.table)
+library(panelvar)
+library(here)
+```
+
+```{r}
+
+```
+

@@ -1,0 +1,13 @@
+step     : clean_base
+script   : data/scripts/cleaning/clean_base.R
+command  : Rscript --vanilla /sessions/rcw-01ue5828f4hab4yzugla9vcn/mnt/RA_Work_Sunde/sanctions and violence - working copy/data/scripts/cleaning/clean_base.R
+started  : 2026-10-19 17:06:20
+machine  : Linux-6.8.0-138-generic-aarch64-with-glibc2.35
+python   : 3.13.15
+----------------------------------------------------------------------
+
+Could not start: [Errno 2] No such file or directory: 'Rscript'
+----------------------------------------------------------------------
+finished : 2026-10-19 17:06:20
+duration : 0.0s
+exit code: 127

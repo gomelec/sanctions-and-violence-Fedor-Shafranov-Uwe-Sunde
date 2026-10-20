@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.Rproj.user
+
+# macOS / R session files
+.DS_Store
+.RData
+.Rhistory
+
+# renv
+renv/library/
+renv/staging/
+
+# raw data (download per data/raw/README.md) and logs
+data/raw/*
+!data/raw/README.md
+data/logs/
+empirics/results/logs/

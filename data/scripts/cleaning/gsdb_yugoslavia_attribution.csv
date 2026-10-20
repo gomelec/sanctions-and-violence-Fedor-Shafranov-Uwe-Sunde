@@ -1,0 +1,76 @@
+case_id,target_iso3,action,keep_from,keep_to,status,reason,source
+419,SVN,keep_arms_only,1991,1992,Sourced,EC arms embargo on whole SFRY territory (July 1991); financial component Serbia/Montenegro only,GRIP Bosnia record; SIPRI Yugoslavia record
+420,SVN,keep_arms_only,1991,1996,Sourced,"UN res. 713 arms embargo on all territory of former Yugoslavia; lifted by res. 1021, most provisions 13 Mar 1996",SIPRI Slovenia record; UN SC/6127; UN SC/6193
+422,SVN,keep_arms_only,1991,1996,Not verified,US arms embargo assumed territory-wide like res. 713 (provisional); financial component Serbia/Montenegro only (EO 12808),"arms: none checked; financial: Bush report 23 Dec 1992, Clinton letter 6 Dec 1993"
+469,SVN,keep_arms_only,1991,1996,Sourced,"EU arms embargo on former SFRY, released for this republic in 1996","CP 96/184/CFSP (Feb 1996, case-by-case licensing); formal lifting Aug 1998 = robustness"
+421,SVN,drop,,,Not verified,"US financial measure 1991, aimed at the federal government",none checked
+470,SVN,drop,,,Sourced,UN res. 757 comprehensive sanctions directed at the FRY (Serbia and Montenegro),UN SC/6127
+619,SVN,drop,,,Sourced,EU Kosovo-era measures against FRY/Serbian governments,CP 98/326/CFSP; CP 1999/318/CFSP; UN S/1999/490
+620,SVN,drop,,,Sourced,UN res. 1160 arms embargo on the territory of the FRY incl. Kosovo,GRIP FRY record
+621,SVN,drop,,,Sourced,US Kosovo-era asset freeze on FRY/Serbian/Montenegrin governments,Clinton transmittal June 1998; CDOC 107-6
+636,SVN,drop,,,Sourced,EU Kosovo-era measure against the FRY,CP 1999/318/CFSP; UN S/1999/490
+637,SVN,drop,,,Not verified,Swiss Kosovo-era measures against the FRY,none checked
+638,SVN,drop,,,Sourced,US Kosovo-era measure against the FRY,CDOC 107-6
+660,SVN,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+676,SVN,drop,,,Not verified,Swiss targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+732,SVN,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+419,HRV,keep_arms_only,1991,1992,Sourced,EC arms embargo on whole SFRY territory (July 1991); financial component Serbia/Montenegro only,GRIP Bosnia record; SIPRI Yugoslavia record
+420,HRV,keep_arms_only,1991,1996,Sourced,"UN res. 713 arms embargo on all territory of former Yugoslavia; lifted by res. 1021, most provisions 13 Mar 1996",SIPRI Slovenia record; UN SC/6127; UN SC/6193
+422,HRV,keep_arms_only,1991,1996,Not verified,US arms embargo assumed territory-wide like res. 713 (provisional); financial component Serbia/Montenegro only (EO 12808),"arms: none checked; financial: Bush report 23 Dec 1992, Clinton letter 6 Dec 1993"
+469,HRV,keep_arms_only,1991,2000,Sourced,"EU arms embargo on former SFRY, released for this republic in 2000",CP 2000/722/CFSP (Nov 2000)
+421,HRV,drop,,,Not verified,"US financial measure 1991, aimed at the federal government",none checked
+470,HRV,drop,,,Sourced,UN res. 757 comprehensive sanctions directed at the FRY (Serbia and Montenegro),UN SC/6127
+619,HRV,drop,,,Sourced,EU Kosovo-era measures against FRY/Serbian governments,CP 98/326/CFSP; CP 1999/318/CFSP; UN S/1999/490
+620,HRV,drop,,,Sourced,UN res. 1160 arms embargo on the territory of the FRY incl. Kosovo,GRIP FRY record
+621,HRV,drop,,,Sourced,US Kosovo-era asset freeze on FRY/Serbian/Montenegrin governments,Clinton transmittal June 1998; CDOC 107-6
+636,HRV,drop,,,Sourced,EU Kosovo-era measure against the FRY,CP 1999/318/CFSP; UN S/1999/490
+637,HRV,drop,,,Not verified,Swiss Kosovo-era measures against the FRY,none checked
+638,HRV,drop,,,Sourced,US Kosovo-era measure against the FRY,CDOC 107-6
+660,HRV,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+676,HRV,drop,,,Not verified,Swiss targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+732,HRV,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+419,BIH,keep_arms_only,1991,1992,Sourced,EC arms embargo on whole SFRY territory (July 1991); financial component Serbia/Montenegro only,GRIP Bosnia record; SIPRI Yugoslavia record
+420,BIH,keep_arms_only,1991,1996,Sourced,"UN res. 713 arms embargo on all territory of former Yugoslavia; lifted by res. 1021, most provisions 13 Mar 1996",SIPRI Slovenia record; UN SC/6127; UN SC/6193
+422,BIH,keep_arms_only,1991,1996,Not verified,US arms embargo assumed territory-wide like res. 713 (provisional); financial component Serbia/Montenegro only (EO 12808),"arms: none checked; financial: Bush report 23 Dec 1992, Clinton letter 6 Dec 1993"
+469,BIH,keep_arms_only,1991,2006,Sourced,"EU arms embargo on former SFRY, released for this republic in 2006",CP 2006/29/CFSP (Jan 2006)
+421,BIH,drop,,,Not verified,"US financial measure 1991, aimed at the federal government",none checked
+470,BIH,drop,,,Sourced,UN res. 757 comprehensive sanctions directed at the FRY (Serbia and Montenegro),UN SC/6127
+619,BIH,drop,,,Sourced,EU Kosovo-era measures against FRY/Serbian governments,CP 98/326/CFSP; CP 1999/318/CFSP; UN S/1999/490
+620,BIH,drop,,,Sourced,UN res. 1160 arms embargo on the territory of the FRY incl. Kosovo,GRIP FRY record
+621,BIH,drop,,,Sourced,US Kosovo-era asset freeze on FRY/Serbian/Montenegrin governments,Clinton transmittal June 1998; CDOC 107-6
+636,BIH,drop,,,Sourced,EU Kosovo-era measure against the FRY,CP 1999/318/CFSP; UN S/1999/490
+637,BIH,drop,,,Not verified,Swiss Kosovo-era measures against the FRY,none checked
+638,BIH,drop,,,Sourced,US Kosovo-era measure against the FRY,CDOC 107-6
+660,BIH,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+676,BIH,drop,,,Not verified,Swiss targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+732,BIH,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+419,MKD,keep_arms_only,1991,1992,Sourced,EC arms embargo on whole SFRY territory (July 1991); financial component Serbia/Montenegro only,GRIP Bosnia record; SIPRI Yugoslavia record
+420,MKD,keep_arms_only,1991,1996,Sourced,"UN res. 713 arms embargo on all territory of former Yugoslavia; lifted by res. 1021, most provisions 13 Mar 1996",SIPRI Slovenia record; UN SC/6127; UN SC/6193
+422,MKD,keep_arms_only,1991,1996,Not verified,US arms embargo assumed territory-wide like res. 713 (provisional); financial component Serbia/Montenegro only (EO 12808),"arms: none checked; financial: Bush report 23 Dec 1992, Clinton letter 6 Dec 1993"
+469,MKD,keep_arms_only,1991,1996,Sourced,"EU arms embargo on former SFRY, released for this republic in 1996",CP 96/184/CFSP (Feb 1996)
+421,MKD,drop,,,Not verified,"US financial measure 1991, aimed at the federal government",none checked
+470,MKD,drop,,,Sourced,UN res. 757 comprehensive sanctions directed at the FRY (Serbia and Montenegro),UN SC/6127
+619,MKD,drop,,,Sourced,EU Kosovo-era measures against FRY/Serbian governments,CP 98/326/CFSP; CP 1999/318/CFSP; UN S/1999/490
+620,MKD,drop,,,Sourced,UN res. 1160 arms embargo on the territory of the FRY incl. Kosovo,GRIP FRY record
+621,MKD,drop,,,Sourced,US Kosovo-era asset freeze on FRY/Serbian/Montenegrin governments,Clinton transmittal June 1998; CDOC 107-6
+636,MKD,drop,,,Sourced,EU Kosovo-era measure against the FRY,CP 1999/318/CFSP; UN S/1999/490
+637,MKD,drop,,,Not verified,Swiss Kosovo-era measures against the FRY,none checked
+638,MKD,drop,,,Sourced,US Kosovo-era measure against the FRY,CDOC 107-6
+660,MKD,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+676,MKD,drop,,,Not verified,Swiss targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+732,MKD,drop,,,Not verified,EU targeted measures on 'Yugoslavia' (democracy); Serbia as continuator,none checked
+419,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+420,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+421,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+422,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+469,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+470,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+619,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+620,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+621,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+636,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+637,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+638,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+660,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+676,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
+732,MNE,drop,,,Not verified,"from 2006 'Yugoslavia' no longer exists; Serbia (340) is the continuator, Montenegro (341) a separate state (rows before 2006 are recoded to YUG and not affected)",coding convention
