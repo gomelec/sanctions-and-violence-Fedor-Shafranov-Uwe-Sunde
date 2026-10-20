@@ -101,6 +101,9 @@ uv run python master.py --set-baseline    # freeze current outputs as the new ba
 |---|---|
 | Data pipeline | complete; last Mac run + baseline at 20 Oct 17:27 |
 | `ru_sanction` (added after that baseline) | **user must run** `uv run python master.py --set-baseline` on the Mac |
+| GSDB flow variables (S11: `n_new_cases`, `new_sanction`, `n_joined_cases`, `n_lifted_cases`, …), added 20 Oct evening | tested in the VM (existing values unchanged, Russia matches GSDB-R4 Fig. 6b); **user must run** `uv run python master.py --check` then `--set-baseline` on the Mac |
+| Democracy data (B11) | `{isard}` 0.2.0 in renv (global library had 0.1.0; peacesciencer 1.2.0 in both) → `euds`/`aeuds`/`v2x_polyarchy` changed vs the 17:43 baseline (re-estimated scale, corr. 0.998); accepted and documented in `data/README.md` B11 |
+| Empirics plan | next: `empirics/ANALYSIS_PLAN.md` (bivariate FE-OLS reaction functions à la Jaeger–Paserman, `new_sanction`/`n_new_cases` × violence), then `01_prepare_sample.R` |
 | `setup_renv.R` | written, **not yet run** (may fail for `panelvar` if archived on CRAN) |
 | `02_descriptives.R` | written, **never run** (AI could not test R) — check the figures after the first run |
 | `01_unit_root_tests.Rmd`, `02_panel_var.Rmd` | not reproducible yet (use `na_check` from an old R session; missing library calls); data path updated; `iso3c_x` → `iso3c` if used |

@@ -13,6 +13,10 @@ Output: data/clean/gsdb/gsdb_received.csv   (country_iso3 x year)
         data/clean/gsdb/gsdb_set_aside.csv  (rows kept out of the counts: non-GW entities)
         data/clean/gsdb/gsdb_self_dyads_dropped.csv (sender == target after recoding)
 
+ADDED 2026-10-20 (data/README.md, S11): flow variables on the received side
+(n_new_cases, new_sanction, n_joined_cases, n_lifted_cases, lifted_sanction, new_un/eu/us_sanction,
+new_arms_sanction, new_conflict_obj_sanction), step 5c.
+
 Refactored 1:1 from archive/notebooks/create_sanction_data.ipynb (cells 3 and 6).
 
 Two ways of counting countries (both kept):
@@ -272,6 +276,114 @@ received_sanctions = received_sanctions.merge(cases_cy, on=["country_iso3", "yea
 print("case-based measures: target-years", len(cases_cy), "| with UN case:", int(cases_cy["un_sanction"].sum()),
       "| EU:", int(cases_cy["eu_sanction"].sum()), "| US:", int(cases_cy["us_sanction"].sum()),
       "| Russia/SU:", int(cases_cy["ru_sanction"].sum()))
+
+# =====================================================================
+# STEP 5c — ADDED 2026-10-20: FLOWS — new and lifted cases (received side)
+# =====================================================================
+# n_cases_received is a stock (cases in force). For dynamic models (panel VAR,
+# Granger tests) we need events: cases that START or END for a target in year t.
+# Built from the cleaned dyadic data (after all drop/recode/Yugoslavia rules), so
+# that  n_cases(t) = n_cases(t-1) + n_new_cases(t) - n_lifted_cases(t)  holds for
+# every state that exists in t-1 and t (checked below), with
+#   n_cases(t) = n_cases(t-1) + n_new_cases(t) + n_joined_cases(t) - n_lifted_cases(t).
+#   new    : case in force for the target in t, not in t-1, and the case BEGINS in t
+#            (GSDB_V4.csv `begin` = t). This is the sanction decision (the event).
+#   joined : case in force for the target in t, not in t-1, but begun earlier, for a
+#            state that existed in t-1: the state became a target of an existing
+#            group case (CoCom/Comecon successors 1992, EU accession 2004/07/13 under
+#            case 559, ...). Not a new decision -> kept separate from `new`.
+#   (inherited, not counted: a state entering the panel with cases begun earlier,
+#    e.g. Serbia 2006, Czech Rep. 1993, cases begun before 1950.)
+#   lifted : case in force in t-1 but not in t, for a state that still exists in t
+#            (dated to the first year WITHOUT the case; normally GSDB `end` = t-1;
+#            also covers leaving a targeted group, e.g. Mauritania/ECOWAS 2000, UK/EU 2021).
+# Same logic as GSDB-R4 (Yalcin et al. 2024, Fig. 1 and Fig. 6b: new vs existing cases).
+case_info = pd.read_csv(RAW / "GSDB_V4.csv").set_index("case_id")
+obj_tokens = case_info["objective"].astype(str).str.split(r",\s*")
+CONFLICT_OBJ = {"end_war", "territorial_conflict", "prevent_war"}
+is_conflict_obj = obj_tokens.apply(lambda t: bool(CONFLICT_OBJ & set(t)))
+
+fl = rc[["sanctioned_state_iso3", "year", "case"]].reset_index(drop=True)
+fl["yr"] = pd.to_datetime(fl["year"]).dt.year
+active = set(zip(fl["sanctioned_state_iso3"], fl["case"], fl["yr"]))
+exists = set(zip(gw_cw["iso3c"], pd.to_datetime(gw_cw["year"]).dt.year))
+FIRST_YEAR = 1950
+
+def _existed_before(iso, t):
+    return t - 1 >= FIRST_YEAR and (iso, t - 1) in exists
+
+fl["prev"] = [(i, c, t - 1) in active for i, c, t in zip(fl["sanctioned_state_iso3"], fl["case"], fl["yr"])]
+fl["begins"] = fl["case"].map(case_info["begin"]).eq(fl["yr"])
+fl["existed_prev"] = [_existed_before(i, t) for i, t in zip(fl["sanctioned_state_iso3"], fl["yr"])]
+fl["is_new"] = ~fl["prev"] & fl["begins"]
+fl["joined"] = ~fl["prev"] & ~fl["begins"] & fl["existed_prev"]
+fl["inherited"] = ~fl["prev"] & ~fl["begins"] & ~fl["existed_prev"]
+print("case-target starts: new (case begins that year):", int(fl["is_new"].sum()),
+      "| joined (existing case extended to the state):", int(fl["joined"].sum()),
+      "| inherited at panel entry (not counted):", int(fl["inherited"].sum()))
+print("joined, by case:", fl[fl["joined"]].groupby("case").size().to_dict())
+
+new = fl[fl["is_new"]].copy()
+for flag, ser in [("un", is_un), ("eu", is_eu), ("us", is_us)]:
+    new[flag] = new["case"].map(ser)
+new["arms"] = new["case"].map(case_info["arms"]).eq(1)
+new["conflict_obj"] = new["case"].map(is_conflict_obj)
+new_cy = (new.groupby(["sanctioned_state_iso3", "year"])
+             .agg(n_new_cases=("case", "nunique"),
+                  new_un_sanction=("un", "max"), new_eu_sanction=("eu", "max"), new_us_sanction=("us", "max"),
+                  new_arms_sanction=("arms", "max"), new_conflict_obj_sanction=("conflict_obj", "max"))
+             .reset_index())
+
+lift = fl[["sanctioned_state_iso3", "case", "yr"]].copy()
+lift["yr"] = lift["yr"] + 1                                    # candidate first year without the case
+lift = lift[[(i, c, t) not in active and (i, t) in exists and t <= fl["yr"].max()
+             for i, c, t in zip(lift["sanctioned_state_iso3"], lift["case"], lift["yr"])]]
+lift["year"] = pd.to_datetime(lift["yr"].astype(str), format="%Y")
+lift_cy = (lift.groupby(["sanctioned_state_iso3", "year"])
+               .agg(n_lifted_cases=("case", "nunique")).reset_index())
+print("lifted case-target ends:", len(lift), "| GSDB end = year-1 for", int(lift["case"].map(case_info["end"]).eq(lift["yr"] - 1).sum()))
+
+flows = (new_cy.merge(lift_cy, on=["sanctioned_state_iso3", "year"], how="outer")
+               .rename(columns={"sanctioned_state_iso3": "country_iso3"}))
+FLOW_COLS = ["n_new_cases", "n_lifted_cases", "new_un_sanction", "new_eu_sanction", "new_us_sanction",
+             "new_arms_sanction", "new_conflict_obj_sanction"]
+orig_dtypes = received_sanctions.dtypes.to_dict()
+joined_cy = (fl[fl["joined"]].groupby(["sanctioned_state_iso3", "year"])
+                .agg(n_joined_cases=("case", "nunique")).reset_index()
+                .rename(columns={"sanctioned_state_iso3": "country_iso3"}))
+flows = flows.merge(joined_cy, on=["country_iso3", "year"], how="outer")
+FLOW_COLS.insert(2, "n_joined_cases")
+received_sanctions = received_sanctions.merge(flows, on=["country_iso3", "year"], how="outer")
+n_lift_only = int(received_sanctions["num_sanctioners"].isna().sum())
+print("country-years with lifted cases but no case in force (rows added, counts = 0):", n_lift_only)
+received_sanctions = received_sanctions.fillna({c: 0 for c in received_sanctions.columns
+                                                if c not in ("country_iso3", "year")})
+received_sanctions["new_sanction"] = (received_sanctions["n_new_cases"] > 0).astype(int)
+received_sanctions["lifted_sanction"] = (received_sanctions["n_lifted_cases"] > 0).astype(int)
+FLOW_COLS += ["new_sanction", "lifted_sanction"]
+for c in received_sanctions.columns:              # keep the original columns' dtypes (values unchanged)
+    if c not in ("country_iso3", "year"):
+        received_sanctions[c] = received_sanctions[c].astype(orig_dtypes.get(c, "int64"))
+received_sanctions = received_sanctions.sort_values(["country_iso3", "year"]).reset_index(drop=True)
+
+# identity check: stock(t) = stock(t-1) + new(t) - lifted(t) for states existing in t-1 and t
+chk = received_sanctions[["country_iso3", "year", "n_cases_received", "n_new_cases", "n_joined_cases", "n_lifted_cases"]].copy()
+chk["yr"] = pd.to_datetime(chk["year"]).dt.year
+full = pd.DataFrame(sorted(exists), columns=["country_iso3", "yr"])
+full = full[full["yr"] >= FIRST_YEAR].merge(chk.drop(columns="year"), on=["country_iso3", "yr"], how="left").fillna(0)
+full = full.sort_values(["country_iso3", "yr"])
+full["stock_prev"] = full.groupby("country_iso3")["n_cases_received"].shift()
+full["yr_prev"] = full.groupby("country_iso3")["yr"].shift()
+cont = full[full["yr_prev"].eq(full["yr"] - 1)]
+bad = cont[cont["n_cases_received"] != cont["stock_prev"] + cont["n_new_cases"] + cont["n_joined_cases"] - cont["n_lifted_cases"]]
+print("stock-flow identity violations:", len(bad), "of", len(cont), "continuing state-years")
+assert bad.empty, bad.head(20).to_string()
+print("flows: state-years with a new case", int(received_sanctions["new_sanction"].sum()),
+      "| with a lifted case", int(received_sanctions["lifted_sanction"].sum()))
+# validation against GSDB-R4 Fig. 6(b): Russia 2022 = 25 new, 38 in force
+ru = received_sanctions[received_sanctions["country_iso3"].eq("RUS")]
+print("Russia 2014-2023 (in force / new / lifted):")
+print(ru[pd.to_datetime(ru["year"]).dt.year >= 2014][["year", "n_cases_received", "n_new_cases", "n_joined_cases", "n_lifted_cases"]].to_string(index=False))
 
 # duplicate check (printed to the log; should be empty)
 dup_mask = received_sanctions.duplicated(subset=["year", "country_iso3"], keep=False)
