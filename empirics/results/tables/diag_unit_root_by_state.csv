@@ -1,0 +1,1577 @@
+variable,version,gwcode,gw_name,class,t_stat,adf_lags,degenerate,p_value
+new_sanction,raw,2,United States of America,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,20,Canada,testable,-4.176345347922784,1,FALSE,7.202853578023657e-4
+new_sanction,raw,31,Bahamas,constant,NA,NA,FALSE,NA
+new_sanction,raw,40,Cuba,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,41,Haiti,testable,-4.895215382447739,0,FALSE,3.328349310687778e-5
+new_sanction,raw,42,Dominican Republic,testable,-3.61022134455521,0,FALSE,0.005596961702882858
+new_sanction,raw,51,Jamaica,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,53,Barbados,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,54,Dominica,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,55,Grenada,constant,NA,NA,FALSE,NA
+new_sanction,raw,56,Saint Lucia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+new_sanction,raw,58,Antigua & Barbuda,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+new_sanction,raw,70,Mexico,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,80,Belize,testable,-3.7416573867739413,0,FALSE,0.0035832736441695654
+new_sanction,raw,90,Guatemala,testable,-4.757689645830794,0,FALSE,6.225229065074365e-5
+new_sanction,raw,91,Honduras,testable,-4.757689645830793,0,FALSE,6.225229065074384e-5
+new_sanction,raw,92,El Salvador,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,93,Nicaragua,testable,-2.6172728356093726,0,FALSE,0.08939352639303574
+new_sanction,raw,94,Costa Rica,testable,-3.2719844670996188,0,FALSE,0.01621114489408164
+new_sanction,raw,95,Panama,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+new_sanction,raw,100,Colombia,testable,-5.0438089274449,1,FALSE,1.6594083933201163e-5
+new_sanction,raw,101,Venezuela,testable,-1.6010839010198101,1,FALSE,0.48201433337110555
+new_sanction,raw,110,Guyana,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,115,Surinam,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,130,Ecuador,testable,-5.752469825293226,0,FALSE,4.611248164454309e-7
+new_sanction,raw,135,Peru,testable,-5.7524698252932245,0,FALSE,4.611248164454351e-7
+new_sanction,raw,140,Brazil,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,145,Bolivia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,150,Paraguay,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,155,Chile,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,160,Argentina,testable,-3.15947048903351,1,FALSE,0.022484818877560177
+new_sanction,raw,165,Uruguay,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,200,United Kingdom,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,205,Ireland,testable,-3.867674250707916,0,FALSE,0.002296526254559275
+new_sanction,raw,210,Netherlands,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,211,Belgium,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,212,Luxembourg,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,220,France,testable,-3.5582115683609086,0,FALSE,0.00663871678867442
+new_sanction,raw,221,Monaco,constant,NA,NA,FALSE,NA
+new_sanction,raw,223,Liechtenstein,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,225,Switzerland,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,230,Spain,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,232,Andorra,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,235,Portugal,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,260,German Federal Republic,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,290,Poland,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,305,Austria,testable,-4.967692230975558,0,FALSE,2.3761810718496183e-5
+new_sanction,raw,310,Hungary,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,316,Czech Republic,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,317,Slovakia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,325,Italy/Sardinia,testable,-3.867674250707916,0,FALSE,0.002296526254559275
+new_sanction,raw,331,San Marino,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,338,Malta,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,339,Albania,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,340,Serbia,constant,NA,NA,FALSE,NA
+new_sanction,raw,341,Montenegro,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,343,Macedonia (Former Yugoslav Republic of),testable,-3.809413065942934,0,FALSE,0.0028252711299239265
+new_sanction,raw,344,Croatia,testable,-3.7449152518985587,0,FALSE,0.003543033781968547
+new_sanction,raw,345,Yugoslavia,testable,-1.7496355305594136,0,FALSE,0.4061471837453517
+new_sanction,raw,346,Bosnia-Herzegovina,testable,-4.644436531773731,0,FALSE,1e-4
+new_sanction,raw,347,Kosovo,constant,NA,NA,FALSE,NA
+new_sanction,raw,349,Slovenia,testable,-5.232681184722836,0,FALSE,6.658387115449367e-6
+new_sanction,raw,350,Greece,testable,-4.176345347922784,1,FALSE,7.202853578023657e-4
+new_sanction,raw,352,Cyprus,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,355,Bulgaria,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,359,Moldova,testable,-4.370588154508102,0,FALSE,3.293363960361478e-4
+new_sanction,raw,360,Rumania,testable,-5.507570547286102,0,FALSE,1.668234803395301e-6
+new_sanction,raw,365,Russia (Soviet Union),testable,-5.734213373037212,0,FALSE,5.08358900854766e-7
+new_sanction,raw,366,Estonia,testable,-6.419407387663694,0,FALSE,1.1000478436345275e-8
+new_sanction,raw,367,Latvia,testable,-4.621973319117861,0,FALSE,1e-4
+new_sanction,raw,368,Lithuania,testable,-3.809413065942934,0,FALSE,0.0028252711299239265
+new_sanction,raw,369,Ukraine,testable,-5.415243019590222,0,FALSE,2.674534291966402e-6
+new_sanction,raw,370,Belarus (Byelorussia),testable,-5.3257521875915685,0,FALSE,4.197299521842245e-6
+new_sanction,raw,371,Armenia,testable,-3.353322680388102,2,FALSE,0.012687706106172154
+new_sanction,raw,372,Georgia,testable,-5.585696017507577,0,FALSE,1.1127670022027466e-6
+new_sanction,raw,373,Azerbaijan,testable,-5.325752187591566,0,FALSE,4.197299521842307e-6
+new_sanction,raw,375,Finland,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,380,Sweden,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,385,Norway,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+new_sanction,raw,390,Denmark,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,395,Iceland,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,396,Abkhazia,constant,NA,NA,FALSE,NA
+new_sanction,raw,397,South Ossetia,constant,NA,NA,FALSE,NA
+new_sanction,raw,402,Cape Verde,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+new_sanction,raw,404,Guinea-Bissau,testable,-6.033241251599344,0,FALSE,9.960983498614659e-8
+new_sanction,raw,411,Equatorial Guinea,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,420,Gambia,testable,-5.371535573650434,0,FALSE,3.3358558978966696e-6
+new_sanction,raw,432,Mali,testable,-4.842770372564826,0,FALSE,4.2347227900796074e-5
+new_sanction,raw,433,Senegal,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,434,Benin,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,435,Mauritania,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,436,Niger,testable,-4.376973239219324,0,FALSE,3.2078951077042973e-4
+new_sanction,raw,437,Ivory Coast,testable,-3.0063224516914846,2,FALSE,0.034323305216641425
+new_sanction,raw,438,Guinea,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,439,Burkina Faso (Upper Volta),testable,-5.752469825293229,0,FALSE,4.6112481644542486e-7
+new_sanction,raw,450,Liberia,testable,-3.741657386773942,0,FALSE,0.0035832736441695568
+new_sanction,raw,451,Sierra Leone,testable,-3.2249030993194205,0,FALSE,0.018619035621474128
+new_sanction,raw,452,Ghana,testable,-3.6102213445552094,0,FALSE,0.005596961702882863
+new_sanction,raw,461,Togo,testable,-4.496912521077349,0,FALSE,1.943132658107626e-4
+new_sanction,raw,471,Cameroon,testable,-3.1594704890335104,1,FALSE,0.022484818877560174
+new_sanction,raw,475,Nigeria,testable,-3.6688701535592,0,FALSE,0.004597419409388323
+new_sanction,raw,481,Gabon,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,482,Central African Republic,testable,-3.4832934606968347,0,FALSE,0.008454630757230106
+new_sanction,raw,483,Chad,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,484,Congo,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,490,"Congo, Democratic Republic of (Zaire)",testable,-4.628615601571793,0,FALSE,1e-4
+new_sanction,raw,500,Uganda,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+new_sanction,raw,501,Kenya,testable,-4.9676922309755565,0,FALSE,2.3761810718496373e-5
+new_sanction,raw,510,Tanzania/Tanganyika,testable,-1.8920575194229,1,FALSE,0.3363946956895433
+new_sanction,raw,516,Burundi,testable,-3.4832934606968347,0,FALSE,0.008454630757230106
+new_sanction,raw,517,Rwanda,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+new_sanction,raw,520,Somalia,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,522,Djibouti,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,530,Ethiopia,testable,-3.190896140869865,2,FALSE,0.02054770911829785
+new_sanction,raw,531,Eritrea,testable,-4.405878426135061,0,FALSE,2.846390826306503e-4
+new_sanction,raw,540,Angola,testable,-3.935652639922335,0,FALSE,0.0017939502796640741
+new_sanction,raw,541,Mozambique,constant,NA,NA,FALSE,NA
+new_sanction,raw,551,Zambia,testable,-5.752469825293229,0,FALSE,4.6112481644542486e-7
+new_sanction,raw,552,Zimbabwe (Rhodesia),testable,-3.9356526399223366,0,FALSE,0.0017939502796640633
+new_sanction,raw,553,Malawi,testable,-4.376973239219325,0,FALSE,3.207895107704288e-4
+new_sanction,raw,560,South Africa,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,565,Namibia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,570,Lesotho,testable,-3.15947048903351,1,FALSE,0.022484818877560177
+new_sanction,raw,571,Botswana,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,572,Swaziland,constant,NA,NA,FALSE,NA
+new_sanction,raw,580,Madagascar,testable,-4.496912521077346,0,FALSE,1.9431326581076592e-4
+new_sanction,raw,581,Comoros,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,590,Mauritius,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,591,Seychelles,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,600,Morocco,constant,NA,NA,FALSE,NA
+new_sanction,raw,615,Algeria,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,616,Tunisia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,620,Libya,testable,-4.450990985692622,1,FALSE,2.3581532799476511e-4
+new_sanction,raw,625,Sudan,testable,-3.944053188733078,0,FALSE,0.0017394329266834983
+new_sanction,raw,630,Iran (Persia),testable,-2.9137254363387335,0,FALSE,0.043762122969593274
+new_sanction,raw,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+new_sanction,raw,645,Iraq,testable,-5.418010585969488,0,FALSE,2.637232804327572e-6
+new_sanction,raw,651,Egypt,testable,-4.496912521077348,0,FALSE,1.9431326581076318e-4
+new_sanction,raw,652,Syria,testable,-4.084745964208157,2,FALSE,0.0010271587977600488
+new_sanction,raw,660,Lebanon,testable,-4.024172650028993,0,FALSE,0.0012924893285250463
+new_sanction,raw,663,Jordan,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,666,Israel,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,670,Saudi Arabia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,678,Yemen (Arab Republic of Yemen),testable,-1.452510324049557,2,FALSE,0.557879197806773
+new_sanction,raw,690,Kuwait,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,692,Bahrain,constant,NA,NA,FALSE,NA
+new_sanction,raw,694,Qatar,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+new_sanction,raw,698,Oman,constant,NA,NA,FALSE,NA
+new_sanction,raw,700,Afghanistan,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+new_sanction,raw,701,Turkmenistan,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,702,Tajikistan,testable,-4.370588154508102,0,FALSE,3.293363960361478e-4
+new_sanction,raw,703,Kyrgyz Republic,testable,-3.683098884269108,0,FALSE,0.004381165225530708
+new_sanction,raw,704,Uzbekistan,testable,-3.8094130659429335,0,FALSE,0.0028252711299239265
+new_sanction,raw,705,Kazakhstan,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,710,China,testable,-2.808668205871226,0,FALSE,0.0570075684183395
+new_sanction,raw,712,Mongolia,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,713,Taiwan,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,731,"Korea, People's Republic of",testable,-2.0371095428413226,1,FALSE,0.27095989596574355
+new_sanction,raw,732,"Korea, Republic of",almost constant,NA,NA,FALSE,NA
+new_sanction,raw,740,Japan,constant,NA,NA,FALSE,NA
+new_sanction,raw,750,India,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,760,Bhutan,constant,NA,NA,FALSE,NA
+new_sanction,raw,770,Pakistan,testable,-4.887484015319127,0,FALSE,3.449192169556172e-5
+new_sanction,raw,771,Bangladesh,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,775,Myanmar (Burma),testable,-4.7900781951346785,1,FALSE,5.380234782818195e-5
+new_sanction,raw,780,Sri Lanka (Ceylon),almost constant,NA,NA,FALSE,NA
+new_sanction,raw,781,Maldives,constant,NA,NA,FALSE,NA
+new_sanction,raw,790,Nepal,testable,-5.507570547286099,0,FALSE,1.6682348033953197e-6
+new_sanction,raw,800,Thailand,testable,-6.555882231762152,0,FALSE,4.924387484164152e-9
+new_sanction,raw,811,Cambodia (Kampuchea),testable,-3.483293460696837,0,FALSE,0.008454630757230049
+new_sanction,raw,812,Laos,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,816,"Vietnam, Democratic Republic of",testable,-5.752469825293225,0,FALSE,4.611248164454309e-7
+new_sanction,raw,820,Malaysia,constant,NA,NA,FALSE,NA
+new_sanction,raw,830,Singapore,constant,NA,NA,FALSE,NA
+new_sanction,raw,835,Brunei,constant,NA,NA,FALSE,NA
+new_sanction,raw,840,Philippines,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,850,Indonesia,testable,-5.546420768578523,0,FALSE,1.3648383644487086e-6
+new_sanction,raw,860,East Timor,constant,NA,NA,FALSE,NA
+new_sanction,raw,900,Australia,testable,-5.752469825293228,0,FALSE,4.6112481644542486e-7
+new_sanction,raw,910,Papua New Guinea,constant,NA,NA,FALSE,NA
+new_sanction,raw,920,New Zealand,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,935,Vanuatu,constant,NA,NA,FALSE,NA
+new_sanction,raw,940,Solomon Islands,constant,NA,NA,FALSE,NA
+new_sanction,raw,950,Fiji,testable,-4.861724348043978,0,FALSE,3.882847199441626e-5
+new_sanction,raw,970,Kiribati,constant,NA,NA,FALSE,NA
+new_sanction,raw,971,Nauru,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,972,Tonga,constant,NA,NA,FALSE,NA
+new_sanction,raw,973,Tuvalu,constant,NA,NA,FALSE,NA
+new_sanction,raw,983,Marshall Islands,almost constant,NA,NA,FALSE,NA
+new_sanction,raw,986,Palau,constant,NA,NA,FALSE,NA
+new_sanction,raw,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+new_sanction,raw,990,Samoa/Western Samoa,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,2,United States of America,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,20,Canada,testable,-4.078895396439316,0,FALSE,0.0010503893521162536
+new_sanction,year-demeaned,31,Bahamas,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,40,Cuba,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,41,Haiti,testable,-5.521678741628862,0,FALSE,1.5511804579729976e-6
+new_sanction,year-demeaned,42,Dominican Republic,testable,-3.1333468681105696,0,FALSE,0.02421086498902774
+new_sanction,year-demeaned,51,Jamaica,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,53,Barbados,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,54,Dominica,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,55,Grenada,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,56,Saint Lucia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,58,Antigua & Barbuda,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,70,Mexico,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,80,Belize,testable,-3.895211254937023,0,FALSE,0.002079114846635872
+new_sanction,year-demeaned,90,Guatemala,testable,-4.696951050335005,0,FALSE,8.162274184937972e-5
+new_sanction,year-demeaned,91,Honduras,testable,-4.394262295237822,0,FALSE,2.986742387063294e-4
+new_sanction,year-demeaned,92,El Salvador,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,93,Nicaragua,testable,-2.715495294019059,0,FALSE,0.07132727628541538
+new_sanction,year-demeaned,94,Costa Rica,testable,-3.956188825450977,0,FALSE,0.0016633689207375113
+new_sanction,year-demeaned,95,Panama,testable,-5.590238953297759,0,FALSE,1.0867051275780887e-6
+new_sanction,year-demeaned,100,Colombia,testable,-4.895606655850578,1,FALSE,3.3223426045911295e-5
+new_sanction,year-demeaned,101,Venezuela,testable,-1.1226961567934248,1,FALSE,0.7091532404242512
+new_sanction,year-demeaned,110,Guyana,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,115,Surinam,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,130,Ecuador,testable,-6.134176094338671,0,FALSE,5.658728590019776e-8
+new_sanction,year-demeaned,135,Peru,testable,-2.070015987047078,2,FALSE,0.2570916138319882
+new_sanction,year-demeaned,140,Brazil,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,145,Bolivia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,150,Paraguay,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,155,Chile,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,160,Argentina,testable,-2.695930488369504,0,FALSE,0.07467135185847916
+new_sanction,year-demeaned,165,Uruguay,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,200,United Kingdom,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,205,Ireland,testable,-3.331341933989812,0,FALSE,0.013565692559512727
+new_sanction,year-demeaned,210,Netherlands,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,211,Belgium,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,212,Luxembourg,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,220,France,testable,-3.409837655598483,0,FALSE,0.010661424401738695
+new_sanction,year-demeaned,221,Monaco,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,223,Liechtenstein,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,225,Switzerland,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,230,Spain,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,232,Andorra,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,235,Portugal,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,260,German Federal Republic,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,290,Poland,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,305,Austria,testable,-4.715318641186829,0,FALSE,7.522995444127317e-5
+new_sanction,year-demeaned,310,Hungary,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,316,Czech Republic,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,317,Slovakia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,325,Italy/Sardinia,testable,-3.331341933989812,0,FALSE,0.013565692559512727
+new_sanction,year-demeaned,331,San Marino,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,338,Malta,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,339,Albania,testable,-5.084565891723403,0,FALSE,1.3662606604071096e-5
+new_sanction,year-demeaned,340,Serbia,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,341,Montenegro,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,343,Macedonia (Former Yugoslav Republic of),testable,-4.228860461240816,0,FALSE,5.842494326973054e-4
+new_sanction,year-demeaned,344,Croatia,testable,-3.935766089970502,0,FALSE,0.0017932036470502555
+new_sanction,year-demeaned,345,Yugoslavia,testable,-2.008466350297513,0,FALSE,0.28334725120243764
+new_sanction,year-demeaned,346,Bosnia-Herzegovina,testable,-5.2339848251895384,0,FALSE,6.615832373129055e-6
+new_sanction,year-demeaned,347,Kosovo,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,349,Slovenia,testable,-5.213114364956618,0,FALSE,7.3297015662134695e-6
+new_sanction,year-demeaned,350,Greece,testable,-4.064427435724878,1,FALSE,0.0011099433231029712
+new_sanction,year-demeaned,352,Cyprus,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,355,Bulgaria,testable,-4.717096096992714,0,FALSE,7.463727622764647e-5
+new_sanction,year-demeaned,359,Moldova,testable,-4.874444274533453,0,FALSE,3.66257288208381e-5
+new_sanction,year-demeaned,360,Rumania,testable,-5.465205944870198,0,FALSE,2.0734848151554316e-6
+new_sanction,year-demeaned,365,Russia (Soviet Union),testable,-5.375902608268132,0,FALSE,3.2632552455739617e-6
+new_sanction,year-demeaned,366,Estonia,testable,-7.225691934988029,0,FALSE,8.012303319302094e-11
+new_sanction,year-demeaned,367,Latvia,testable,-4.266296156894907,0,FALSE,5.031337666450668e-4
+new_sanction,year-demeaned,368,Lithuania,testable,-3.35278778021268,0,FALSE,0.01270845734729189
+new_sanction,year-demeaned,369,Ukraine,testable,-5.123527473313748,0,FALSE,1.133006376014176e-5
+new_sanction,year-demeaned,370,Belarus (Byelorussia),testable,-4.963682394241119,0,FALSE,2.421200262244429e-5
+new_sanction,year-demeaned,371,Armenia,testable,-4.164782651154776,1,FALSE,7.536585563163371e-4
+new_sanction,year-demeaned,372,Georgia,testable,-1.8991425752565898,2,FALSE,0.3330513675237568
+new_sanction,year-demeaned,373,Azerbaijan,testable,-5.079042742811172,0,FALSE,1.4028503277586306e-5
+new_sanction,year-demeaned,375,Finland,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,380,Sweden,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,385,Norway,testable,-5.68895427084211,0,FALSE,6.466480772420055e-7
+new_sanction,year-demeaned,390,Denmark,testable,-4.17455936195771,0,FALSE,7.253487434733335e-4
+new_sanction,year-demeaned,395,Iceland,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,396,Abkhazia,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,397,South Ossetia,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,402,Cape Verde,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,404,Guinea-Bissau,testable,-6.570965179939949,0,FALSE,4.502350870049269e-9
+new_sanction,year-demeaned,411,Equatorial Guinea,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,420,Gambia,testable,-5.070694762037113,0,FALSE,1.4599468845269098e-5
+new_sanction,year-demeaned,432,Mali,testable,-4.770410823621413,0,FALSE,5.8792602644138e-5
+new_sanction,year-demeaned,433,Senegal,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,434,Benin,testable,-4.770673648674512,0,FALSE,5.8723095290260925e-5
+new_sanction,year-demeaned,435,Mauritania,testable,-4.174228362824985,0,FALSE,7.262907798230554e-4
+new_sanction,year-demeaned,436,Niger,testable,-4.022687481812555,0,FALSE,0.0012997271791606135
+new_sanction,year-demeaned,437,Ivory Coast,testable,-3.37589473457051,2,FALSE,0.011842951132887433
+new_sanction,year-demeaned,438,Guinea,testable,-4.374107029481791,0,FALSE,3.2459995996930756e-4
+new_sanction,year-demeaned,439,Burkina Faso (Upper Volta),testable,-5.862635463073716,0,FALSE,2.5458801159289526e-7
+new_sanction,year-demeaned,450,Liberia,testable,-4.158315128766807,0,FALSE,7.729476598008565e-4
+new_sanction,year-demeaned,451,Sierra Leone,testable,-3.2345263334435836,0,FALSE,0.01810280582713035
+new_sanction,year-demeaned,452,Ghana,testable,-3.1036946283212146,0,FALSE,0.026307337113320735
+new_sanction,year-demeaned,461,Togo,testable,-4.257756402565471,0,FALSE,5.206493923533373e-4
+new_sanction,year-demeaned,471,Cameroon,testable,-2.719537911362417,0,FALSE,0.07065129679956084
+new_sanction,year-demeaned,475,Nigeria,testable,-3.68813050546898,0,FALSE,0.004306762229858021
+new_sanction,year-demeaned,481,Gabon,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,482,Central African Republic,testable,-3.520529193273334,0,FALSE,0.007502849576796326
+new_sanction,year-demeaned,483,Chad,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,484,Congo,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,490,"Congo, Democratic Republic of (Zaire)",testable,-4.753636754415387,0,FALSE,6.339471320871795e-5
+new_sanction,year-demeaned,500,Uganda,testable,-5.51933293475294,0,FALSE,1.5700758497638087e-6
+new_sanction,year-demeaned,501,Kenya,testable,-3.772034271021979,2,FALSE,0.0032220997219917077
+new_sanction,year-demeaned,510,Tanzania/Tanganyika,testable,-0.8952727703502068,1,FALSE,0.7904163742213112
+new_sanction,year-demeaned,516,Burundi,testable,-3.341021895290352,0,FALSE,0.013172607522906788
+new_sanction,year-demeaned,517,Rwanda,testable,-5.470393477711128,0,FALSE,2.019161554169142e-6
+new_sanction,year-demeaned,520,Somalia,testable,-4.183108358153489,0,FALSE,7.000089870025045e-4
+new_sanction,year-demeaned,522,Djibouti,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,530,Ethiopia,testable,-3.726303347507849,1,FALSE,0.0037785775747095065
+new_sanction,year-demeaned,531,Eritrea,testable,-4.152683519871043,0,FALSE,7.90116764111618e-4
+new_sanction,year-demeaned,540,Angola,testable,-4.026627985738406,0,FALSE,0.0012806050836562952
+new_sanction,year-demeaned,541,Mozambique,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,551,Zambia,testable,-5.965124285727651,0,FALSE,1.4526790735277843e-7
+new_sanction,year-demeaned,552,Zimbabwe (Rhodesia),testable,-4.193296398905038,0,FALSE,6.725141644850687e-4
+new_sanction,year-demeaned,553,Malawi,testable,-4.942017075488621,0,FALSE,2.6789348985912424e-5
+new_sanction,year-demeaned,560,South Africa,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,565,Namibia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,570,Lesotho,testable,-2.695930488369504,0,FALSE,0.07467135185847916
+new_sanction,year-demeaned,571,Botswana,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,572,Swaziland,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,580,Madagascar,testable,-3.9966148918804785,0,FALSE,0.0014315717524124873
+new_sanction,year-demeaned,581,Comoros,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,590,Mauritius,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,591,Seychelles,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,600,Morocco,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,615,Algeria,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,616,Tunisia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,620,Libya,testable,-4.278504994413399,1,FALSE,4.7905042016293766e-4
+new_sanction,year-demeaned,625,Sudan,testable,-3.7283889379990884,0,FALSE,0.0037514926091848895
+new_sanction,year-demeaned,630,Iran (Persia),testable,-2.8979650585257852,0,FALSE,0.045567881058445524
+new_sanction,year-demeaned,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,645,Iraq,testable,-5.879321378253984,0,FALSE,2.3249080463012575e-7
+new_sanction,year-demeaned,651,Egypt,testable,-4.476614794727006,0,FALSE,2.1172456667848847e-4
+new_sanction,year-demeaned,652,Syria,testable,-4.0951640641750275,2,FALSE,9.86967484363182e-4
+new_sanction,year-demeaned,660,Lebanon,testable,-4.1958978892328584,0,FALSE,6.656570545411843e-4
+new_sanction,year-demeaned,663,Jordan,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,666,Israel,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,670,Saudi Arabia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,678,Yemen (Arab Republic of Yemen),testable,-1.6458913826581563,2,FALSE,0.4589873443451392
+new_sanction,year-demeaned,690,Kuwait,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,692,Bahrain,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,694,Qatar,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,698,Oman,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,700,Afghanistan,testable,-4.618736340890064,0,FALSE,1e-4
+new_sanction,year-demeaned,701,Turkmenistan,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,702,Tajikistan,testable,-4.04196165973414,0,FALSE,0.001208643306159798
+new_sanction,year-demeaned,703,Kyrgyz Republic,testable,-3.855479503884336,0,FALSE,0.002399315338213274
+new_sanction,year-demeaned,704,Uzbekistan,testable,-4.1938340988681615,0,FALSE,6.710914823930304e-4
+new_sanction,year-demeaned,705,Kazakhstan,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,710,China,testable,-2.8458646038740922,0,FALSE,0.05198327452929997
+new_sanction,year-demeaned,712,Mongolia,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,713,Taiwan,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,731,"Korea, People's Republic of",testable,-1.793736242024935,1,FALSE,0.3841038760789983
+new_sanction,year-demeaned,732,"Korea, Republic of",almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,740,Japan,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,750,India,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,760,Bhutan,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,770,Pakistan,testable,-5.133440077368378,0,FALSE,1.080076545563494e-5
+new_sanction,year-demeaned,771,Bangladesh,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,775,Myanmar (Burma),testable,-4.70598286754744,1,FALSE,7.841720535773775e-5
+new_sanction,year-demeaned,780,Sri Lanka (Ceylon),almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,781,Maldives,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,790,Nepal,testable,-5.372733333318567,0,FALSE,3.3157895797485765e-6
+new_sanction,year-demeaned,800,Thailand,testable,-6.222238173382614,0,FALSE,3.434029985808931e-8
+new_sanction,year-demeaned,811,Cambodia (Kampuchea),testable,-3.295357529608283,0,FALSE,0.015119606078965044
+new_sanction,year-demeaned,812,Laos,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,816,"Vietnam, Democratic Republic of",testable,-5.307155006178902,0,FALSE,4.605446383580169e-6
+new_sanction,year-demeaned,820,Malaysia,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,830,Singapore,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,835,Brunei,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,840,Philippines,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,850,Indonesia,testable,-5.392320309621788,0,FALSE,3.003737838410175e-6
+new_sanction,year-demeaned,860,East Timor,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,900,Australia,testable,-5.77865479899113,0,FALSE,4.0075046673130546e-7
+new_sanction,year-demeaned,910,Papua New Guinea,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,920,New Zealand,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,935,Vanuatu,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,940,Solomon Islands,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,950,Fiji,testable,-1.6645737382780943,2,FALSE,0.4494079753105358
+new_sanction,year-demeaned,970,Kiribati,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,971,Nauru,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,972,Tonga,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,973,Tuvalu,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,983,Marshall Islands,almost constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,986,Palau,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+new_sanction,year-demeaned,990,Samoa/Western Samoa,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,2,United States of America,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,20,Canada,testable,-4.363484845854284,0,FALSE,3.390965199447343e-4
+n_new_cases,raw,31,Bahamas,constant,NA,NA,FALSE,NA
+n_new_cases,raw,40,Cuba,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,41,Haiti,testable,-2.664836024855489,2,FALSE,0.08024291329235184
+n_new_cases,raw,42,Dominican Republic,testable,-3.61022134455521,0,FALSE,0.005596961702882858
+n_new_cases,raw,51,Jamaica,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,53,Barbados,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,54,Dominica,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,55,Grenada,constant,NA,NA,FALSE,NA
+n_new_cases,raw,56,Saint Lucia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+n_new_cases,raw,58,Antigua & Barbuda,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+n_new_cases,raw,70,Mexico,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,80,Belize,testable,-3.7416573867739413,0,FALSE,0.0035832736441695654
+n_new_cases,raw,90,Guatemala,testable,-5.038918426127759,0,FALSE,1.6983985588323e-5
+n_new_cases,raw,91,Honduras,testable,-5.0389184261277595,0,FALSE,1.698398558832293e-5
+n_new_cases,raw,92,El Salvador,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,93,Nicaragua,testable,-2.6172728356093726,0,FALSE,0.08939352639303574
+n_new_cases,raw,94,Costa Rica,testable,-3.2719844670996188,0,FALSE,0.01621114489408164
+n_new_cases,raw,95,Panama,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+n_new_cases,raw,100,Colombia,testable,-4.795653909790324,1,FALSE,5.246284548716336e-5
+n_new_cases,raw,101,Venezuela,testable,-1.4362414022551906,1,FALSE,0.5660249828140863
+n_new_cases,raw,110,Guyana,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,115,Surinam,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,130,Ecuador,testable,-5.667243338592713,0,FALSE,7.253432181351258e-7
+n_new_cases,raw,135,Peru,testable,-5.538425525667988,0,FALSE,1.422544511704069e-6
+n_new_cases,raw,140,Brazil,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,145,Bolivia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,150,Paraguay,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,155,Chile,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,160,Argentina,testable,-3.15947048903351,1,FALSE,0.022484818877560177
+n_new_cases,raw,165,Uruguay,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,200,United Kingdom,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,205,Ireland,testable,-3.867674250707916,0,FALSE,0.002296526254559275
+n_new_cases,raw,210,Netherlands,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,211,Belgium,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,212,Luxembourg,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,220,France,testable,-4.928282855638462,0,FALSE,2.8557182967339824e-5
+n_new_cases,raw,221,Monaco,constant,NA,NA,FALSE,NA
+n_new_cases,raw,223,Liechtenstein,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,225,Switzerland,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,230,Spain,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,232,Andorra,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,235,Portugal,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,260,German Federal Republic,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,290,Poland,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,305,Austria,testable,-5.320818650462644,0,FALSE,4.302034651796901e-6
+n_new_cases,raw,310,Hungary,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,316,Czech Republic,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,317,Slovakia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,325,Italy/Sardinia,testable,-3.867674250707916,0,FALSE,0.002296526254559275
+n_new_cases,raw,331,San Marino,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,338,Malta,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,339,Albania,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,340,Serbia,constant,NA,NA,FALSE,NA
+n_new_cases,raw,341,Montenegro,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,343,Macedonia (Former Yugoslav Republic of),testable,-2.609393224962731,2,FALSE,0.09098541268643137
+n_new_cases,raw,344,Croatia,testable,-3.700064349504773,0,FALSE,0.00413485487190034
+n_new_cases,raw,345,Yugoslavia,testable,-2.898946240345423,0,FALSE,0.04545368077949463
+n_new_cases,raw,346,Bosnia-Herzegovina,testable,-4.644436531773731,0,FALSE,1e-4
+n_new_cases,raw,347,Kosovo,constant,NA,NA,FALSE,NA
+n_new_cases,raw,349,Slovenia,testable,-5.232681184722836,0,FALSE,6.658387115449367e-6
+n_new_cases,raw,350,Greece,testable,-4.176345347922784,1,FALSE,7.202853578023657e-4
+n_new_cases,raw,352,Cyprus,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,355,Bulgaria,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,359,Moldova,testable,-4.370588154508102,0,FALSE,3.293363960361478e-4
+n_new_cases,raw,360,Rumania,testable,-5.507570547286102,0,FALSE,1.668234803395301e-6
+n_new_cases,raw,365,Russia (Soviet Union),testable,-5.4902494989900825,0,FALSE,1.823682809180615e-6
+n_new_cases,raw,366,Estonia,testable,-6.419407387663694,0,FALSE,1.1000478436345275e-8
+n_new_cases,raw,367,Latvia,testable,-3.3626912299068303,0,FALSE,0.012329112405523552
+n_new_cases,raw,368,Lithuania,testable,-3.809413065942934,0,FALSE,0.0028252711299239265
+n_new_cases,raw,369,Ukraine,testable,-4.799278055401485,0,FALSE,5.16093191892958e-5
+n_new_cases,raw,370,Belarus (Byelorussia),testable,-5.777777777777778,0,FALSE,4.0264199180965495e-7
+n_new_cases,raw,371,Armenia,testable,-3.353322680388102,2,FALSE,0.012687706106172154
+n_new_cases,raw,372,Georgia,testable,-5.4948656386755035,0,FALSE,1.7809356489321978e-6
+n_new_cases,raw,373,Azerbaijan,testable,-2.8982753492378874,2,FALSE,0.045531740396545124
+n_new_cases,raw,375,Finland,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,380,Sweden,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,385,Norway,testable,-5.667243338592715,0,FALSE,7.25343218135115e-7
+n_new_cases,raw,390,Denmark,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,395,Iceland,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,396,Abkhazia,constant,NA,NA,FALSE,NA
+n_new_cases,raw,397,South Ossetia,constant,NA,NA,FALSE,NA
+n_new_cases,raw,402,Cape Verde,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+n_new_cases,raw,404,Guinea-Bissau,testable,-5.525308340542139,0,FALSE,1.5223776887907815e-6
+n_new_cases,raw,411,Equatorial Guinea,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,420,Gambia,testable,-5.714581612245157,0,FALSE,5.643970219481844e-7
+n_new_cases,raw,432,Mali,testable,-4.856041487363057,0,FALSE,3.985301721061544e-5
+n_new_cases,raw,433,Senegal,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,434,Benin,testable,-4.4969125210773475,0,FALSE,1.9431326581076443e-4
+n_new_cases,raw,435,Mauritania,testable,-4.0073461953532,0,FALSE,0.0013767143700794179
+n_new_cases,raw,436,Niger,testable,-5.27957137217349,0,FALSE,5.282150258888515e-6
+n_new_cases,raw,437,Ivory Coast,testable,-4.8819395052922685,0,FALSE,3.5384266956300624e-5
+n_new_cases,raw,438,Guinea,testable,-4.403540847308189,0,FALSE,2.874124741382531e-4
+n_new_cases,raw,439,Burkina Faso (Upper Volta),testable,-5.752469825293229,0,FALSE,4.6112481644542486e-7
+n_new_cases,raw,450,Liberia,testable,-4.124238813937975,0,FALSE,8.8238713632698e-4
+n_new_cases,raw,451,Sierra Leone,testable,-3.647668163185987,0,FALSE,0.004938476582965608
+n_new_cases,raw,452,Ghana,testable,-3.6102213445552094,0,FALSE,0.005596961702882863
+n_new_cases,raw,461,Togo,testable,-4.30546594888835,0,FALSE,4.2964577879250773e-4
+n_new_cases,raw,471,Cameroon,testable,-3.308715278733974,0,FALSE,0.014525334474074723
+n_new_cases,raw,475,Nigeria,testable,-4.632157873465731,0,FALSE,1e-4
+n_new_cases,raw,481,Gabon,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,482,Central African Republic,testable,-3.958742450708908,1,FALSE,0.0016477591744211869
+n_new_cases,raw,483,Chad,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,484,Congo,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,490,"Congo, Democratic Republic of (Zaire)",testable,-3.991153693557349,0,FALSE,0.0014610376763067208
+n_new_cases,raw,500,Uganda,testable,-5.752469825293227,0,FALSE,4.611248164454301e-7
+n_new_cases,raw,501,Kenya,testable,-3.198715817636941,2,FALSE,0.02008946177723894
+n_new_cases,raw,510,Tanzania/Tanganyika,testable,-0.523105538179616,1,FALSE,0.8844174015224957
+n_new_cases,raw,516,Burundi,testable,-3.9731239957638245,0,FALSE,0.0015623434734832618
+n_new_cases,raw,517,Rwanda,testable,-5.667243338592715,0,FALSE,7.25343218135115e-7
+n_new_cases,raw,520,Somalia,testable,-4.239729784075314,0,FALSE,5.595170824094067e-4
+n_new_cases,raw,522,Djibouti,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,530,Ethiopia,testable,-3.190896140869865,2,FALSE,0.02054770911829785
+n_new_cases,raw,531,Eritrea,testable,-4.320493798938573,0,FALSE,4.0422757334820274e-4
+n_new_cases,raw,540,Angola,testable,-4.711169913218961,0,FALSE,7.663080252893207e-5
+n_new_cases,raw,541,Mozambique,constant,NA,NA,FALSE,NA
+n_new_cases,raw,551,Zambia,testable,-5.667243338592713,0,FALSE,7.253432181351258e-7
+n_new_cases,raw,552,Zimbabwe (Rhodesia),testable,-4.680781208548231,0,FALSE,8.767558940683351e-5
+n_new_cases,raw,553,Malawi,testable,-5.156493057777915,0,FALSE,9.660232887004415e-6
+n_new_cases,raw,560,South Africa,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,565,Namibia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,570,Lesotho,testable,-3.15947048903351,1,FALSE,0.022484818877560177
+n_new_cases,raw,571,Botswana,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,572,Swaziland,constant,NA,NA,FALSE,NA
+n_new_cases,raw,580,Madagascar,testable,-2.277979189805998,2,FALSE,0.17922280969869747
+n_new_cases,raw,581,Comoros,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,590,Mauritius,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,591,Seychelles,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,600,Morocco,constant,NA,NA,FALSE,NA
+n_new_cases,raw,615,Algeria,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,616,Tunisia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,620,Libya,testable,-5.426668407909897,0,FALSE,2.5237633332487543e-6
+n_new_cases,raw,625,Sudan,testable,-3.094987458524035,0,FALSE,0.026951814394070718
+n_new_cases,raw,630,Iran (Persia),testable,-3.704269111493229,0,FALSE,0.004075784425223088
+n_new_cases,raw,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,645,Iraq,testable,-4.652229921579891,0,FALSE,9.941958400292399e-5
+n_new_cases,raw,651,Egypt,testable,-2.4665088690962915,1,FALSE,0.12380085387292321
+n_new_cases,raw,652,Syria,testable,-3.493636836060966,0,FALSE,0.008179891589875418
+n_new_cases,raw,660,Lebanon,testable,-3.636529653921373,0,FALSE,0.005126677344303717
+n_new_cases,raw,663,Jordan,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,666,Israel,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,670,Saudi Arabia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,678,Yemen (Arab Republic of Yemen),testable,-4.24497373139081,0,FALSE,5.479388204252175e-4
+n_new_cases,raw,690,Kuwait,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,692,Bahrain,constant,NA,NA,FALSE,NA
+n_new_cases,raw,694,Qatar,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+n_new_cases,raw,698,Oman,constant,NA,NA,FALSE,NA
+n_new_cases,raw,700,Afghanistan,testable,-5.325752187591568,0,FALSE,4.197299521842245e-6
+n_new_cases,raw,701,Turkmenistan,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,702,Tajikistan,testable,-4.370588154508102,0,FALSE,3.293363960361478e-4
+n_new_cases,raw,703,Kyrgyz Republic,testable,-3.683098884269108,0,FALSE,0.004381165225530708
+n_new_cases,raw,704,Uzbekistan,testable,-3.8094130659429335,0,FALSE,0.0028252711299239265
+n_new_cases,raw,705,Kazakhstan,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,710,China,testable,-1.3802857759606635,2,FALSE,0.5936483256279592
+n_new_cases,raw,712,Mongolia,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,713,Taiwan,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,731,"Korea, People's Republic of",testable,-5.032071057768838,0,FALSE,1.754471023332019e-5
+n_new_cases,raw,732,"Korea, Republic of",almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,740,Japan,constant,NA,NA,FALSE,NA
+n_new_cases,raw,750,India,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,760,Bhutan,constant,NA,NA,FALSE,NA
+n_new_cases,raw,770,Pakistan,testable,-3.746585495521851,0,FALSE,0.0035225635011825345
+n_new_cases,raw,771,Bangladesh,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,775,Myanmar (Burma),testable,-5.282815622485451,1,FALSE,5.197838802330255e-6
+n_new_cases,raw,780,Sri Lanka (Ceylon),almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,781,Maldives,constant,NA,NA,FALSE,NA
+n_new_cases,raw,790,Nepal,testable,-5.418010585969484,0,FALSE,2.6372328043276263e-6
+n_new_cases,raw,800,Thailand,testable,-6.087905853967941,0,FALSE,7.340153832991885e-8
+n_new_cases,raw,811,Cambodia (Kampuchea),testable,-5.099019513592785,0,FALSE,1.2747981162330197e-5
+n_new_cases,raw,812,Laos,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,816,"Vietnam, Democratic Republic of",testable,-5.752469825293225,0,FALSE,4.611248164454309e-7
+n_new_cases,raw,820,Malaysia,constant,NA,NA,FALSE,NA
+n_new_cases,raw,830,Singapore,constant,NA,NA,FALSE,NA
+n_new_cases,raw,835,Brunei,constant,NA,NA,FALSE,NA
+n_new_cases,raw,840,Philippines,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,850,Indonesia,testable,-6.3047222944224695,0,FALSE,2.140075150116116e-8
+n_new_cases,raw,860,East Timor,constant,NA,NA,FALSE,NA
+n_new_cases,raw,900,Australia,testable,-5.752469825293228,0,FALSE,4.6112481644542486e-7
+n_new_cases,raw,910,Papua New Guinea,constant,NA,NA,FALSE,NA
+n_new_cases,raw,920,New Zealand,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,935,Vanuatu,constant,NA,NA,FALSE,NA
+n_new_cases,raw,940,Solomon Islands,constant,NA,NA,FALSE,NA
+n_new_cases,raw,950,Fiji,testable,-5.556403667239841,0,FALSE,1.2959656802320396e-6
+n_new_cases,raw,970,Kiribati,constant,NA,NA,FALSE,NA
+n_new_cases,raw,971,Nauru,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,972,Tonga,constant,NA,NA,FALSE,NA
+n_new_cases,raw,973,Tuvalu,constant,NA,NA,FALSE,NA
+n_new_cases,raw,983,Marshall Islands,almost constant,NA,NA,FALSE,NA
+n_new_cases,raw,986,Palau,constant,NA,NA,FALSE,NA
+n_new_cases,raw,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+n_new_cases,raw,990,Samoa/Western Samoa,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,2,United States of America,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,20,Canada,testable,-4.700618755999595,0,FALSE,8.030625498144656e-5
+n_new_cases,year-demeaned,31,Bahamas,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,40,Cuba,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,41,Haiti,testable,-2.6710445136503154,2,FALSE,0.07910578452116482
+n_new_cases,year-demeaned,42,Dominican Republic,testable,-3.0997063023738285,0,FALSE,0.026600880099644744
+n_new_cases,year-demeaned,51,Jamaica,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,53,Barbados,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,54,Dominica,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,55,Grenada,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,56,Saint Lucia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,58,Antigua & Barbuda,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,70,Mexico,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,80,Belize,testable,-4.012465938363607,0,FALSE,0.0013505658513099392
+n_new_cases,year-demeaned,90,Guatemala,testable,-5.074536618084223,0,FALSE,1.4333982564376018e-5
+n_new_cases,year-demeaned,91,Honduras,testable,-4.828454840809137,0,FALSE,4.520476601030542e-5
+n_new_cases,year-demeaned,92,El Salvador,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,93,Nicaragua,testable,-2.7594343092077143,0,FALSE,0.06425038523343442
+n_new_cases,year-demeaned,94,Costa Rica,testable,-2.909886898936608,2,FALSE,0.04419633819517858
+n_new_cases,year-demeaned,95,Panama,testable,-5.574175566566455,0,FALSE,1.1816049575128106e-6
+n_new_cases,year-demeaned,100,Colombia,testable,-4.811233728776158,1,FALSE,4.888663056496114e-5
+n_new_cases,year-demeaned,101,Venezuela,testable,-1.2705673312295929,1,FALSE,0.6455043301845466
+n_new_cases,year-demeaned,110,Guyana,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,115,Surinam,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,130,Ecuador,testable,-5.865705112795564,0,FALSE,2.5037488702501837e-7
+n_new_cases,year-demeaned,135,Peru,testable,-5.5080203679365045,0,FALSE,1.6643739929879083e-6
+n_new_cases,year-demeaned,140,Brazil,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,145,Bolivia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,150,Paraguay,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,155,Chile,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,160,Argentina,testable,-2.5730501525421485,0,FALSE,0.09861400295509509
+n_new_cases,year-demeaned,165,Uruguay,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,200,United Kingdom,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,205,Ireland,testable,-3.206916488082559,0,FALSE,0.019618472663834794
+n_new_cases,year-demeaned,210,Netherlands,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,211,Belgium,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,212,Luxembourg,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,220,France,testable,-4.925225547523988,0,FALSE,2.8965644874701437e-5
+n_new_cases,year-demeaned,221,Monaco,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,223,Liechtenstein,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,225,Switzerland,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,230,Spain,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,232,Andorra,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,235,Portugal,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,260,German Federal Republic,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,290,Poland,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,305,Austria,testable,-5.02954051099407,0,FALSE,1.7756398146333903e-5
+n_new_cases,year-demeaned,310,Hungary,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,316,Czech Republic,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,317,Slovakia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,325,Italy/Sardinia,testable,-3.206916488082559,0,FALSE,0.019618472663834794
+n_new_cases,year-demeaned,331,San Marino,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,338,Malta,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,339,Albania,testable,-5.178255513755421,0,FALSE,8.690557397632577e-6
+n_new_cases,year-demeaned,340,Serbia,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,341,Montenegro,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,343,Macedonia (Former Yugoslav Republic of),testable,-2.8030812593296113,2,FALSE,0.05778906920066924
+n_new_cases,year-demeaned,344,Croatia,testable,-4.023175310194892,0,FALSE,0.0012973456656307457
+n_new_cases,year-demeaned,345,Yugoslavia,testable,-3.036373136840428,0,FALSE,0.03165530210821237
+n_new_cases,year-demeaned,346,Bosnia-Herzegovina,testable,-5.434276685409684,0,FALSE,2.427960433022261e-6
+n_new_cases,year-demeaned,347,Kosovo,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,349,Slovenia,testable,-4.857530099457766,0,FALSE,3.958216932092277e-5
+n_new_cases,year-demeaned,350,Greece,testable,-4.088628454214019,1,FALSE,0.0010120066674407997
+n_new_cases,year-demeaned,352,Cyprus,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,355,Bulgaria,testable,-4.635867858450502,0,FALSE,1e-4
+n_new_cases,year-demeaned,359,Moldova,testable,-4.989051795018407,0,FALSE,2.1495783198863893e-5
+n_new_cases,year-demeaned,360,Rumania,testable,-5.0399305953422795,0,FALSE,1.690257398958897e-5
+n_new_cases,year-demeaned,365,Russia (Soviet Union),testable,-5.395376110665664,0,FALSE,2.957689131369546e-6
+n_new_cases,year-demeaned,366,Estonia,testable,-6.908939130593128,0,FALSE,5.815841982709801e-10
+n_new_cases,year-demeaned,367,Latvia,testable,-2.468133471131119,0,FALSE,0.12338473067064094
+n_new_cases,year-demeaned,368,Lithuania,testable,-3.48287827932337,0,FALSE,0.008465830210588852
+n_new_cases,year-demeaned,369,Ukraine,testable,-4.720700902811145,0,FALSE,7.34489096940961e-5
+n_new_cases,year-demeaned,370,Belarus (Byelorussia),testable,-5.631205903732681,0,FALSE,8.769349882971396e-7
+n_new_cases,year-demeaned,371,Armenia,testable,-4.042478866315467,1,FALSE,0.0012062825354220452
+n_new_cases,year-demeaned,372,Georgia,testable,-5.040860912084886,0,FALSE,1.6828076607642568e-5
+n_new_cases,year-demeaned,373,Azerbaijan,testable,-2.6621556893123364,2,FALSE,0.08073780939165351
+n_new_cases,year-demeaned,375,Finland,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,380,Sweden,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,385,Norway,testable,-5.670427496518841,0,FALSE,7.132454414018449e-7
+n_new_cases,year-demeaned,390,Denmark,testable,-4.081353090737197,0,FALSE,0.0010405720256148106
+n_new_cases,year-demeaned,395,Iceland,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,396,Abkhazia,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,397,South Ossetia,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,402,Cape Verde,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,404,Guinea-Bissau,testable,-5.583242631405562,0,FALSE,1.1270926462397696e-6
+n_new_cases,year-demeaned,411,Equatorial Guinea,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,420,Gambia,testable,-5.543435782376755,0,FALSE,1.3861121571602678e-06
+n_new_cases,year-demeaned,432,Mali,testable,-4.853436185058425,0,FALSE,4.0331312348515634e-5
+n_new_cases,year-demeaned,433,Senegal,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,434,Benin,testable,-4.578108653877158,0,FALSE,1e-4
+n_new_cases,year-demeaned,435,Mauritania,testable,-3.8250937019006472,0,FALSE,0.002672557791527656
+n_new_cases,year-demeaned,436,Niger,testable,-5.181071441003163,0,FALSE,8.572156740223218e-6
+n_new_cases,year-demeaned,437,Ivory Coast,testable,-4.6588240979271704,0,FALSE,9.658129510572979e-5
+n_new_cases,year-demeaned,438,Guinea,testable,-4.242195855141031,0,FALSE,5.540439136763468e-4
+n_new_cases,year-demeaned,439,Burkina Faso (Upper Volta),testable,-5.720761556852972,0,FALSE,5.461387064395222e-7
+n_new_cases,year-demeaned,450,Liberia,testable,-4.550328551655317,0,FALSE,1.5473961461239585e-4
+n_new_cases,year-demeaned,451,Sierra Leone,testable,-3.689058461119816,0,FALSE,0.004293166245313713
+n_new_cases,year-demeaned,452,Ghana,testable,-3.015671789302109,0,FALSE,0.03347325929497129
+n_new_cases,year-demeaned,461,Togo,testable,-4.255703992214368,0,FALSE,5.249434170355805e-4
+n_new_cases,year-demeaned,471,Cameroon,testable,-3.248667049091198,0,FALSE,0.017366965309139747
+n_new_cases,year-demeaned,475,Nigeria,testable,-4.676694923773024,0,FALSE,8.927148155579386e-5
+n_new_cases,year-demeaned,481,Gabon,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,482,Central African Republic,testable,-3.834605024919844,1,FALSE,0.0025836568737901593
+n_new_cases,year-demeaned,483,Chad,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,484,Congo,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,490,"Congo, Democratic Republic of (Zaire)",testable,-3.964522002656482,0,FALSE,0.001612927869155038
+n_new_cases,year-demeaned,500,Uganda,testable,-5.253667911062644,0,FALSE,6.004323294906465e-6
+n_new_cases,year-demeaned,501,Kenya,testable,-3.2276238091466656,2,FALSE,0.018471797045075143
+n_new_cases,year-demeaned,510,Tanzania/Tanganyika,testable,1.4418655014183073,1,FALSE,0.9992012160270981
+n_new_cases,year-demeaned,516,Burundi,testable,-3.965753620274553,0,FALSE,0.0016055937330388434
+n_new_cases,year-demeaned,517,Rwanda,testable,-5.6425072936693255,0,FALSE,8.263577726925268e-7
+n_new_cases,year-demeaned,520,Somalia,testable,-4.103524695170544,0,FALSE,9.557738478316777e-4
+n_new_cases,year-demeaned,522,Djibouti,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,530,Ethiopia,testable,-3.762739882925687,1,FALSE,0.003328384777530494
+n_new_cases,year-demeaned,531,Eritrea,testable,-4.148298816794241,0,FALSE,8.037293025295535e-4
+n_new_cases,year-demeaned,540,Angola,testable,-4.829525058354947,0,FALSE,4.498492111760119e-5
+n_new_cases,year-demeaned,541,Mozambique,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,551,Zambia,testable,-5.6760717805614345,0,FALSE,6.922806104287036e-7
+n_new_cases,year-demeaned,552,Zimbabwe (Rhodesia),testable,-4.615645890991961,0,FALSE,1e-4
+n_new_cases,year-demeaned,553,Malawi,testable,-5.248217722253375,0,FALSE,6.167961893708009e-6
+n_new_cases,year-demeaned,560,South Africa,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,565,Namibia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,570,Lesotho,testable,-2.5730501525421485,0,FALSE,0.09861400295509509
+n_new_cases,year-demeaned,571,Botswana,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,572,Swaziland,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,580,Madagascar,testable,-2.0346947736327707,2,FALSE,0.271992600245778
+n_new_cases,year-demeaned,581,Comoros,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,590,Mauritius,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,591,Seychelles,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,600,Morocco,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,615,Algeria,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,616,Tunisia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,620,Libya,testable,-5.404089041502758,0,FALSE,2.8301086320721877e-6
+n_new_cases,year-demeaned,625,Sudan,testable,-3.0255082994861153,0,FALSE,0.03259821738702138
+n_new_cases,year-demeaned,630,Iran (Persia),testable,-3.6711232198579222,0,FALSE,0.004562460445551094
+n_new_cases,year-demeaned,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,645,Iraq,testable,-5.034553672099266,0,FALSE,1.7339387794620147e-5
+n_new_cases,year-demeaned,651,Egypt,testable,-2.511288801079583,1,FALSE,0.11269082847701721
+n_new_cases,year-demeaned,652,Syria,testable,-3.4767187590571216,0,FALSE,0.008632522819344218
+n_new_cases,year-demeaned,660,Lebanon,testable,-3.5927456758794873,0,FALSE,0.005930492440615443
+n_new_cases,year-demeaned,663,Jordan,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,666,Israel,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,670,Saudi Arabia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,678,Yemen (Arab Republic of Yemen),testable,-4.259044920642799,0,FALSE,5.179704233200626e-4
+n_new_cases,year-demeaned,690,Kuwait,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,692,Bahrain,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,694,Qatar,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,698,Oman,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,700,Afghanistan,testable,-5.363232819554652,0,FALSE,3.4782160826410215e-6
+n_new_cases,year-demeaned,701,Turkmenistan,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,702,Tajikistan,testable,-4.100466503764865,0,FALSE,9.670763375401546e-4
+n_new_cases,year-demeaned,703,Kyrgyz Republic,testable,-3.998877849877048,0,FALSE,0.0014209935246451083
+n_new_cases,year-demeaned,704,Uzbekistan,testable,-2.303801445316781,1,FALSE,0.17076456450506075
+n_new_cases,year-demeaned,705,Kazakhstan,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,710,China,testable,-2.7443686783630477,0,FALSE,0.06661013422558557
+n_new_cases,year-demeaned,712,Mongolia,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,713,Taiwan,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,731,"Korea, People's Republic of",testable,-4.863897322191393,0,FALSE,3.8443409010485126e-5
+n_new_cases,year-demeaned,732,"Korea, Republic of",almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,740,Japan,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,750,India,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,760,Bhutan,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,770,Pakistan,testable,-3.7563726160172015,0,FALSE,0.0034030361576386035
+n_new_cases,year-demeaned,771,Bangladesh,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,775,Myanmar (Burma),testable,-5.34432081350766,1,FALSE,3.824741147169672e-6
+n_new_cases,year-demeaned,780,Sri Lanka (Ceylon),almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,781,Maldives,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,790,Nepal,testable,-5.272623366196805,0,FALSE,5.467177131082396e-6
+n_new_cases,year-demeaned,800,Thailand,testable,-5.80582737684153,0,FALSE,3.4624485519283715e-7
+n_new_cases,year-demeaned,811,Cambodia (Kampuchea),testable,-5.150059264479324,0,FALSE,9.966313690186342e-6
+n_new_cases,year-demeaned,812,Laos,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,816,"Vietnam, Democratic Republic of",testable,-4.767289861137213,1,FALSE,5.9624001497735384e-5
+n_new_cases,year-demeaned,820,Malaysia,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,830,Singapore,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,835,Brunei,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,840,Philippines,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,850,Indonesia,testable,-6.364209786441456,0,FALSE,1.517096007165904e-8
+n_new_cases,year-demeaned,860,East Timor,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,900,Australia,testable,-5.52099218148486,0,FALSE,1.5566877467934514e-6
+n_new_cases,year-demeaned,910,Papua New Guinea,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,920,New Zealand,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,935,Vanuatu,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,940,Solomon Islands,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,950,Fiji,testable,-5.433044326589204,0,FALSE,2.4432357306678016e-6
+n_new_cases,year-demeaned,970,Kiribati,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,971,Nauru,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,972,Tonga,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,973,Tuvalu,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,983,Marshall Islands,almost constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,986,Palau,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+n_new_cases,year-demeaned,990,Samoa/Western Samoa,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,2,United States of America,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,20,Canada,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,31,Bahamas,constant,NA,NA,FALSE,NA
+viol_inc,raw,40,Cuba,constant,NA,NA,FALSE,NA
+viol_inc,raw,41,Haiti,testable,-4.487956550468916,0,FALSE,2.0182170950710075e-4
+viol_inc,raw,42,Dominican Republic,constant,NA,NA,FALSE,NA
+viol_inc,raw,51,Jamaica,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,53,Barbados,constant,NA,NA,FALSE,NA
+viol_inc,raw,54,Dominica,constant,NA,NA,FALSE,NA
+viol_inc,raw,55,Grenada,constant,NA,NA,FALSE,NA
+viol_inc,raw,56,Saint Lucia,constant,NA,NA,FALSE,NA
+viol_inc,raw,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+viol_inc,raw,58,Antigua & Barbuda,constant,NA,NA,FALSE,NA
+viol_inc,raw,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+viol_inc,raw,70,Mexico,testable,-3.7142857142857153,0,FALSE,0.003938140163308983
+viol_inc,raw,80,Belize,constant,NA,NA,FALSE,NA
+viol_inc,raw,90,Guatemala,testable,-1.8055535189384109,2,FALSE,0.3782522636923726
+viol_inc,raw,91,Honduras,testable,-4.282992332892409,0,FALSE,4.704737368821373e-4
+viol_inc,raw,92,El Salvador,testable,-6.64435967779818,0,FALSE,2.905024650879999e-9
+viol_inc,raw,93,Nicaragua,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,94,Costa Rica,constant,NA,NA,FALSE,NA
+viol_inc,raw,95,Panama,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,100,Colombia,constant,NA,NA,FALSE,NA
+viol_inc,raw,101,Venezuela,testable,-4.376973239219326,0,FALSE,3.207895107704275e-4
+viol_inc,raw,110,Guyana,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,115,Surinam,constant,NA,NA,FALSE,NA
+viol_inc,raw,130,Ecuador,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,135,Peru,testable,-1.8312225741486012,0,FALSE,0.36564322168816804
+viol_inc,raw,140,Brazil,testable,-3.322052985133746,1,FALSE,0.013952641899080352
+viol_inc,raw,145,Bolivia,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,150,Paraguay,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,155,Chile,constant,NA,NA,FALSE,NA
+viol_inc,raw,160,Argentina,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,165,Uruguay,constant,NA,NA,FALSE,NA
+viol_inc,raw,200,United Kingdom,testable,-4.080798281478944,0,FALSE,0.0010427807649892515
+viol_inc,raw,205,Ireland,constant,NA,NA,FALSE,NA
+viol_inc,raw,210,Netherlands,constant,NA,NA,FALSE,NA
+viol_inc,raw,211,Belgium,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,212,Luxembourg,constant,NA,NA,FALSE,NA
+viol_inc,raw,220,France,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,221,Monaco,constant,NA,NA,FALSE,NA
+viol_inc,raw,223,Liechtenstein,constant,NA,NA,FALSE,NA
+viol_inc,raw,225,Switzerland,constant,NA,NA,FALSE,NA
+viol_inc,raw,230,Spain,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,232,Andorra,constant,NA,NA,FALSE,NA
+viol_inc,raw,235,Portugal,constant,NA,NA,FALSE,NA
+viol_inc,raw,260,German Federal Republic,constant,NA,NA,FALSE,NA
+viol_inc,raw,290,Poland,constant,NA,NA,FALSE,NA
+viol_inc,raw,305,Austria,constant,NA,NA,FALSE,NA
+viol_inc,raw,310,Hungary,constant,NA,NA,FALSE,NA
+viol_inc,raw,316,Czech Republic,constant,NA,NA,FALSE,NA
+viol_inc,raw,317,Slovakia,constant,NA,NA,FALSE,NA
+viol_inc,raw,325,Italy/Sardinia,constant,NA,NA,FALSE,NA
+viol_inc,raw,331,San Marino,constant,NA,NA,FALSE,NA
+viol_inc,raw,338,Malta,constant,NA,NA,FALSE,NA
+viol_inc,raw,339,Albania,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,340,Serbia,constant,NA,NA,FALSE,NA
+viol_inc,raw,341,Montenegro,constant,NA,NA,FALSE,NA
+viol_inc,raw,343,Macedonia (Former Yugoslav Republic of),almost constant,NA,NA,FALSE,NA
+viol_inc,raw,344,Croatia,testable,-3.8232697137852854,2,FALSE,0.0026899238497278574
+viol_inc,raw,345,Yugoslavia,testable,-3.5959160508690915,1,FALSE,0.00586868679648585
+viol_inc,raw,346,Bosnia-Herzegovina,testable,-4.600000000000001,0,FALSE,1e-4
+viol_inc,raw,347,Kosovo,constant,NA,NA,FALSE,NA
+viol_inc,raw,349,Slovenia,constant,NA,NA,FALSE,NA
+viol_inc,raw,350,Greece,constant,NA,NA,FALSE,NA
+viol_inc,raw,352,Cyprus,constant,NA,NA,FALSE,NA
+viol_inc,raw,355,Bulgaria,constant,NA,NA,FALSE,NA
+viol_inc,raw,359,Moldova,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,360,Rumania,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,365,Russia (Soviet Union),testable,-3.9356526399223277,0,FALSE,0.0017939502796641214
+viol_inc,raw,366,Estonia,constant,NA,NA,FALSE,NA
+viol_inc,raw,367,Latvia,constant,NA,NA,FALSE,NA
+viol_inc,raw,368,Lithuania,constant,NA,NA,FALSE,NA
+viol_inc,raw,369,Ukraine,testable,-0.4803844614152614,0,FALSE,0.8926664198402819
+viol_inc,raw,370,Belarus (Byelorussia),constant,NA,NA,FALSE,NA
+viol_inc,raw,371,Armenia,testable,-6.505382386916234,2,FALSE,6.639801341999636e-9
+viol_inc,raw,372,Georgia,testable,-5.4152430195902195,0,FALSE,2.6745342919664366e-6
+viol_inc,raw,373,Azerbaijan,testable,-3.246207823836861,0,FALSE,0.01749302174066078
+viol_inc,raw,375,Finland,constant,NA,NA,FALSE,NA
+viol_inc,raw,380,Sweden,constant,NA,NA,FALSE,NA
+viol_inc,raw,385,Norway,constant,NA,NA,FALSE,NA
+viol_inc,raw,390,Denmark,constant,NA,NA,FALSE,NA
+viol_inc,raw,395,Iceland,constant,NA,NA,FALSE,NA
+viol_inc,raw,396,Abkhazia,constant,NA,NA,FALSE,NA
+viol_inc,raw,397,South Ossetia,constant,NA,NA,FALSE,NA
+viol_inc,raw,402,Cape Verde,constant,NA,NA,FALSE,NA
+viol_inc,raw,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+viol_inc,raw,404,Guinea-Bissau,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,411,Equatorial Guinea,constant,NA,NA,FALSE,NA
+viol_inc,raw,420,Gambia,constant,NA,NA,FALSE,NA
+viol_inc,raw,432,Mali,testable,-1.969293361459969,1,FALSE,0.3007194330920036
+viol_inc,raw,433,Senegal,testable,-1.2788549933261608,2,FALSE,0.6416999389816302
+viol_inc,raw,434,Benin,constant,NA,NA,FALSE,NA
+viol_inc,raw,435,Mauritania,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,436,Niger,testable,-3.8157568056677826,0,FALSE,0.0027625507691428843
+viol_inc,raw,437,Ivory Coast,testable,-4.067610422035835,0,FALSE,0.0010965791389943589
+viol_inc,raw,438,Guinea,testable,-5.887840577551897,0,FALSE,2.2194083199464078e-7
+viol_inc,raw,439,Burkina Faso (Upper Volta),testable,1.5888920231290817,2,FALSE,0.999521492624308
+viol_inc,raw,450,Liberia,testable,-1.9751343999950655,0,FALSE,0.2980963149269365
+viol_inc,raw,451,Sierra Leone,testable,-1.256412125288286,0,FALSE,0.6519359962728519
+viol_inc,raw,452,Ghana,testable,-3.7142857142857135,0,FALSE,0.003938140163309014
+viol_inc,raw,461,Togo,testable,-3.2296399333050116,1,FALSE,0.018363346480756583
+viol_inc,raw,471,Cameroon,testable,-1.5601522261284746,2,FALSE,0.5030591736562775
+viol_inc,raw,475,Nigeria,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,481,Gabon,constant,NA,NA,FALSE,NA
+viol_inc,raw,482,Central African Republic,testable,-1.2143979199145063,2,FALSE,0.6706190854803599
+viol_inc,raw,483,Chad,testable,-2.6457513110645903,0,FALSE,0.08382082691237332
+viol_inc,raw,484,Congo,testable,-3.9999999999999996,0,FALSE,0.0014150514393323794
+viol_inc,raw,490,"Congo, Democratic Republic of (Zaire)",constant,NA,NA,FALSE,NA
+viol_inc,raw,500,Uganda,testable,-2.422702733757323,0,FALSE,0.13540665219832498
+viol_inc,raw,501,Kenya,testable,-5.269308103165902,1,FALSE,5.55765210620231e-6
+viol_inc,raw,510,Tanzania/Tanganyika,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,516,Burundi,testable,-1.898409965218157,0,FALSE,0.3333964309712657
+viol_inc,raw,517,Rwanda,testable,-1.4360032791420259,1,FALSE,0.5661438355761513
+viol_inc,raw,520,Somalia,constant,NA,NA,FALSE,NA
+viol_inc,raw,522,Djibouti,testable,-3.591411804228778,0,FALSE,0.005956670613136984
+viol_inc,raw,530,Ethiopia,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,531,Eritrea,testable,-3.3166247903553994,0,FALSE,0.014183260442839261
+viol_inc,raw,540,Angola,testable,-2.0265333964279013,1,FALSE,0.27550333480132105
+viol_inc,raw,541,Mozambique,testable,-2.1459876881973807,1,FALSE,0.22668866820745986
+viol_inc,raw,551,Zambia,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,552,Zimbabwe (Rhodesia),almost constant,NA,NA,FALSE,NA
+viol_inc,raw,553,Malawi,constant,NA,NA,FALSE,NA
+viol_inc,raw,560,South Africa,testable,-1.6288220358559113,0,FALSE,0.4677590788601259
+viol_inc,raw,565,Namibia,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,570,Lesotho,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,571,Botswana,constant,NA,NA,FALSE,NA
+viol_inc,raw,572,Swaziland,constant,NA,NA,FALSE,NA
+viol_inc,raw,580,Madagascar,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,581,Comoros,testable,-3.8188130791298667,1,FALSE,0.0027327916060850155
+viol_inc,raw,590,Mauritius,constant,NA,NA,FALSE,NA
+viol_inc,raw,591,Seychelles,constant,NA,NA,FALSE,NA
+viol_inc,raw,600,Morocco,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,615,Algeria,testable,NA,NA,TRUE,NA
+viol_inc,raw,616,Tunisia,testable,-1.4244891395915253,1,FALSE,0.5718760941489243
+viol_inc,raw,620,Libya,testable,-0.6252818913170463,0,FALSE,0.8627358194570685
+viol_inc,raw,625,Sudan,constant,NA,NA,FALSE,NA
+viol_inc,raw,630,Iran (Persia),testable,-4.072797285050962,1,FALSE,0.0010751203303615172
+viol_inc,raw,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+viol_inc,raw,645,Iraq,constant,NA,NA,FALSE,NA
+viol_inc,raw,651,Egypt,testable,-2.5035688811888406,0,FALSE,0.11455094643144856
+viol_inc,raw,652,Syria,testable,-0.6252818913170463,0,FALSE,0.8627358194570685
+viol_inc,raw,660,Lebanon,testable,-2.9575636011879065,0,FALSE,0.03905530525689902
+viol_inc,raw,663,Jordan,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,666,Israel,testable,-3.8676742507079167,0,FALSE,0.002296526254559266
+viol_inc,raw,670,Saudi Arabia,testable,-3.7605358769830564,2,FALSE,0.003354054018786723
+viol_inc,raw,678,Yemen (Arab Republic of Yemen),testable,-1.5402931780205378,1,FALSE,0.5132576381053507
+viol_inc,raw,690,Kuwait,testable,-7.358959553787867,0,FALSE,3.4200025185281036e-11
+viol_inc,raw,692,Bahrain,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,694,Qatar,constant,NA,NA,FALSE,NA
+viol_inc,raw,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+viol_inc,raw,698,Oman,constant,NA,NA,FALSE,NA
+viol_inc,raw,700,Afghanistan,constant,NA,NA,FALSE,NA
+viol_inc,raw,701,Turkmenistan,constant,NA,NA,FALSE,NA
+viol_inc,raw,702,Tajikistan,testable,-2.7812833710506095,0,FALSE,0.06094476283928642
+viol_inc,raw,703,Kyrgyz Republic,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,704,Uzbekistan,testable,-3.809413065942934,0,FALSE,0.0028252711299239265
+viol_inc,raw,705,Kazakhstan,constant,NA,NA,FALSE,NA
+viol_inc,raw,710,China,testable,-3.8188130791298667,1,FALSE,0.0027327916060850155
+viol_inc,raw,712,Mongolia,constant,NA,NA,FALSE,NA
+viol_inc,raw,713,Taiwan,constant,NA,NA,FALSE,NA
+viol_inc,raw,731,"Korea, People's Republic of",constant,NA,NA,FALSE,NA
+viol_inc,raw,732,"Korea, Republic of",constant,NA,NA,FALSE,NA
+viol_inc,raw,740,Japan,constant,NA,NA,FALSE,NA
+viol_inc,raw,750,India,constant,NA,NA,FALSE,NA
+viol_inc,raw,760,Bhutan,constant,NA,NA,FALSE,NA
+viol_inc,raw,770,Pakistan,constant,NA,NA,FALSE,NA
+viol_inc,raw,771,Bangladesh,testable,-4.1126607560828115,0,FALSE,9.227345837862789e-4
+viol_inc,raw,775,Myanmar (Burma),constant,NA,NA,FALSE,NA
+viol_inc,raw,780,Sri Lanka (Ceylon),testable,-2.1884866196096615,0,FALSE,0.2106410783778272
+viol_inc,raw,781,Maldives,constant,NA,NA,FALSE,NA
+viol_inc,raw,790,Nepal,testable,-1.4300153216748128,0,FALSE,0.5691261254543101
+viol_inc,raw,800,Thailand,testable,-1.0836122825499492,1,FALSE,0.7245711721585919
+viol_inc,raw,811,Cambodia (Kampuchea),testable,-1.6288220358559113,0,FALSE,0.4677590788601259
+viol_inc,raw,812,Laos,testable,-5.291502622129182,0,FALSE,4.978426522553706e-6
+viol_inc,raw,816,"Vietnam, Democratic Republic of",constant,NA,NA,FALSE,NA
+viol_inc,raw,820,Malaysia,almost constant,NA,NA,FALSE,NA
+viol_inc,raw,830,Singapore,constant,NA,NA,FALSE,NA
+viol_inc,raw,835,Brunei,constant,NA,NA,FALSE,NA
+viol_inc,raw,840,Philippines,constant,NA,NA,FALSE,NA
+viol_inc,raw,850,Indonesia,testable,-2.0878892300899836,0,FALSE,0.24972783458738634
+viol_inc,raw,860,East Timor,constant,NA,NA,FALSE,NA
+viol_inc,raw,900,Australia,constant,NA,NA,FALSE,NA
+viol_inc,raw,910,Papua New Guinea,testable,-1.4875863718563749,2,FALSE,0.5401673959030551
+viol_inc,raw,920,New Zealand,constant,NA,NA,FALSE,NA
+viol_inc,raw,935,Vanuatu,constant,NA,NA,FALSE,NA
+viol_inc,raw,940,Solomon Islands,constant,NA,NA,FALSE,NA
+viol_inc,raw,950,Fiji,constant,NA,NA,FALSE,NA
+viol_inc,raw,970,Kiribati,constant,NA,NA,FALSE,NA
+viol_inc,raw,971,Nauru,constant,NA,NA,FALSE,NA
+viol_inc,raw,972,Tonga,constant,NA,NA,FALSE,NA
+viol_inc,raw,973,Tuvalu,constant,NA,NA,FALSE,NA
+viol_inc,raw,983,Marshall Islands,constant,NA,NA,FALSE,NA
+viol_inc,raw,986,Palau,constant,NA,NA,FALSE,NA
+viol_inc,raw,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+viol_inc,raw,990,Samoa/Western Samoa,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,2,United States of America,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,20,Canada,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,31,Bahamas,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,40,Cuba,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,41,Haiti,testable,-4.5600067307527965,0,FALSE,1.484413839642574e-4
+viol_inc,year-demeaned,42,Dominican Republic,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,51,Jamaica,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,53,Barbados,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,54,Dominica,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,55,Grenada,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,56,Saint Lucia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,58,Antigua & Barbuda,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,70,Mexico,testable,-2.026964835886595,2,FALSE,0.2753174335054442
+viol_inc,year-demeaned,80,Belize,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,90,Guatemala,testable,-1.7425232773408854,2,FALSE,0.40973025781718997
+viol_inc,year-demeaned,91,Honduras,testable,-4.180356726902644,0,FALSE,7.076130963936956e-4
+viol_inc,year-demeaned,92,El Salvador,testable,-6.305187479197407,0,FALSE,2.1343459295600465e-8
+viol_inc,year-demeaned,93,Nicaragua,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,94,Costa Rica,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,95,Panama,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,100,Colombia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,101,Venezuela,testable,-4.61351964666721,0,FALSE,1e-4
+viol_inc,year-demeaned,110,Guyana,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,115,Surinam,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,130,Ecuador,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,135,Peru,testable,-1.8452259508970044,0,FALSE,0.3588257166376012
+viol_inc,year-demeaned,140,Brazil,testable,-3.311345169611353,1,FALSE,0.014410795209119198
+viol_inc,year-demeaned,145,Bolivia,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,150,Paraguay,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,155,Chile,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,160,Argentina,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,165,Uruguay,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,200,United Kingdom,testable,-4.200051123766485,0,FALSE,6.548451461116929e-4
+viol_inc,year-demeaned,205,Ireland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,210,Netherlands,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,211,Belgium,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,212,Luxembourg,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,220,France,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,221,Monaco,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,223,Liechtenstein,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,225,Switzerland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,230,Spain,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,232,Andorra,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,235,Portugal,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,260,German Federal Republic,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,290,Poland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,305,Austria,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,310,Hungary,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,316,Czech Republic,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,317,Slovakia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,325,Italy/Sardinia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,331,San Marino,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,338,Malta,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,339,Albania,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,340,Serbia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,341,Montenegro,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,343,Macedonia (Former Yugoslav Republic of),almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,344,Croatia,testable,-3.3324490985819444,2,FALSE,0.013520211871623937
+viol_inc,year-demeaned,345,Yugoslavia,testable,-3.682715069708628,1,FALSE,0.004386888263839889
+viol_inc,year-demeaned,346,Bosnia-Herzegovina,testable,-4.459406066125419,0,FALSE,2.276316990209966e-4
+viol_inc,year-demeaned,347,Kosovo,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,349,Slovenia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,350,Greece,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,352,Cyprus,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,355,Bulgaria,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,359,Moldova,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,360,Rumania,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,365,Russia (Soviet Union),testable,-3.7003470329640438,0,FALSE,0.004130859377703978
+viol_inc,year-demeaned,366,Estonia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,367,Latvia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,368,Lithuania,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,369,Ukraine,testable,-0.5411993627529734,0,FALSE,0.8807810111915383
+viol_inc,year-demeaned,370,Belarus (Byelorussia),constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,371,Armenia,testable,-6.6562524887750865,2,FALSE,2.705017718866053e-9
+viol_inc,year-demeaned,372,Georgia,testable,-5.537613276405328,0,FALSE,1.4285375979005503e-6
+viol_inc,year-demeaned,373,Azerbaijan,testable,-3.2986466623933333,0,FALSE,0.014971319556754254
+viol_inc,year-demeaned,375,Finland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,380,Sweden,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,385,Norway,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,390,Denmark,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,395,Iceland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,396,Abkhazia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,397,South Ossetia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,402,Cape Verde,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,404,Guinea-Bissau,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,411,Equatorial Guinea,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,420,Gambia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,432,Mali,testable,-1.8953504917980832,1,FALSE,0.33483906928587887
+viol_inc,year-demeaned,433,Senegal,testable,-1.334866977038802,2,FALSE,0.6154976207114511
+viol_inc,year-demeaned,434,Benin,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,435,Mauritania,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,436,Niger,testable,-3.8832922054499215,0,FALSE,0.002170786011758701
+viol_inc,year-demeaned,437,Ivory Coast,testable,-3.985351645770122,0,FALSE,0.0014929560612581372
+viol_inc,year-demeaned,438,Guinea,testable,-3.246926352837189,2,FALSE,0.017456108325234393
+viol_inc,year-demeaned,439,Burkina Faso (Upper Volta),testable,1.779488834117502,2,FALSE,0.999761659151027
+viol_inc,year-demeaned,450,Liberia,testable,-2.031805291774214,0,FALSE,0.2732360938866855
+viol_inc,year-demeaned,451,Sierra Leone,testable,-1.199207126786452,0,FALSE,0.6772195192569019
+viol_inc,year-demeaned,452,Ghana,testable,-3.7791815795051225,0,FALSE,0.003142488599868453
+viol_inc,year-demeaned,461,Togo,testable,-3.2492578588360663,1,FALSE,0.01733827598340354
+viol_inc,year-demeaned,471,Cameroon,testable,-1.1171625954743387,1,FALSE,0.711373203359035
+viol_inc,year-demeaned,475,Nigeria,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,481,Gabon,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,482,Central African Republic,testable,-1.2404342876794778,2,FALSE,0.6591167788450987
+viol_inc,year-demeaned,483,Chad,testable,-2.7137348224430147,0,FALSE,0.07162325597595898
+viol_inc,year-demeaned,484,Congo,testable,-4.109426351799102,0,FALSE,9.343081794589027e-4
+viol_inc,year-demeaned,490,"Congo, Democratic Republic of (Zaire)",constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,500,Uganda,testable,-2.3975015839770384,0,FALSE,0.1424253018440564
+viol_inc,year-demeaned,501,Kenya,testable,-5.319336851465452,1,FALSE,4.33398189462817e-6
+viol_inc,year-demeaned,510,Tanzania/Tanganyika,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,516,Burundi,testable,-1.9540512028960177,0,FALSE,0.30761933633147065
+viol_inc,year-demeaned,517,Rwanda,testable,-1.4017598323740392,1,FALSE,0.5831267703176003
+viol_inc,year-demeaned,520,Somalia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,522,Djibouti,testable,-3.7143246358516344,0,FALSE,0.003937613654223297
+viol_inc,year-demeaned,530,Ethiopia,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,531,Eritrea,testable,-3.4114459653632005,0,FALSE,0.01060814163696821
+viol_inc,year-demeaned,540,Angola,testable,-2.085486299302579,1,FALSE,0.25071001239424795
+viol_inc,year-demeaned,541,Mozambique,testable,-3.4288619270955008,0,FALSE,0.010046176976099604
+viol_inc,year-demeaned,551,Zambia,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,552,Zimbabwe (Rhodesia),almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,553,Malawi,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,560,South Africa,testable,-1.5863539373549802,0,FALSE,0.48958919557492875
+viol_inc,year-demeaned,565,Namibia,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,570,Lesotho,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,571,Botswana,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,572,Swaziland,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,580,Madagascar,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,581,Comoros,testable,-3.9448780458360853,1,FALSE,0.001734162996289563
+viol_inc,year-demeaned,590,Mauritius,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,591,Seychelles,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,600,Morocco,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,615,Algeria,testable,-0.1888841716496687,0,FALSE,0.9375417572013643
+viol_inc,year-demeaned,616,Tunisia,testable,-1.4391835680818508,1,FALSE,0.5645556015256412
+viol_inc,year-demeaned,620,Libya,testable,-0.6599795394144138,0,FALSE,0.8547114223872074
+viol_inc,year-demeaned,625,Sudan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,630,Iran (Persia),testable,-3.9594886121417,1,FALSE,0.0016432236353878717
+viol_inc,year-demeaned,640,Turkey (Ottoman Empire),almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,645,Iraq,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,651,Egypt,testable,-2.52747313135352,0,FALSE,0.10887088541877615
+viol_inc,year-demeaned,652,Syria,testable,-0.6599795394144138,0,FALSE,0.8547114223872074
+viol_inc,year-demeaned,660,Lebanon,testable,-3.053463020989113,0,FALSE,0.03021762720739636
+viol_inc,year-demeaned,663,Jordan,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,666,Israel,testable,-3.870516059467642,0,FALSE,0.0022731607126388865
+viol_inc,year-demeaned,670,Saudi Arabia,testable,-3.168046791020618,0,FALSE,0.021939193964489782
+viol_inc,year-demeaned,678,Yemen (Arab Republic of Yemen),testable,-1.4895509407443879,1,FALSE,0.5391698997572465
+viol_inc,year-demeaned,690,Kuwait,testable,-7.283868263261183,0,FALSE,5.532072238259596e-11
+viol_inc,year-demeaned,692,Bahrain,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,694,Qatar,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,696,United Arab Emirates,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,698,Oman,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,700,Afghanistan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,701,Turkmenistan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,702,Tajikistan,testable,-2.813831617616458,0,FALSE,0.05628786043921657
+viol_inc,year-demeaned,703,Kyrgyz Republic,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,704,Uzbekistan,testable,-3.896108951596977,0,FALSE,0.0020723567018198505
+viol_inc,year-demeaned,705,Kazakhstan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,710,China,testable,-3.47814031260876,1,FALSE,0.008593500180074754
+viol_inc,year-demeaned,712,Mongolia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,713,Taiwan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,731,"Korea, People's Republic of",constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,732,"Korea, Republic of",constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,740,Japan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,750,India,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,760,Bhutan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,770,Pakistan,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,771,Bangladesh,testable,-4.212726699636432,0,FALSE,6.228543289195559e-4
+viol_inc,year-demeaned,775,Myanmar (Burma),constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,780,Sri Lanka (Ceylon),testable,-2.1986279325833458,0,FALSE,0.20691866769741799
+viol_inc,year-demeaned,781,Maldives,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,790,Nepal,testable,-1.502302235319031,0,FALSE,0.5326859727129807
+viol_inc,year-demeaned,800,Thailand,testable,-1.1400706700194645,1,FALSE,0.7020963499782414
+viol_inc,year-demeaned,811,Cambodia (Kampuchea),testable,-1.5863539373549802,0,FALSE,0.48958919557492875
+viol_inc,year-demeaned,812,Laos,testable,-5.003348898424791,0,FALSE,2.0096420820015535e-5
+viol_inc,year-demeaned,816,"Vietnam, Democratic Republic of",constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,820,Malaysia,almost constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,830,Singapore,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,835,Brunei,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,840,Philippines,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,850,Indonesia,testable,-2.1171366198072885,0,FALSE,0.23796722749079888
+viol_inc,year-demeaned,860,East Timor,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,900,Australia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,910,Papua New Guinea,testable,-1.5353276648431495,2,FALSE,0.5158032375668833
+viol_inc,year-demeaned,920,New Zealand,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,935,Vanuatu,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,940,Solomon Islands,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,950,Fiji,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,970,Kiribati,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,971,Nauru,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,972,Tonga,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,973,Tuvalu,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,983,Marshall Islands,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,986,Palau,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+viol_inc,year-demeaned,990,Samoa/Western Samoa,constant,NA,NA,FALSE,NA
+viol_lev,raw,2,United States of America,testable,-5.300347121836733,0,FALSE,4.764231567431197e-6
+viol_lev,raw,20,Canada,testable,-3.864530185695498,0,FALSE,0.0023226336276883676
+viol_lev,raw,31,Bahamas,constant,NA,NA,FALSE,NA
+viol_lev,raw,40,Cuba,constant,NA,NA,FALSE,NA
+viol_lev,raw,41,Haiti,testable,-6.985429744892126,0,FALSE,3.6233894528328616e-10
+viol_lev,raw,42,Dominican Republic,constant,NA,NA,FALSE,NA
+viol_lev,raw,51,Jamaica,testable,-3.8941802306716986,0,FALSE,0.002086901715241679
+viol_lev,raw,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,53,Barbados,constant,NA,NA,FALSE,NA
+viol_lev,raw,54,Dominica,constant,NA,NA,FALSE,NA
+viol_lev,raw,55,Grenada,constant,NA,NA,FALSE,NA
+viol_lev,raw,56,Saint Lucia,constant,NA,NA,FALSE,NA
+viol_lev,raw,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+viol_lev,raw,58,Antigua & Barbuda,constant,NA,NA,FALSE,NA
+viol_lev,raw,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+viol_lev,raw,70,Mexico,testable,0.05699545445866944,0,FALSE,0.9624480934267292
+viol_lev,raw,80,Belize,constant,NA,NA,FALSE,NA
+viol_lev,raw,90,Guatemala,testable,-3.5614321150351795,1,FALSE,0.0065691777753377695
+viol_lev,raw,91,Honduras,testable,-4.032597631319377,0,FALSE,0.0012521309915411736
+viol_lev,raw,92,El Salvador,testable,-9.234975453373776,0,FALSE,8.85611664415607e-17
+viol_lev,raw,93,Nicaragua,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,94,Costa Rica,constant,NA,NA,FALSE,NA
+viol_lev,raw,95,Panama,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,100,Colombia,testable,-1.111103910191577,0,FALSE,0.7137905272597234
+viol_lev,raw,101,Venezuela,testable,-1.4591363429759727,1,FALSE,0.5545442635811408
+viol_lev,raw,110,Guyana,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,115,Surinam,constant,NA,NA,FALSE,NA
+viol_lev,raw,130,Ecuador,testable,-5.556904523405517,0,FALSE,1.2926005144494449e-6
+viol_lev,raw,135,Peru,testable,-5.0774664831271465,0,FALSE,1.4134642646494241e-5
+viol_lev,raw,140,Brazil,testable,-1.380076142242991,0,FALSE,0.5937504259014048
+viol_lev,raw,145,Bolivia,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,150,Paraguay,testable,-0.3978888195132394,1,FALSE,0.907309199061147
+viol_lev,raw,155,Chile,constant,NA,NA,FALSE,NA
+viol_lev,raw,160,Argentina,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,165,Uruguay,constant,NA,NA,FALSE,NA
+viol_lev,raw,200,United Kingdom,testable,-3.7405977575083122,0,FALSE,0.003596451137759384
+viol_lev,raw,205,Ireland,constant,NA,NA,FALSE,NA
+viol_lev,raw,210,Netherlands,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,211,Belgium,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,212,Luxembourg,constant,NA,NA,FALSE,NA
+viol_lev,raw,220,France,testable,-3.2814679035671612,0,FALSE,0.015760176105402347
+viol_lev,raw,221,Monaco,constant,NA,NA,FALSE,NA
+viol_lev,raw,223,Liechtenstein,constant,NA,NA,FALSE,NA
+viol_lev,raw,225,Switzerland,constant,NA,NA,FALSE,NA
+viol_lev,raw,230,Spain,testable,-5.438888124204404,0,FALSE,2.371616562918187e-6
+viol_lev,raw,232,Andorra,constant,NA,NA,FALSE,NA
+viol_lev,raw,235,Portugal,constant,NA,NA,FALSE,NA
+viol_lev,raw,260,German Federal Republic,testable,-5.421205568075197,0,FALSE,2.594796292039405e-6
+viol_lev,raw,290,Poland,constant,NA,NA,FALSE,NA
+viol_lev,raw,305,Austria,constant,NA,NA,FALSE,NA
+viol_lev,raw,310,Hungary,constant,NA,NA,FALSE,NA
+viol_lev,raw,316,Czech Republic,constant,NA,NA,FALSE,NA
+viol_lev,raw,317,Slovakia,constant,NA,NA,FALSE,NA
+viol_lev,raw,325,Italy/Sardinia,constant,NA,NA,FALSE,NA
+viol_lev,raw,331,San Marino,constant,NA,NA,FALSE,NA
+viol_lev,raw,338,Malta,constant,NA,NA,FALSE,NA
+viol_lev,raw,339,Albania,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,340,Serbia,constant,NA,NA,FALSE,NA
+viol_lev,raw,341,Montenegro,constant,NA,NA,FALSE,NA
+viol_lev,raw,343,Macedonia (Former Yugoslav Republic of),testable,-4.675831141326056,0,FALSE,8.96123503265514e-5
+viol_lev,raw,344,Croatia,testable,-2.1769983210501924,2,FALSE,0.2149082279627531
+viol_lev,raw,345,Yugoslavia,testable,-3.7053123646536412,1,FALSE,0.004061247416465979
+viol_lev,raw,346,Bosnia-Herzegovina,testable,-4.0662073053648475,0,FALSE,0.0011024518331763731
+viol_lev,raw,347,Kosovo,constant,NA,NA,FALSE,NA
+viol_lev,raw,349,Slovenia,constant,NA,NA,FALSE,NA
+viol_lev,raw,350,Greece,constant,NA,NA,FALSE,NA
+viol_lev,raw,352,Cyprus,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,355,Bulgaria,constant,NA,NA,FALSE,NA
+viol_lev,raw,359,Moldova,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,360,Rumania,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,365,Russia (Soviet Union),testable,-1.6626632045302232,2,FALSE,0.45038710787870007
+viol_lev,raw,366,Estonia,constant,NA,NA,FALSE,NA
+viol_lev,raw,367,Latvia,constant,NA,NA,FALSE,NA
+viol_lev,raw,368,Lithuania,constant,NA,NA,FALSE,NA
+viol_lev,raw,369,Ukraine,testable,-2.5036867951877846,0,FALSE,0.1145223649803429
+viol_lev,raw,370,Belarus (Byelorussia),constant,NA,NA,FALSE,NA
+viol_lev,raw,371,Armenia,testable,-4.298300054894822,0,FALSE,4.4228802866454593e-4
+viol_lev,raw,372,Georgia,testable,-8.243424464788156,0,FALSE,9.543982696641657e-14
+viol_lev,raw,373,Azerbaijan,testable,-6.178165775425278,2,FALSE,4.412342411521013e-8
+viol_lev,raw,375,Finland,constant,NA,NA,FALSE,NA
+viol_lev,raw,380,Sweden,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,385,Norway,constant,NA,NA,FALSE,NA
+viol_lev,raw,390,Denmark,constant,NA,NA,FALSE,NA
+viol_lev,raw,395,Iceland,constant,NA,NA,FALSE,NA
+viol_lev,raw,396,Abkhazia,constant,NA,NA,FALSE,NA
+viol_lev,raw,397,South Ossetia,constant,NA,NA,FALSE,NA
+viol_lev,raw,402,Cape Verde,constant,NA,NA,FALSE,NA
+viol_lev,raw,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+viol_lev,raw,404,Guinea-Bissau,testable,-3.7635190761913795,1,FALSE,0.0033193528458262934
+viol_lev,raw,411,Equatorial Guinea,constant,NA,NA,FALSE,NA
+viol_lev,raw,420,Gambia,testable,-4.62310009221003,0,FALSE,1e-4
+viol_lev,raw,432,Mali,testable,-2.750779939550156,0,FALSE,0.06559755893644871
+viol_lev,raw,433,Senegal,testable,-1.2253519889018056,2,FALSE,0.6658093195658178
+viol_lev,raw,434,Benin,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,435,Mauritania,testable,-4.1276485316827,0,FALSE,8.708209951314121e-4
+viol_lev,raw,436,Niger,testable,-2.5622939305038313,0,FALSE,0.10096647522478643
+viol_lev,raw,437,Ivory Coast,testable,-3.646553649151105,0,FALSE,0.0049570224156278795
+viol_lev,raw,438,Guinea,testable,-3.8654017888546783,0,FALSE,0.0023153689488560297
+viol_lev,raw,439,Burkina Faso (Upper Volta),testable,7.454199485609888,1,FALSE,1
+viol_lev,raw,450,Liberia,testable,-1.9028314536374502,0,FALSE,0.3313123806028858
+viol_lev,raw,451,Sierra Leone,testable,-1.236435738856469,0,FALSE,0.6608992219240937
+viol_lev,raw,452,Ghana,testable,-4.28013276990019,0,FALSE,4.759224222984816e-4
+viol_lev,raw,461,Togo,testable,-5.71506184651533,0,FALSE,5.629571931088763e-7
+viol_lev,raw,471,Cameroon,testable,-1.4105202157171788,0,FALSE,0.5788020922598386
+viol_lev,raw,475,Nigeria,testable,-2.4036857627412416,0,FALSE,0.1406792290984522
+viol_lev,raw,481,Gabon,constant,NA,NA,FALSE,NA
+viol_lev,raw,482,Central African Republic,testable,-0.8394362915706328,2,FALSE,0.8073547568578591
+viol_lev,raw,483,Chad,testable,-3.1603335793021197,2,FALSE,0.02242965731787233
+viol_lev,raw,484,Congo,testable,-2.9034009280588013,0,FALSE,0.044938186029372405
+viol_lev,raw,490,"Congo, Democratic Republic of (Zaire)",testable,-3.335717001391603,0,FALSE,0.013386758817074275
+viol_lev,raw,500,Uganda,testable,-1.9003347727520459,0,FALSE,0.3324859112955941
+viol_lev,raw,501,Kenya,testable,-4.378076229858327,1,FALSE,3.1933441244336186e-4
+viol_lev,raw,510,Tanzania/Tanganyika,testable,-5.547319963009982,0,FALSE,1.358492141046806e-6
+viol_lev,raw,516,Burundi,testable,-1.0043282965619151,1,FALSE,0.7539835532417095
+viol_lev,raw,517,Rwanda,testable,-1.1183280533424131,2,FALSE,0.7109066601188415
+viol_lev,raw,520,Somalia,testable,-3.8579101436532626,0,FALSE,0.0023784969570870063
+viol_lev,raw,522,Djibouti,testable,-3.1814463650660123,0,FALSE,0.021113593860983954
+viol_lev,raw,530,Ethiopia,testable,-4.349902880373656,1,FALSE,3.5852133491068777e-4
+viol_lev,raw,531,Eritrea,testable,-1.7021650600999922,2,FALSE,0.43020490809218365
+viol_lev,raw,540,Angola,testable,-1.242010940003888,2,FALSE,0.6584123703163014
+viol_lev,raw,541,Mozambique,testable,-6.973162910493003,1,FALSE,3.9099853130824317e-10
+viol_lev,raw,551,Zambia,testable,-4.66928887209242,0,FALSE,9.223457845470098e-5
+viol_lev,raw,552,Zimbabwe (Rhodesia),testable,-5.334558683567897,0,FALSE,4.016434559757452e-6
+viol_lev,raw,553,Malawi,constant,NA,NA,FALSE,NA
+viol_lev,raw,560,South Africa,testable,-2.8777812678964487,0,FALSE,0.0479697032030248
+viol_lev,raw,565,Namibia,testable,-5.044940133305777,0,FALSE,1.6505128922291146e-5
+viol_lev,raw,570,Lesotho,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,571,Botswana,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,572,Swaziland,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,580,Madagascar,testable,-5.592131703941576,0,FALSE,1.0760224313902633e-6
+viol_lev,raw,581,Comoros,testable,-3.7989101349154324,1,FALSE,0.0029319894022261607
+viol_lev,raw,590,Mauritius,constant,NA,NA,FALSE,NA
+viol_lev,raw,591,Seychelles,constant,NA,NA,FALSE,NA
+viol_lev,raw,600,Morocco,testable,-6.312318025687323,0,FALSE,2.048381930745247e-8
+viol_lev,raw,615,Algeria,testable,-1.4766344280155053,0,FALSE,0.5457186890684047
+viol_lev,raw,616,Tunisia,testable,-2.0988336786365593,0,FALSE,0.2452880525407235
+viol_lev,raw,620,Libya,testable,-0.13481102600271885,2,FALSE,0.9439199058641367
+viol_lev,raw,625,Sudan,testable,-2.1351963212346625,0,FALSE,0.2308700874866896
+viol_lev,raw,630,Iran (Persia),testable,-3.3291521739340886,0,FALSE,0.01365604427547535
+viol_lev,raw,640,Turkey (Ottoman Empire),testable,-1.4920082536201416,0,FALSE,0.5379214470238286
+viol_lev,raw,645,Iraq,testable,-3.6022038411463098,0,FALSE,0.005747821223874103
+viol_lev,raw,651,Egypt,testable,-1.2522255178050936,2,FALSE,0.6538246782281221
+viol_lev,raw,652,Syria,testable,-1.5977102353304842,1,FALSE,0.4837465630351448
+viol_lev,raw,660,Lebanon,testable,-3.8561262586564666,0,FALSE,0.002393759642827828
+viol_lev,raw,663,Jordan,testable,-5.448251305096557,0,FALSE,2.2610812915174315e-6
+viol_lev,raw,666,Israel,testable,-3.6802896551139264,0,FALSE,0.004423210431546635
+viol_lev,raw,670,Saudi Arabia,testable,-4.580183626012553,0,FALSE,1e-4
+viol_lev,raw,678,Yemen (Arab Republic of Yemen),testable,-0.5285398340485444,2,FALSE,0.8833341734175084
+viol_lev,raw,690,Kuwait,testable,-31.637230657254293,0,FALSE,2.081330936379553e-45
+viol_lev,raw,692,Bahrain,testable,-5.04618060581185,0,FALSE,1.6408107932605852e-5
+viol_lev,raw,694,Qatar,constant,NA,NA,FALSE,NA
+viol_lev,raw,696,United Arab Emirates,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,698,Oman,constant,NA,NA,FALSE,NA
+viol_lev,raw,700,Afghanistan,testable,-1.3497685331816436,0,FALSE,0.6083891138737367
+viol_lev,raw,701,Turkmenistan,constant,NA,NA,FALSE,NA
+viol_lev,raw,702,Tajikistan,testable,-3.065340938723662,1,FALSE,0.029251462648054342
+viol_lev,raw,703,Kyrgyz Republic,testable,-4.615786636576614,0,FALSE,1e-4
+viol_lev,raw,704,Uzbekistan,testable,-4.206239724757564,0,FALSE,6.390389766071291e-4
+viol_lev,raw,705,Kazakhstan,constant,NA,NA,FALSE,NA
+viol_lev,raw,710,China,testable,-3.620772488735359,0,FALSE,0.005403993562236012
+viol_lev,raw,712,Mongolia,constant,NA,NA,FALSE,NA
+viol_lev,raw,713,Taiwan,constant,NA,NA,FALSE,NA
+viol_lev,raw,731,"Korea, People's Republic of",constant,NA,NA,FALSE,NA
+viol_lev,raw,732,"Korea, Republic of",constant,NA,NA,FALSE,NA
+viol_lev,raw,740,Japan,constant,NA,NA,FALSE,NA
+viol_lev,raw,750,India,testable,-2.892699038045169,2,FALSE,0.04618487813412866
+viol_lev,raw,760,Bhutan,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,770,Pakistan,testable,-2.0153509003758265,1,FALSE,0.28034410085554085
+viol_lev,raw,771,Bangladesh,testable,-3.5980745146539896,0,FALSE,0.005826940631605473
+viol_lev,raw,775,Myanmar (Burma),testable,-5.663456973467097,0,FALSE,7.399885185747919e-7
+viol_lev,raw,780,Sri Lanka (Ceylon),testable,-2.2232897079708263,0,FALSE,0.19803439234211187
+viol_lev,raw,781,Maldives,constant,NA,NA,FALSE,NA
+viol_lev,raw,790,Nepal,testable,-1.5373612876671257,0,FALSE,0.5147608652946325
+viol_lev,raw,800,Thailand,testable,-2.0088488739766674,1,FALSE,0.2831802297140013
+viol_lev,raw,811,Cambodia (Kampuchea),testable,-1.3919293420544319,0,FALSE,0.5879583755440999
+viol_lev,raw,812,Laos,testable,-5.462253073397238,0,FALSE,2.1050361077759677e-6
+viol_lev,raw,816,"Vietnam, Democratic Republic of",constant,NA,NA,FALSE,NA
+viol_lev,raw,820,Malaysia,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,830,Singapore,constant,NA,NA,FALSE,NA
+viol_lev,raw,835,Brunei,constant,NA,NA,FALSE,NA
+viol_lev,raw,840,Philippines,testable,-4.752331288934242,0,FALSE,6.376693235145155e-5
+viol_lev,raw,850,Indonesia,testable,-1.6990457160100119,1,FALSE,0.4317940608571613
+viol_lev,raw,860,East Timor,constant,NA,NA,FALSE,NA
+viol_lev,raw,900,Australia,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,910,Papua New Guinea,testable,-1.281011649347202,2,FALSE,0.6407082028211819
+viol_lev,raw,920,New Zealand,constant,NA,NA,FALSE,NA
+viol_lev,raw,935,Vanuatu,constant,NA,NA,FALSE,NA
+viol_lev,raw,940,Solomon Islands,almost constant,NA,NA,FALSE,NA
+viol_lev,raw,950,Fiji,constant,NA,NA,FALSE,NA
+viol_lev,raw,970,Kiribati,constant,NA,NA,FALSE,NA
+viol_lev,raw,971,Nauru,constant,NA,NA,FALSE,NA
+viol_lev,raw,972,Tonga,constant,NA,NA,FALSE,NA
+viol_lev,raw,973,Tuvalu,constant,NA,NA,FALSE,NA
+viol_lev,raw,983,Marshall Islands,constant,NA,NA,FALSE,NA
+viol_lev,raw,986,Palau,constant,NA,NA,FALSE,NA
+viol_lev,raw,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+viol_lev,raw,990,Samoa/Western Samoa,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,2,United States of America,testable,-4.096131102143878,0,FALSE,9.833117564821863e-4
+viol_lev,year-demeaned,20,Canada,testable,-1.9927646716145253,1,FALSE,0.2902478934306573
+viol_lev,year-demeaned,31,Bahamas,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,40,Cuba,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,41,Haiti,testable,-6.660296154296697,0,FALSE,2.6401436644609843e-9
+viol_lev,year-demeaned,42,Dominican Republic,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,51,Jamaica,testable,-3.8001634869071053,0,FALSE,0.002919063056666943
+viol_lev,year-demeaned,52,Trinidad and Tobago,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,53,Barbados,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,54,Dominica,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,55,Grenada,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,56,Saint Lucia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,57,Saint Vincent and the Grenadines,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,58,Antigua & Barbuda,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,60,Saint Kitts and Nevis,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,70,Mexico,testable,-0.03886658770976135,0,FALSE,0.95393862339636
+viol_lev,year-demeaned,80,Belize,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,90,Guatemala,testable,-3.32115184701195,0,FALSE,0.013990695714717942
+viol_lev,year-demeaned,91,Honduras,testable,-3.011157383839338,0,FALSE,0.03388146104521046
+viol_lev,year-demeaned,92,El Salvador,testable,-5.55040278283384,1,FALSE,1.3369510232857368e-6
+viol_lev,year-demeaned,93,Nicaragua,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,94,Costa Rica,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,95,Panama,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,100,Colombia,testable,-1.1468405368396268,0,FALSE,0.6993163443689121
+viol_lev,year-demeaned,101,Venezuela,testable,-2.0982034361789244,1,FALSE,0.24554267492488305
+viol_lev,year-demeaned,110,Guyana,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,115,Surinam,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,130,Ecuador,testable,-1.8236861350060596,1,FALSE,0.3693288354372603
+viol_lev,year-demeaned,135,Peru,testable,-3.7150661228019333,2,FALSE,0.003927595439398388
+viol_lev,year-demeaned,140,Brazil,testable,-1.2838375794975903,0,FALSE,0.6394065132294284
+viol_lev,year-demeaned,145,Bolivia,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,150,Paraguay,testable,-2.219778323771178,2,FALSE,0.19928418843871631
+viol_lev,year-demeaned,155,Chile,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,160,Argentina,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,165,Uruguay,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,200,United Kingdom,testable,-1.7218845806851604,0,FALSE,0.42017307327508824
+viol_lev,year-demeaned,205,Ireland,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,210,Netherlands,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,211,Belgium,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,212,Luxembourg,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,220,France,testable,-1.9079466323903393,0,FALSE,0.3289135800555797
+viol_lev,year-demeaned,221,Monaco,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,223,Liechtenstein,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,225,Switzerland,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,230,Spain,testable,-2.814725635812817,0,FALSE,0.05616400134282925
+viol_lev,year-demeaned,232,Andorra,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,235,Portugal,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,260,German Federal Republic,testable,-1.6614628997388081,0,FALSE,0.4510023748646782
+viol_lev,year-demeaned,290,Poland,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,305,Austria,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,310,Hungary,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,316,Czech Republic,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,317,Slovakia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,325,Italy/Sardinia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,331,San Marino,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,338,Malta,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,339,Albania,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,340,Serbia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,341,Montenegro,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,343,Macedonia (Former Yugoslav Republic of),testable,-4.723282995033122,0,FALSE,7.260879410260895e-5
+viol_lev,year-demeaned,344,Croatia,testable,-2.085810448280397,2,FALSE,0.25057738278882025
+viol_lev,year-demeaned,345,Yugoslavia,testable,-3.8362749521627575,1,FALSE,0.0025683314627460083
+viol_lev,year-demeaned,346,Bosnia-Herzegovina,testable,-4.046176571007814,0,FALSE,0.0011895283525251161
+viol_lev,year-demeaned,347,Kosovo,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,349,Slovenia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,350,Greece,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,352,Cyprus,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,355,Bulgaria,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,359,Moldova,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,360,Rumania,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,365,Russia (Soviet Union),testable,-1.8598893871076012,2,FALSE,0.35174289940426745
+viol_lev,year-demeaned,366,Estonia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,367,Latvia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,368,Lithuania,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,369,Ukraine,testable,-2.438972858812195,0,FALSE,0.13100978165671404
+viol_lev,year-demeaned,370,Belarus (Byelorussia),constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,371,Armenia,testable,-3.9422502907040773,0,FALSE,0.0017510029003512913
+viol_lev,year-demeaned,372,Georgia,testable,-8.222879054291312,0,FALSE,1.0986514873256592e-13
+viol_lev,year-demeaned,373,Azerbaijan,testable,-6.4245722910331535,2,FALSE,1.0673380725664903e-8
+viol_lev,year-demeaned,375,Finland,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,380,Sweden,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,385,Norway,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,390,Denmark,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,395,Iceland,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,396,Abkhazia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,397,South Ossetia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,402,Cape Verde,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,403,Sao Tome and Principe,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,404,Guinea-Bissau,testable,-3.847438278406595,1,FALSE,0.0024680081609814585
+viol_lev,year-demeaned,411,Equatorial Guinea,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,420,Gambia,testable,-2.683302326196216,0,FALSE,0.07689621868404622
+viol_lev,year-demeaned,432,Mali,testable,-2.650922112957832,0,FALSE,0.0828396632394512
+viol_lev,year-demeaned,433,Senegal,testable,-1.532787293770033,2,FALSE,0.5171049973489301
+viol_lev,year-demeaned,434,Benin,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,435,Mauritania,testable,-2.2070507955617105,0,FALSE,0.2038570458864809
+viol_lev,year-demeaned,436,Niger,testable,-2.525389264409238,0,FALSE,0.10935796329813728
+viol_lev,year-demeaned,437,Ivory Coast,testable,-3.3910032754157973,0,FALSE,0.011303377964874541
+viol_lev,year-demeaned,438,Guinea,testable,-3.772937210570586,0,FALSE,0.0032119414279963097
+viol_lev,year-demeaned,439,Burkina Faso (Upper Volta),testable,1.6952577779279003,2,FALSE,0.9996742829290025
+viol_lev,year-demeaned,450,Liberia,testable,-1.9528121320207936,0,FALSE,0.3081831724762399
+viol_lev,year-demeaned,451,Sierra Leone,testable,-1.2333289598703334,0,FALSE,0.6622801590465998
+viol_lev,year-demeaned,452,Ghana,testable,-4.732830470939625,0,FALSE,6.958121138201273e-5
+viol_lev,year-demeaned,461,Togo,testable,-5.576573513653857,0,FALSE,1.1669444805107263e-6
+viol_lev,year-demeaned,471,Cameroon,testable,-1.3103352780902104,0,FALSE,0.6270803325674132
+viol_lev,year-demeaned,475,Nigeria,testable,-2.3527685617659326,0,FALSE,0.1555107532635343
+viol_lev,year-demeaned,481,Gabon,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,482,Central African Republic,testable,-0.8245074514092147,2,FALSE,0.8116921004887978
+viol_lev,year-demeaned,483,Chad,testable,-3.2848974278123406,2,FALSE,0.015599829234601691
+viol_lev,year-demeaned,484,Congo,testable,-2.9950790688044733,0,FALSE,0.035369641520662014
+viol_lev,year-demeaned,490,"Congo, Democratic Republic of (Zaire)",testable,-3.4688653318711085,0,FALSE,0.008850983375293109
+viol_lev,year-demeaned,500,Uganda,testable,-1.9339305966490898,0,FALSE,0.3168341644906578
+viol_lev,year-demeaned,501,Kenya,testable,-4.2562362043092286,0,FALSE,5.238267529584791e-4
+viol_lev,year-demeaned,510,Tanzania/Tanganyika,testable,-1.915307280212297,0,FALSE,0.32547344361222225
+viol_lev,year-demeaned,516,Burundi,testable,-1.0755322176173003,1,FALSE,0.7276869919505763
+viol_lev,year-demeaned,517,Rwanda,testable,-1.1499771813585105,2,FALSE,0.6980222634980036
+viol_lev,year-demeaned,520,Somalia,testable,-3.6348471867850836,0,FALSE,0.005155661837841224
+viol_lev,year-demeaned,522,Djibouti,testable,-3.324885573360174,0,FALSE,0.013833621723118219
+viol_lev,year-demeaned,530,Ethiopia,testable,-4.496523781968323,1,FALSE,1.9463361115456136e-4
+viol_lev,year-demeaned,531,Eritrea,testable,-1.7645437390973908,2,FALSE,0.39866417415456373
+viol_lev,year-demeaned,540,Angola,testable,-1.276049974857226,2,FALSE,0.6429951804859222
+viol_lev,year-demeaned,541,Mozambique,testable,-7.09598309219425,1,FALSE,1.8171604339028565e-10
+viol_lev,year-demeaned,551,Zambia,testable,-2.2103258822011047,1,FALSE,0.20267438084990952
+viol_lev,year-demeaned,552,Zimbabwe (Rhodesia),testable,-4.097476567811569,0,FALSE,9.782463357123432e-4
+viol_lev,year-demeaned,553,Malawi,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,560,South Africa,testable,-2.8478757077619496,0,FALSE,0.05172246503932766
+viol_lev,year-demeaned,565,Namibia,testable,-5.135565521273386,0,FALSE,1.069041300443047e-5
+viol_lev,year-demeaned,570,Lesotho,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,571,Botswana,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,572,Swaziland,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,580,Madagascar,testable,-2.241836904521117,1,FALSE,0.19151969281976955
+viol_lev,year-demeaned,581,Comoros,testable,-4.035054191733098,1,FALSE,0.0012405845626407334
+viol_lev,year-demeaned,590,Mauritius,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,591,Seychelles,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,600,Morocco,testable,-2.063792754459057,2,FALSE,0.25968617760043866
+viol_lev,year-demeaned,615,Algeria,testable,-1.6756197584216863,0,FALSE,0.44375277249529677
+viol_lev,year-demeaned,616,Tunisia,testable,-1.8995829600840075,0,FALSE,0.33284401566600663
+viol_lev,year-demeaned,620,Libya,testable,-0.12853769977311366,2,FALSE,0.944624751951783
+viol_lev,year-demeaned,625,Sudan,testable,-2.2319258100128345,0,FALSE,0.1949835420329677
+viol_lev,year-demeaned,630,Iran (Persia),testable,-1.2780959260353664,1,FALSE,0.6420486503709386
+viol_lev,year-demeaned,640,Turkey (Ottoman Empire),testable,-1.6955181612956274,0,FALSE,0.4335894853968405
+viol_lev,year-demeaned,645,Iraq,testable,-3.4276445504928676,0,FALSE,0.01008457674132805
+viol_lev,year-demeaned,651,Egypt,testable,-1.1742402369218627,2,FALSE,0.6878859306435474
+viol_lev,year-demeaned,652,Syria,testable,-1.5959572772037411,1,FALSE,0.48464802714958954
+viol_lev,year-demeaned,660,Lebanon,testable,-4.123677712579826,0,FALSE,8.843040712496737e-4
+viol_lev,year-demeaned,663,Jordan,testable,-3.902188580972164,0,FALSE,0.0020271162148165858
+viol_lev,year-demeaned,666,Israel,testable,-3.4755928482491845,0,FALSE,0.008663542585611923
+viol_lev,year-demeaned,670,Saudi Arabia,testable,-2.8416780879369505,0,FALSE,0.052533023113489015
+viol_lev,year-demeaned,678,Yemen (Arab Republic of Yemen),testable,-0.5164946837920581,2,FALSE,0.885724813263995
+viol_lev,year-demeaned,690,Kuwait,testable,-24.78731028720518,1,FALSE,3.2043424016925804e-52
+viol_lev,year-demeaned,692,Bahrain,testable,-4.400233381989603,0,FALSE,2.9138014376389076e-4
+viol_lev,year-demeaned,694,Qatar,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,696,United Arab Emirates,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,698,Oman,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,700,Afghanistan,testable,-1.3179201764201502,0,FALSE,0.6235172452938731
+viol_lev,year-demeaned,701,Turkmenistan,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,702,Tajikistan,testable,-2.9970431523707015,1,FALSE,0.035184943734531314
+viol_lev,year-demeaned,703,Kyrgyz Republic,testable,-4.669031781701615,0,FALSE,9.233909947981017e-5
+viol_lev,year-demeaned,704,Uzbekistan,testable,-4.1812999175877845,0,FALSE,7.049979454076354e-4
+viol_lev,year-demeaned,705,Kazakhstan,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,710,China,testable,-1.6337053851961283,0,FALSE,0.46524447447965767
+viol_lev,year-demeaned,712,Mongolia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,713,Taiwan,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,731,"Korea, People's Republic of",constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,732,"Korea, Republic of",constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,740,Japan,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,750,India,testable,-1.9519748597651432,0,FALSE,0.3085644413181995
+viol_lev,year-demeaned,760,Bhutan,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,770,Pakistan,testable,-1.943782287868957,1,FALSE,0.31230652226258077
+viol_lev,year-demeaned,771,Bangladesh,testable,-1.249799422131027,2,FALSE,0.6549166282542309
+viol_lev,year-demeaned,775,Myanmar (Burma),testable,-6.539920014064454,0,FALSE,5.413292219393796e-9
+viol_lev,year-demeaned,780,Sri Lanka (Ceylon),testable,-2.245689020297068,0,FALSE,0.190184146625957
+viol_lev,year-demeaned,781,Maldives,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,790,Nepal,testable,-1.5446893889541045,0,FALSE,0.511003693335062
+viol_lev,year-demeaned,800,Thailand,testable,-1.7105237981983366,1,FALSE,0.42594581517953695
+viol_lev,year-demeaned,811,Cambodia (Kampuchea),testable,-1.4444521967686714,0,FALSE,0.5619194308051828
+viol_lev,year-demeaned,812,Laos,testable,-3.777046875739497,0,FALSE,0.003166075691626586
+viol_lev,year-demeaned,816,"Vietnam, Democratic Republic of",constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,820,Malaysia,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,830,Singapore,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,835,Brunei,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,840,Philippines,testable,-4.087158994252201,0,FALSE,0.0010177169630257762
+viol_lev,year-demeaned,850,Indonesia,testable,-1.6076420213255298,1,FALSE,0.47864482875650505
+viol_lev,year-demeaned,860,East Timor,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,900,Australia,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,910,Papua New Guinea,testable,-1.555783075815824,2,FALSE,0.505303330832314
+viol_lev,year-demeaned,920,New Zealand,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,935,Vanuatu,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,940,Solomon Islands,almost constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,950,Fiji,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,970,Kiribati,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,971,Nauru,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,972,Tonga,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,973,Tuvalu,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,983,Marshall Islands,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,986,Palau,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,987,Federated States of Micronesia,constant,NA,NA,FALSE,NA
+viol_lev,year-demeaned,990,Samoa/Western Samoa,constant,NA,NA,FALSE,NA

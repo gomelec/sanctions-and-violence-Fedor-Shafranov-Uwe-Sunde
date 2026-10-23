@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{How closely does GDELT track UCDP violence?}
+\label{tab:gdeltvalidation}
+\begin{threeparttable}
+\begin{tabular}{lc}
+\toprule
+Statistic & Value \\
+\midrule
+Correlation with UCDP log deaths, pooled & 0.61 \\
+Correlation with UCDP log deaths, within states & 0.47 \\
+Correlation with UCDP conflict (0/1), pooled & 0.58 \\
+Correlation with UCDP conflict (0/1), within states & 0.38 \\
+P(GDELT incidence $=1$ $|$ UCDP conflict year) & 0.64 \\
+P(GDELT incidence $=1$ $|$ no UCDP conflict) & 0.46 \\
+P(UCDP conflict $|$ GDELT incidence $=1$) & 0.27 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} State-years 1989--2019 with both measures. GDELT measure: violent events in \% of all GDELT events.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

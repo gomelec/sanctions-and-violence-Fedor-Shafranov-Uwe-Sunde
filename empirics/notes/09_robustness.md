@@ -1,0 +1,87 @@
+# 09 — Robustness checks
+
+Script: `empirics/scripts/09_robustness.R` · Output: `results/tables/robustness_nonlinear.md`, `robustness_nonlinear.csv`.
+Part 1 (R3) written 2026-10-22; further parts (controls one at a time, Driscoll–Kraay, splits, time aggregation,
+anticipation proxy) to follow.
+
+## R3. Logit and PPML (Jaeger & Paserman, footnote 3)
+
+**Why.** The main models are linear: linear probability models for incidence, OLS on log(1 + deaths per 100k) for
+levels. With many zeros, a linear probability model can predict outside [0, 1], and log(1 + y) coefficients have no
+percentage interpretation (Chen & Roth 2024). The nonlinear versions keep everything else of Table 1 (samples, two
+lags, controls, state and year fixed effects as dummies, clustering by state).
+
+- **Logit** for the incidence equations (conflict 0/1, new sanction 0/1). Comparable scale: average partial effect
+  ≈ sum of the lag coefficients × mean p(1−p).
+- **PPML** (Poisson pseudo-maximum likelihood) for the levels equations, with the *untransformed* outcome: deaths
+  per 100,000 (and winsorised at the 99th percentile, 45.6) and the number of new cases. Same right-hand side as
+  the levels VAR. Sum of coefficients in log points: exp(sum) − 1 = proportional change.
+- States whose outcome never changes drop out (no information with fixed effects): 85–108 states in the conflict
+  logit, 61–84 in the deaths PPML, 19–32 in the sender models.
+
+## Results (χ²(2) Granger test, p; comparable sum)
+
+| | Controls | OLS (Table 1) | Logit / PPML |
+|---|---|---|---|
+| Sanctions → conflict (logit) | yes | 7.27, p = 0.026, sum −0.035 | 6.44, p = 0.040, APE −0.046 |
+| | no | 5.01, p = 0.082, sum 0.002 | 5.69, p = 0.058, APE 0.007 |
+| Sanctions → deaths (PPML) | yes | 8.08, p = 0.018 | 3.94, p = 0.140, −34% |
+| | no | 7.14, p = 0.028 | 2.75, p = 0.253, −25% |
+| Sanctions → deaths, winsorised (PPML) | yes | | 12.52, p = 0.002, −16% |
+| | no | | 11.99, p = 0.002, −11% |
+| Conflict → new sanction (logit) | yes | 6.11, p = 0.047 | 5.48, p = 0.065, APE 0.046 |
+| | no | 9.86, p = 0.007 | 10.21, p = 0.006, APE 0.058 |
+| log deaths → new cases (PPML) | yes | 2.79, p = 0.248 | 1.54, p = 0.464, +7% |
+| | no | 7.30, p = 0.026 | 7.43, p = 0.024, +15% |
+
+**Meaning.**
+- The functional form does not drive the results: same signs, same lag pattern (nothing at t−1, negative at t−2 for
+  sanctions → violence), similar significance.
+- Logit APE with controls (−0.046) is close to the linear-probability estimate (−0.035).
+- PPML on raw deaths: large negative point estimates but imprecise — a few extreme state-years (Rwanda 1994, etc.)
+  dominate the Poisson likelihood. Winsorised, the effect is precise: death rates 11–16% lower two years after a
+  new sanction.
+- Violence → sanctions: unchanged too — significant without controls, weaker with controls.
+- Caveat: fixed-effects logit has an incidental-parameter bias of order 1/T (like the Nickell bias); an analytical
+  correction (Fernández-Val & Weidner) is a possible refinement.
+
+## R10. Raw deaths instead of log deaths (Jaeger & Paserman use raw counts)
+
+Linear levels VAR as in Table 1, with deaths per 100,000 instead of log(1 + deaths per 100k) as the violence
+variable (outcome and lags): uncapped, capped at p99 (45.6) and at p95 (6.2) of all state-years 1989–2019.
+
+| Granger χ²(2), OLS | Controls | log deaths (Table 1) | Raw | Cap p99 | Cap p95 |
+|---|---|---|---|---|---|
+| Sanctions → violence | yes | 8.08** (−0.050) | 0.55 (−2.53) | 6.63** (−0.338) | 7.41** (−0.096) |
+| | no | 7.14** (−0.035) | 4.18 (+0.56) | 5.68* (−0.186) | 5.82* (−0.067) |
+| Violence → sanctions | yes | 2.79 | 289.6*** | 4.55 | 1.99 |
+| | no | 7.30** | 323.1*** | 13.94*** | 4.32 |
+
+(sum of the two cross-lag coefficients in brackets: deaths per 100k per new case)
+
+**Meaning.**
+- **Uncapped raw deaths are useless:** Rwanda 1994 (12,577 per 100k) dominates. Persistence of violence falls to
+  0.17 (0.67 with logs); the sender-equation χ² of ~300 comes from Rwanda alone (2 new cases in 1996, two years after
+  the genocide) — without Rwanda it is 4.7 (p = 0.10). This is why the base case uses logs.
+- **Capped:** sanctions → violence significant with controls at both caps, negative: −0.34 (p99) / −0.10 (p95)
+  deaths per 100k two years after a new case, about 17–24% of the mean of the capped variable.
+- Violence → sanctions: significant without controls at p99, weaker otherwise — as in the base case.
+- Jackknife versions in `robustness_raw_deaths.csv`, same conclusions.
+
+### R10 dynamics: IRFs and response function with deaths capped at p99
+
+(`robustness_capped_dynamics.md`, figure `fig17_capped_deaths_dynamics.png`; 199 bootstrap draws)
+
+| Cumulative after 10 years | Controls | No same-year effect | Sanctions first | Violence first |
+|---|---|---|---|---|
+| New case → deaths per 100k | yes | −0.83 [−1.99, 0.21] | +1.08 * | −0.83 |
+| | no | −0.47 [−1.59, 0.61] | +1.60 * | −0.47 |
+| +1 death per 100k → new cases | yes | 0.007 [−0.002, 0.016] | 0.007 | 0.031 * |
+| | no | 0.012 * | 0.012 * | 0.036 * |
+
+- Same signs as the log version; magnitudes now in deaths: one new case → about 0.8 fewer deaths per 100k over ten
+  years (≈ half a year's mean of 1.42), but not significant — level dynamics are noisier than the Granger tests.
+- Positive if sanctions may affect deaths within the same year (as in the base case).
+- Response function: capped deaths up in the year before a sanction, peak +1.8 per 100k in the sanction year (two-way
+  FE), back to normal at h = 2 — same shape as with logs.
+

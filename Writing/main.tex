@@ -1,0 +1,687 @@
+% =============================================================================
+% main.tex — preliminary brief for the advisor, written as the skeleton of the paper.
+%
+% Build (from the Writing folder):
+%   python3 scripts/make_tables.py      (or: uv run python Writing/scripts/make_tables.py from the project root)
+%   latexmk -pdf main.tex
+%
+% Tables are generated from the CSV results (tables/*.tex, do not edit by hand).
+% Figures are read directly from ../empirics/results/figures/.
+% Numbers quoted in the TEXT refer to the run of 2026-10-22 16:45 and must be
+% checked by hand after a new run (search for "% NUMBERS" comments).
+% Paragraphs marked [PAPER] are placeholders for the later paper version.
+% =============================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,threeparttable,makecell}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{float}
+\usepackage{enumitem}
+\setlist{itemsep=2pt,topsep=4pt}
+\usepackage{xcolor}
+\usepackage[authoryear,round]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{mdframed}
+
+\graphicspath{{../empirics/results/figures/}{../empirics/results/figures/descriptives/}}
+
+% Notes to the advisor / to ourselves; set \showtodostrue to \showtodosfalse to hide them in the paper
+\newif\ifshowtodos \showtodostrue
+\newcommand{\todo}[1]{\ifshowtodos{\color{red!70!black}\textbf{[To do:} #1\textbf{]}}\fi}
+\newcommand{\paperonly}[1]{\ifshowtodos{\color{gray}\textit{[Paper: #1]}}\fi}
+
+\newcommand{\Sanc}{S_{it}}
+\newcommand{\Viol}{V_{it}}
+
+\title{Do Sanctions Break the Cycle of Violence?\\[4pt]
+\large Panel-VAR evidence on sanctions and organized violence, 1989--2019\\[2pt]
+\normalsize Preliminary results --- brief for discussion}
+\author{[Name] \\ Research assistant to Prof.\ Uwe Sunde, LMU Munich}
+\date{Draft of \today}
+
+\begin{document}
+\maketitle
+\onehalfspacing
+
+% =============================================================================
+\begin{mdframed}[linewidth=0.6pt,innerleftmargin=10pt,innerrightmargin=10pt]
+\textbf{Summary for the meeting.}
+% NUMBERS: Table 1, Table 4, Table 5, gdelt tables (run 2026-10-22)
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Design.} A panel version of \citet{jaeger2008}: two reaction functions (new sanctions on past
+  violence; violence on past new sanctions) forming a bivariate VAR(2) with state and year fixed effects, for
+  197 states, 1989--2019. Sanctions are \emph{new} cases from the GSDB, violence is UCDP organized violence. Same
+  outputs as the original: Granger tests, lag-structure grid, response functions, cumulative impulse responses.
+\item \textbf{Senders react to violence.} Past violence predicts new sanctions (Granger $p=0.007$ incidence,
+  $p=0.026$ levels, state and year FE only); a conflict year raises the number of new-sanction years over the next
+  decade by 0.09--0.16 (11 of 12 IRF versions significant). The effect weakens when GDP growth is controlled for,
+  which is plausibly a bad control.
+\item \textbf{Violence reacts to sanctions with a two-year lag.} With controls, a new sanction is followed two years
+  later by a 3.5 percentage-point lower conflict probability (mean 0.23; Granger $p=0.026$); confirmed by the
+  bias-corrected jackknife and by GMM. The cumulative response is $-0.077$ [$-0.154$, $-0.006$] conflict-years
+  if sanctions have no same-year effect on violence. Without controls the incidence effect is zero, and if
+  sanctions may affect violence within the same year the cumulative response turns positive.
+\item \textbf{Sanctions coincide with escalations}: violence is already elevated before a new sanction and peaks
+  in the sanction year. With annual data, who moves first within a year cannot be identified.
+\item \textbf{Robustness.} Stationarity, stability and residual diagnostics are fine. GMM and logit/PPML
+  versions and raw (capped) deaths confirm the sanctions$\rightarrow$violence result (negative, at $t-2$). With GDELT (media-reported violence) the incidence estimate has the
+  same sign and size but is not significant, low-level violence \emph{rises} after sanctions, and senders do not
+  react to GDELT violence.
+\item \textbf{Decisions needed}: (i) main specification with or without controls (D8); (ii) how to handle
+  within-year timing (monthly data?); (iii) whether the LP-DiD event study becomes part of the paper.
+\end{enumerate}
+\end{mdframed}
+
+% =============================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Sanctions are the most frequently used coercive tool short of force, and a large share of them is imposed in
+response to political violence: to end civil wars, stop atrocities or punish repression. Whether they achieve
+this, or instead feed a cycle in which violence triggers sanctions and sanctions trigger more violence, is an
+open empirical question.
+
+This project brings the empirical framework of \citet{jaeger2008} --- built to ask whether one side's violence
+predicts the other side's violence in the Second Intifada --- to a cross-country panel: do senders react to
+violence in a target state, and does violence react to new sanctions? We estimate both reaction functions
+jointly as a panel VAR on 197 states over 1989--2019, using the Global Sanctions Data Base
+\citep{felbermayr2020,yalcin2024} and UCDP data on organized violence \citep{davies2026}.
+
+\paragraph{Preliminary contribution.}
+\begin{itemize}[leftmargin=*]
+\item The first cross-country panel VAR of \emph{sanctions} and \emph{fatal violence}. The closest work,
+  \citet{dizaji2024}, uses arms-import shocks as a proxy for embargoes and an expert risk index for conflict in
+  48 selected countries.
+\item A design that separates the two directions of the relationship, which the cross-sectional sanctions
+  literature typically does not.
+\item Inference that takes the short-$T$ panel seriously: Nickell-bias corrections, GMM, cluster bootstrap.
+\end{itemize}
+\paperonly{motivation with recent examples (Myanmar 2021, Russia 2014/2022, Sudan); policy relevance; roadmap.}
+
+% =============================================================================
+\section{Related literature}
+\label{sec:literature}
+
+\paragraph{Sanctions and political violence.}
+Most cross-national studies relate the \emph{presence} of sanctions to an outcome of the target state. Economic
+sanctions are associated with more state repression \citep{wood2008}, worse physical-integrity rights
+\citep{peksen2009} and declining democracy \citep{peksen2010}. For armed conflict, the evidence is mixed.
+\citet{hultman2017} study African civil conflicts 1989--2005 and find that threatened and imposed economic
+sanctions tend to intensify fighting, while imposed arms embargoes reduce it. \citet{escribafolch2010} finds that
+sanctions are associated with shorter civil wars, with institutional sanctions favouring negotiated settlements,
+whereas \citet{lektzian2016} argue that sanctions on their own rarely shorten civil conflicts and help mainly as
+part of a broader response including military intervention. At the sub-national level, \citet{urtuzuastigui2024}
+find that targeted sanctions on armed actors increase violence against civilians (resource substitution);
+\citet{stork2020} reports a similar pattern for UN sanctions on rebel groups. The literature on targeted
+sanctions \citep{drezner2011,biersteker2016} and on sanction success \citep{hufbauer2007} provides the
+institutional background. A common limitation is the treatment of sanctions as exogenous, although they are often
+imposed \emph{because of} violence: this reverse direction is exactly what a VAR models.
+
+\paragraph{Cycles of violence and VARs.}
+\citet{jaeger2008} estimate two reaction functions with daily fatality data and show that Palestinian fatalities
+Granger-cause Israeli responses but not the reverse; \citet{asali2017} revisit the result with nonlinear VARs.
+The closest cross-country application is \citet{dizaji2024}, a panel VAR in which negative shocks to arms imports
+(a proxy for embargoes) are followed by lower military spending but \emph{more} internal conflict; their
+methodological template is \citet{dizaji2023}. Their design differs from ours in four respects that matter: no
+sanctions data, an expert risk index instead of fatalities, 48 selected countries, and no treatment of the
+Nickell bias or of year effects.
+
+\paragraph{Methods.}
+Panel VARs go back to \citet{holtzeakin1988}; the GMM workflow we use as a robustness check follows
+\citet{love2006} and \citet{abrigo2016}. With $T\approx 30$, fixed-effects estimates of dynamic models are biased
+\citep{nickell1981}; we use the half-panel jackknife \citep{dhaene2015}, which \citet{juodis2021} combine with a
+pooled Granger test for heterogeneous panels \citep[implemented by][]{xiao2023}; alternatives are
+\citet{dumitrescu2012} and, under cross-sectional dependence, \citet{nazlioglu2024}. For impulse responses, VARs
+and local projections \citep{jorda2005} estimate the same object \citep{plagborg2021}, with a bias--variance
+trade-off \citep{li2024}; panel local projections have their own Nickell bias \citep{mei2026}. Event-study
+designs with on/off treatments \citep{dube2023,dechaisemartin2026} are a possible extension. Finally,
+$\log(1+y)$ effects with many zeros are not percentage effects \citep{chen2024}, which is why we read signs and
+significance from the levels specification and magnitudes from the incidence specification.
+
+\todo{literature from the \texttt{papers/} folder is read in full; the political-science entries above are
+from abstracts --- read in full before the paper version.}
+
+% =============================================================================
+\section{Data}
+\label{sec:data}
+
+\paragraph{Sample.} All states of the \citet{gleditsch1999} system with at least ten years of data in 1989--2019:
+197 states and 5,932 state-years (four short-lived states excluded). States that are never in conflict (about 90)
+or never newly sanctioned (31) are kept: dropping them would select on the outcome.
+The panel is built with the \texttt{peacesciencer} framework \citep{miller2022}.
+
+\paragraph{Sanctions.} The Global Sanctions Data Base, release 4 \citep{felbermayr2020,yalcin2024}, covers 1,547
+cases 1950--2023. Because the stock of sanctions in force is highly persistent (more than half of all state-years
+are under some sanction), the VAR uses the \emph{flow}: $\texttt{new\_sanction}_{it}=1$ if at least one case
+against state $i$ begins in year $t$ (incidence), and the number of new cases (levels). The construction
+reproduces the GSDB's own counts (e.g.\ 25 new and 38 active cases against Russia in 2022).
+
+\paragraph{Violence.} UCDP organized violence, country-year version 26.1 \citep{davies2026}: deaths in
+state-based, non-state and one-sided violence. Incidence: conflict year with at least 25 deaths. Levels:
+$\log(1+\text{deaths per }100{,}000)$; the transformation is needed because the top 1\% of state-years account
+for 99.9\% of the variance of raw deaths (Rwanda 1994).
+
+\paragraph{Controls} (lagged one year): number of sanction cases in force, GDP per capita growth, V-Dem polyarchy
+\citep{vdem2025}, and a dummy for the successor states of Yugoslavia, 1991--2016 (see \texttt{data/README.md}).
+\todo{one sentence on why the Yugoslavia dummy is needed.}
+
+\paragraph{Alternative violence measure.} GDELT 1.0 \citep{leetaru2013}: media-reported assault, fight and
+mass-violence events as a share of all GDELT events in the state-year (1979--2021), which captures violence below
+the UCDP threshold.
+
+\input{tables/tab_descriptives}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{fig6_new_lifted_cases_per_year.png}
+\caption{New and lifted sanction cases per year (GSDB)}
+\label{fig:flows}
+\end{figure}
+
+\paperonly{data appendix: case-level construction of flows, Yugoslavia attribution, GDELT country assignment;
+all decisions are documented in \texttt{data/README.md}.}
+
+% =============================================================================
+\section{Empirical strategy}
+\label{sec:strategy}
+
+\paragraph{Reaction functions.} Following \citet{jaeger2008}, the two equations are
+\begin{align}
+\Viol &= \sum_{k=1}^{p} a_k V_{i,t-k} + \sum_{k=1}^{p} b_k S_{i,t-k} + \gamma' X_{i,t-1} + \mu_i + \tau_t + \varepsilon_{it}, \label{eq:violence}\\
+\Sanc &= \sum_{k=1}^{p} d_k S_{i,t-k} + \sum_{k=1}^{p} c_k V_{i,t-k} + \delta' X_{i,t-1} + \nu_i + \lambda_t + u_{it}, \label{eq:sender}
+\end{align}
+with $p=2$, state fixed effects ($\mu_i,\nu_i$), year fixed effects ($\tau_t,\lambda_t$) and lagged controls
+$X$. Together they form a bivariate panel VAR. As in the original, each equation is estimated by OLS (linear
+probability models in the incidence version); standard errors are clustered by state.
+
+\paragraph{Granger tests.} H$_0$: $b_1=b_2=0$ (sanctions do not predict violence) and H$_0$: $c_1=c_2=0$
+(violence does not predict sanctions); Wald $\chi^2(2)$. A rejection means predictive precedence conditional on
+the own history and the fixed effects, not causation.
+
+\paragraph{Nickell bias.} With $T\approx 30$ the fixed-effects estimates of dynamic coefficients are biased by
+$O(1/T)$ \citep{nickell1981}, which is of the same order as their standard errors. We therefore report
+(i) the half-panel jackknife $\tilde\beta = 2\hat\beta - (\hat\beta_{1991-2005}+\hat\beta_{2006-2019})/2$
+\citep{dhaene2015,juodis2021}, and (ii) a GMM panel VAR with forward orthogonal deviations and collapsed
+instruments \citep{abrigo2016}.
+
+\paragraph{Impulse responses.} The VAR traces the joint dynamics after a one-unit shock (one new sanction / one
+conflict year). Annual data leave the within-year ordering open, so we report three identifications: no same-year
+effect on the other variable \citep[fn.~12]{jaeger2008}, and the two Cholesky orderings. Confidence bands come
+from a country-cluster bootstrap.
+
+\paragraph{Response functions.} The model-free analogue of \citet[Fig.~2]{jaeger2008}: the difference between the
+mean outcome $k$ years after an event year and in all other years, raw and net of state and year means.
+
+\paperonly{discussion of identification: what Granger causality can and cannot show here; forward-looking senders;
+omitted common drivers.}
+
+% =============================================================================
+\section{Results}
+\label{sec:results}
+% NUMBERS: section 5 (run 2026-10-22)
+
+\subsection{Granger tests}
+
+Table~\ref{tab:granger} is the panel analogue of \citet[Table 1]{jaeger2008}; the full coefficients are in
+Table~\ref{tab:coefficients}.
+
+\textit{Sanctions $\rightarrow$ violence (Panel A).} The lags of new sanctions are jointly significant at the 5\% level in six
+of eight FE-OLS and jackknife versions (all eight at 10\%) and in all four GMM versions. The effect sits at $t-2$: with controls, a
+new sanction is followed two years later by a 3.5 percentage-point lower conflict probability (mean 0.23) and by
+fewer deaths per capita. Without controls the incidence sum is close to zero because the $t-1$ coefficient turns
+slightly positive. The negative sign is therefore conditional on the controls.
+
+\textit{Violence $\rightarrow$ sanctions (Panel B).} Past violence predicts new sanctions in the specifications
+with fixed effects only (OLS and jackknife). With controls the test weakens, mainly through GDP growth: conflict
+lowers growth, and low growth predicts sanctions, so growth is plausibly a channel rather than a confounder. In
+GMM the incidence version is insignificant, but the GMM incidence models fail or nearly fail the Hansen test
+(Table~\ref{tab:gmm}).
+
+\input{tables/tab_granger}
+
+\subsection{Lag structure}
+
+Table~\ref{tab:laggrid} (appendix) repeats the tests for all combinations of one to three lags, as in
+\citet[Table 2]{jaeger2008}. Senders react to the previous year's violence in every combination without
+controls. The sanctions$\rightarrow$violence effect only appears once two lags of sanctions are included,
+consistent with an effect at $t-2$. BIC selects two lags for incidence and three for levels; two lags are
+the baseline.
+
+\subsection{Response functions}
+
+Figure~\ref{fig:response} shows what happens around event years. Violence is already elevated two years before a
+new sanction, peaks in the sanction year and returns to its normal level after about two years. New sanctions rise
+in the year before a conflict year, peak in the conflict year and stay elevated for two more years. Sanctions
+arrive at the peak of escalations; whether the subsequent decline is an effect of the sanction or the end of the
+escalation cannot be read from this figure.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig10_response_functions.png}
+\caption{Empirical response functions (panel version of \citealt[Fig.~2]{jaeger2008})}
+\label{fig:response}
+\end{figure}
+
+\subsection{Impulse responses}
+
+Table~\ref{tab:irf} and Figures~\ref{fig:irf}--\ref{fig:cumirf} report the dynamic responses.
+\begin{itemize}[leftmargin=*]
+\item \textit{Violence shock.} New sanctions respond in 11 of 12 versions. Allowing violence to trigger sanctions
+  within the same year roughly doubles the response, so much of the sender reaction is fast.
+\item \textit{Sanction shock.} Without a same-year effect, the cumulative response of violence is negative in
+  three of four versions and significant for incidence with controls ($-0.077$ conflict-years over ten years).
+  If sanctions may affect violence within the year, the response turns positive and significant, because
+  sanctions and violence spike in the same year.
+\end{itemize}
+All VARs are stable; the jackknife responses (dashed in Figure~\ref{fig:irf}) decay more slowly, as expected
+once the downward Nickell bias in persistence is removed.
+
+\input{tables/tab_irf}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig12_irf_with_controls.png}
+\caption{Impulse responses, VAR with controls}
+\label{fig:irf}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig13_cumulative_irf.png}
+\caption{Cumulative impulse responses (no same-year effect)}
+\label{fig:cumirf}
+\end{figure}
+
+% =============================================================================
+\section{Diagnostics}
+\label{sec:diagnostics}
+
+\paragraph{Stationarity and persistence} (Table~\ref{tab:datadiag}). All four series reject a unit root in the
+panel tests, including CIPS, which allows for common shocks. Only states whose series varies can be tested;
+constant series (100 states never in conflict) are trivially stationary and stay in the sample. Conflict is
+persistent (82\% probability of continuing), new sanctions are close to events. The VAR is therefore estimated
+in levels.
+
+\paragraph{Estimated models} (Table~\ref{tab:modeldiag}). The violence equation has no remaining residual
+autocorrelation; the sender equation shows a very small one at lag 2 ($p\approx 0.04$), which a third own lag
+does not change in substance (Table~\ref{tab:laggrid}). Residuals are weakly correlated across states (mean
+correlation 0.01--0.03), consistent with senders acting in waves; Driscoll--Kraay standard errors
+\citep{driscoll1998} are planned as a check. All estimated VARs are stable (largest roots 0.56--0.80).
+
+\input{tables/tab_data_diagnostics}
+\input{tables/tab_model_diagnostics}
+
+% =============================================================================
+\section{Robustness}
+\label{sec:robustness}
+
+\subsection{GMM}
+GMM removes the Nickell bias by construction. It confirms the sanctions$\rightarrow$violence results in all four
+versions (Table~\ref{tab:granger}) and the levels results for violence$\rightarrow$sanctions. The Hansen test
+does not reject in the levels models; it rejects for incidence without controls, so the GMM incidence results are
+the least reliable (Table~\ref{tab:gmm}).
+
+\input{tables/tab_gmm}
+
+\subsection{Nonlinear models: logit and PPML}
+% NUMBERS: Table tab:nonlinear (run 2026-10-22 17:41)
+
+\paragraph{Why.} The base-case reaction functions are linear: linear probability models for incidence and OLS on
+$\log(1+\text{deaths per }100{,}000)$ for levels. Both choices are convenient but questionable with outcomes that
+are zero in most state-years. A linear probability model can predict outside $[0,1]$ and imposes a constant
+marginal effect regardless of how likely conflict already is. A $\log(1+y)$ outcome has no percentage
+interpretation when many observations are zero, and its coefficients change with the units in which $y$ is
+measured \citep{chen2024}. \citet[fn.~3]{jaeger2008} address the same concern in their data with probit and
+zero-inflated Poisson regressions.
+
+\paragraph{Design.} We re-estimate every reaction function of Table~\ref{tab:granger} with a model suited to its
+outcome, keeping the samples, the two lags, the controls, the state and year fixed effects and the clustering by
+state unchanged (Table~\ref{tab:nonlinear}):
+\begin{itemize}[leftmargin=*]
+\item \emph{Logit} for the incidence equations (conflict 0/1, new sanction 0/1). To compare magnitudes with the
+  linear model, the sum of the lag coefficients is converted into an approximate average partial effect on the
+  probability.
+\item \emph{Poisson pseudo-maximum likelihood} \citep[PPML;][]{santossilva2006} for the levels equations, with the
+  \emph{untransformed} outcome: deaths per 100,000 and the number of new cases. PPML is consistent for any
+  non-negative outcome with an exponential mean, handles zeros naturally and gives coefficients that are
+  semi-elasticities. Because the death rate is extremely skewed (Rwanda 1994 alone has 12,577 deaths per
+  100,000), we also report a version with deaths winsorised at the 99th percentile (45.6).
+\end{itemize}
+With fixed effects, states whose outcome never changes carry no information and drop out: in the conflict logit
+85--108 states with an unchanged conflict status (mostly states never in conflict), in the deaths PPML 61--84
+states without any deaths, in the sender models 19--32 states never newly sanctioned.
+
+\paragraph{Sanctions $\rightarrow$ violence.} The pattern of the linear models holds in every version: the
+coefficient on the first lag of new sanctions is close to zero, the coefficient on the second lag is negative.
+\begin{itemize}[leftmargin=*]
+\item \emph{Logit, with controls:} the lags are jointly significant ($p=0.040$); the average partial effect of
+  $-0.046$ is close to the linear-probability estimate of $-0.035$, i.e.\ about a 4--5 percentage-point lower
+  probability of conflict two years after a new sanction (mean 0.23). \emph{Without controls,} the first lag turns
+  positive and offsets the second ($p=0.058$, average partial effect $\approx 0$), exactly as in the linear model.
+\item \emph{PPML on raw deaths:} the point estimates are large --- death rates about a quarter to a third lower
+  two years after a sanction --- but imprecise ($p=0.14$ with controls, $0.25$ without). A Poisson likelihood
+  weights observations by their size, so a handful of extreme state-years determine the estimate.
+\item \emph{PPML on winsorised deaths:} once the extreme values are capped, the effect is precisely estimated
+  ($p=0.002$ with and without controls): death rates are 11--16\% lower two years after a new sanction.
+\end{itemize}
+
+\paragraph{Violence $\rightarrow$ sanctions.} Also unchanged. Without controls, past violence predicts new
+sanctions in the logit ($p=0.006$; a conflict year raises the probability of a new sanction by about 6 percentage
+points over the next two years) and in the PPML ($p=0.024$; 15\% more new cases per unit of log deaths). With
+controls both weaken (logit $p=0.065$, PPML $p=0.46$), the same pattern as in the linear model, where GDP growth
+absorbs part of the sender reaction.
+
+\paragraph{What the check adds and what it does not.} The linear specification is not what drives the results:
+signs, lag pattern and significance survive a change of functional form, and the logit magnitudes are close to
+the linear ones. The PPML results also show that the levels finding does not depend on the $\log(1+y)$
+transformation; on the contrary, the semi-elasticities give the effect a natural scale (an 11--16\% lower death
+rate). Three caveats remain.
+\begin{enumerate}[leftmargin=*]
+\item \emph{Different identifying sample.} Because states without variation drop out, the nonlinear models
+  identify the effect from states that experience conflict at some point. The agreement with the linear models,
+  which use all states, suggests that the never-violent states do not drive the linear estimates either; this is
+  related to the conflict-prone subsample (decision D7).
+\item \emph{Incidental-parameter bias.} Fixed-effects logit with $T\approx 29$ has a bias of order $1/T$, the
+  nonlinear counterpart of the Nickell bias; an analytical correction is a possible refinement. PPML with fixed
+  effects does not have this problem for exogenous regressors, but the lagged outcome makes the regressors only
+  predetermined.
+\item \emph{Sensitivity to extreme values.} The comparison of raw and winsorised PPML shows that the effect comes
+  from the bulk of conflict state-years; the largest atrocities add noise rather than drive it. The cap at the
+  99th percentile is a choice, and other caps (95th, 99.5th) would be a natural check.
+\end{enumerate}
+The functional-form check therefore strengthens the base-case reading: the small reduction in violence two years
+after a sanction, conditional on the controls, is not an artefact of linear models or of the log transformation;
+the same-year timing problem (Section~\ref{sec:results}) is unaffected by it.
+
+\input{tables/tab_nonlinear}
+
+\subsection{Raw instead of log deaths}
+% NUMBERS: Table tab:rawdeaths (run 2026-10-22)
+\citet{jaeger2008} estimate their levels VAR on raw fatality counts. Our base case uses
+$\log(1+\text{deaths per }100{,}000)$ because the death rate is extremely skewed. Table~\ref{tab:rawdeaths}
+re-estimates the linear levels VAR with deaths per 100,000 instead, uncapped and winsorised at the 99th (45.6)
+and 95th (6.2) percentile of all state-years; the cap applies to the outcome and to its lags. Everything else is
+as in Table~\ref{tab:granger}.
+\begin{itemize}[leftmargin=*]
+\item \textit{Uncapped raw deaths are not informative.} A single observation dominates the estimates: Rwanda's
+  12,577 deaths per 100,000 in 1994. It pulls the estimated persistence of violence down to 0.17 (0.67 with log
+  deaths), and in the sender equation it produces an absurd Granger statistic ($\chi^2\approx 300$), because
+  Rwanda received two new sanction cases in 1996; without Rwanda the statistic falls to 4.7 ($p=0.10$). This is
+  the reason for the transformation in the base case.
+\item \textit{Capped deaths: sanctions $\rightarrow$ violence holds.} With either cap, the lags of new sanctions are
+  jointly significant with controls ($p=0.036$ at p99, $p=0.025$ at p95) and marginally without ($p\approx
+  0.055$), with negative sums: about 0.34 (p99) and 0.10 (p95) fewer deaths per 100,000 two years after a new
+  case, i.e.\ roughly 17--24\% of the mean of the capped variable.
+\item \textit{Violence $\rightarrow$ sanctions} is significant without controls at the p99 cap ($p=0.001$) and
+  weaker with controls or with the stronger p95 cap, the same pattern as in the base case.
+\end{itemize}
+The base-case results therefore do not depend on the log transformation as long as the most extreme
+state-years are capped; the uncapped raw-count version, the analogue of \citet{jaeger2008}, is unsuitable for a
+cross-country panel that includes a genocide.
+
+\input{tables/tab_raw_deaths}
+
+\paragraph{Dynamics in deaths rather than log points.} Because the capped version is still a linear VAR, it also
+delivers impulse responses in an interpretable unit, deaths per 100,000 --- the analogue of the long-run numbers
+in \citet[Section V]{jaeger2008}. Table~\ref{tab:cappedirf} and Figure~\ref{fig:capped} use the p99 cap.
+\begin{itemize}[leftmargin=*]
+\item \textit{New sanction $\rightarrow$ deaths.} Without a same-year effect, one new sanction case is followed by
+  0.8 fewer deaths per 100,000 over ten years with controls (0.5 without), about half a year's average death rate
+  (1.42). The sign matches the log version, but the bootstrap intervals include zero: with deaths in levels, the
+  dynamics are estimated less precisely than the Granger test. If sanctions may affect deaths within the same year,
+  the cumulative response is positive (+1.1 to +1.6), as in the base case.
+\item \textit{Deaths $\rightarrow$ new sanctions.} One additional death per 100,000 raises the number of new cases
+  by about 0.01 over ten years (significant without controls), and by 0.03--0.04 if deaths may trigger sanctions
+  within the same year (significant in all versions). Senders react, but per death the reaction is small.
+\item \textit{Response function.} Capped deaths are already above normal in the year before a new sanction,
+  peak in the sanction year (+1.8 deaths per 100,000 relative to the state's normal level) and are back to normal
+  two years later --- the same shape as with log deaths (Figure~\ref{fig:response}).
+\end{itemize}
+
+\input{tables/tab_capped_irf}
+
+\paragraph{Reading Figure~\ref{fig:capped}.} The three panels show the timing behind these numbers.
+% NUMBERS: robustness_capped_irf.csv, robustness_capped_response.csv (run 2026-10-22)
+\begin{itemize}[leftmargin=*]
+\item \textit{Left panel (deaths after a new case).} Nothing happens in the year after the sanction (cumulative
+  response $-0.01$ with controls, $+0.08$ without). The decline starts in the second year ($-0.33$ and $-0.21$
+  deaths per 100,000 in that year alone), continues more weakly in the third, and has run its course after about
+  five years, when the cumulative curve flattens at $-0.8$ (with controls) and $-0.5$ (without). This is the
+  $t-2$ pattern of the Granger tests seen as a dynamic path. The bands are wide and include zero at every horizon,
+  so the panel shows the direction and timing, not a precisely estimated effect.
+\item \textit{Middle panel (new cases after one additional death per 100,000).} The sender reaction comes
+  quickly: most of it in the first year after the violence shock (0.005--0.007 new cases), a little more in the
+  second, and nothing after year three. Without controls the band excludes zero from the first year on; with
+  controls it touches zero.
+\item \textit{Right panel (deaths around a new-sanction year).} The grey line (raw means) is above zero at every
+  horizon, including three years \emph{before} the sanction: sanctioned states are more violent in general, by
+  1--3 deaths per 100,000. Net of state and year means (green), deaths are at their normal level three and two
+  years before a sanction, rise in the year before ($+1.0$), peak in the sanction year ($+1.8$), are still elevated
+  one year later ($+1.0$) and are back to normal from the second year on, where they stay.
+\end{itemize}
+Read together, the left and right panels say the same thing as the log version: the decline that the VAR attributes
+to sanctions begins exactly when the escalation around the sanction year ends. Whether sanctions shorten that
+escalation or merely coincide with its end cannot be decided from annual data. What the figure does not show
+is any sign of a lasting \emph{increase} in deaths after sanctions: two years on, deaths are back at the state's
+normal level, and in the VAR, which conditions on the sanction-year escalation, the point estimates are negative.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig17_capped_deaths_dynamics.png}
+\caption{Levels VAR with deaths per 100,000 capped at the 99th percentile: cumulative impulse responses and
+response function}
+\label{fig:capped}
+\end{figure}
+
+\subsection{GDELT instead of UCDP}
+Table~\ref{tab:gdelt} repeats the Granger tests with media-reported violence.
+\begin{itemize}[leftmargin=*]
+\item \textit{Sanctions $\rightarrow$ violence.} Incidence with controls: a sum of lag coefficients of $-0.032$, almost
+  identical to UCDP ($-0.035$) but not significant. Levels: positive and significant, i.e.\ more reported
+  low-level violence after sanctions; the response functions show the violent share up by 0.5--0.7
+  percentage points in the sanction year and the year after (Figure~\ref{fig:gdeltresponse}).
+\item \textit{Violence $\rightarrow$ sanctions.} Not found with GDELT. The GDELT incidence measure tracks UCDP
+  conflict poorly, however (Table~\ref{tab:gdeltvalidation}): a UCDP conflict year is above the state's GDELT
+  median only 64\% of the time. This is a weak test rather than a contradiction.
+\end{itemize}
+One possible reading: sanctions are followed by fewer full-scale conflict years but more low-level unrest. This
+needs a better GDELT incidence definition before it can be claimed.
+
+\input{tables/tab_gdelt}
+\input{tables/tab_gdelt_validation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig14_gdelt_cumulative_irf.png}
+\caption{Cumulative impulse responses with GDELT violence}
+\label{fig:gdeltirf}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig15_gdelt_response_functions.png}
+\caption{Response functions with GDELT violence}
+\label{fig:gdeltresponse}
+\end{figure}
+
+\subsection{Planned checks}
+\begin{itemize}[leftmargin=*]
+\item Controls one at a time; GDP growth as a possible bad control (decision D8).
+\item Bias-corrected heterogeneous Granger test \citep{juodis2021} on the balanced panel (167 states).
+\item Driscoll--Kraay standard errors.
+\item Time aggregation (two- and three-year periods), as in \citet[Table 3]{jaeger2008}.
+\item Splits: sender (UN, EU, US), sanction type (arms embargoes), objective (conflict-related), period.
+\item Anticipation proxy (GDELT threats and coercion), analogous to \citet[Table 4]{jaeger2008}.
+\item Sample to 2023; effects of sanction \emph{lifting}.
+\end{itemize}
+
+% =============================================================================
+\section{Extension (not part of the base case): LP-DiD event study}
+\label{sec:extension}
+% NUMBERS: Table 11 (run 2026-10-22)
+
+The response functions of Section~\ref{sec:results} compare event years with \emph{all} other years. A modern
+alternative is the local-projection difference-in-differences estimator of \citet{dube2023}, which compares
+states with a new event to a set of ``clean'' control states and is designed for treatments that switch on and
+off. This section describes what it estimates, what it shows, and how it relates to the VAR. It is kept separate
+from the base case because it answers a different question and its role in the paper is not yet decided.
+
+\subsection{Design}
+For each horizon $h=-3,\dots,8$ we estimate
+\begin{equation}
+y_{i,t+h}-y_{i,t-1} = \beta_h D_{it} + \gamma_h' (y_{i,t-1},\, y_{i,t-2}) + \tau_t + e_{it},
+\label{eq:lpdid}
+\end{equation}
+on two groups of state-years only. \emph{Treated}: an event in $t$ and none in the three previous years.
+\emph{Clean controls}: no event in $t$ and none in the three previous years. In the sanction direction the event
+is a new sanction; in the reverse direction it is a conflict \emph{onset} (a conflict year after three peaceful
+years), because conflict comes in spells. The outcome is the change relative to the year before the event, so
+time-invariant state differences drop out without state fixed effects; year effects absorb common shocks; the two
+lagged outcomes (used for $h\geq 0$) control for selection on recent violence, as in Dube et al.'s democracy
+application. The pre-event coefficients ($h=-3,-2$) are estimated without these controls, since otherwise
+$h=-2$ would be zero by construction; they test whether treated and control states were already moving
+differently before the year preceding the event.
+
+Restricting comparisons to clean controls avoids the problem that two-way fixed-effects and panel local-projection
+regressions with on/off treatments implicitly use already-treated states as controls, which can bias them, even in
+sign \citep{dechaisemartin2026}. Because the regression has no state fixed effects, the Nickell bias of panel local
+projections with fixed effects \citep{mei2026} does not arise in the same form.
+
+\input{tables/tab_lpdid}
+
+\subsection{Results}
+Table~\ref{tab:lpdid} and Figure~\ref{fig:lpdid} summarise the estimates.
+\begin{itemize}[leftmargin=*]
+\item \textit{Pre-trends.} In the UCDP data, treated and clean-control states move in parallel before the event in
+  both directions (all pre-event coefficients small and insignificant).
+\item \textit{Violence after a new sanction} (348 events). Relative to clean controls, the conflict probability
+  rises by 8.6 percentage points in the sanction year and remains 6.3 points higher two years later; log deaths
+  per capita rise by 0.23 and stay 0.10--0.12 higher up to eight years later (marginally significant at $h=8$).
+\item \textit{New sanctions after a conflict onset} (111 events). The probability of a new sanction rises by 12.8
+  percentage points in the onset year, with further increases at $h=2$ and $h=5$: senders react quickly and keep
+  reacting while the conflict lasts.
+\item \textit{GDELT.} The violent share of reported events is 0.8--1.1 percentage points higher in the years after a
+  new sanction, with flat pre-trends. After a GDELT violence onset there is no sanction response, but the
+  pre-trends are significantly negative, so this comparison is not credible with the median-based onset
+  definition (Figure~\ref{fig:lpdidgdelt}).
+\end{itemize}
+
+\subsection{How the event study relates to the VAR}
+At first sight the event study contradicts the VAR: violence is \emph{higher} after a sanction here, while the VAR
+finds a \emph{lower} conflict probability two years after a sanction. The two estimates condition on different
+things.
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Reference point.} The event study measures violence relative to the year \emph{before} the sanction
+  ($t-1$). In the violence equation of the VAR, the coefficient on a sanction in $t-2$ is estimated conditional on
+  violence in $t-2$ and $t-1$ --- that is, on violence in the \emph{sanction year} itself and the year after. The VAR therefore asks whether violence
+  after the sanction year is lower than the sanction-year level and its usual persistence predict; the event study
+  asks whether it is higher than before the sanction. Both can be true at the same time: sanctions come with an
+  escalation, after which violence declines faster than usual (VAR) but stays above its pre-sanction level
+  (event study). The response functions (Figure~\ref{fig:response}) show exactly this shape.
+\item \textbf{Within-year timing.} The jump at $h=0$ mixes the escalation that led to the sanction with any effect
+  of the sanction itself. Flat pre-trends only show that treated states were not on a different path up to $t-1$;
+  they cannot rule out that the sanction responded to violence earlier in the same year. This is the same
+  identification problem as the ordering of the impulse responses, and the event study does not solve it.
+\item \textbf{Total versus partial effect.} The event study measures everything that follows a new sanction
+  episode, including follow-up sanctions (P(new sanction $|$ new sanction last year) $=0.30$) and the
+  conflict dynamics already under way. The VAR isolates the response to a sanction innovation holding the past of
+  both variables fixed.
+\item \textbf{Comparison group.} Clean controls are states without any new sanction for four years; senders did
+  not target them, and they may differ systematically from targeted states (for example, be more peaceful). The year effects and lagged outcomes reduce but do not
+  remove this selection; in the reverse direction, onsets of conflict are compared with persistently peaceful
+  states.
+\end{enumerate}
+The direction of reverse causality (violence $\rightarrow$ sanctions) is the robust common finding: sanctions
+follow conflict onsets in the event study, Granger-follow violence in the VAR, and rise around conflict years in
+the response functions.
+
+\subsection{Assessment and possible next steps}
+\textit{Strengths:} transparent, model-free comparison with a clear treated/control structure; robust to the
+negative-weighting problem of fixed-effects regressions; explicit pre-trend test; easy to communicate.
+\textit{Weaknesses for our question:} it cannot separate within-year reverse causality, it measures a total
+effect that includes follow-up sanctions, and its controls are selected on not being sanctioned.
+Possible refinements, if it enters the paper:
+\begin{itemize}[leftmargin=*]
+\item Condition on the escalation: compare sanctioned states with clean controls that had the same violence in the
+  event year (i.e.\ add $y_{it}$ or match on conflict status in $t$), which brings the estimand close to the VAR's.
+\item Restrict to conflict-prone states (in conflict in $t-1$), the subsample where sanctions are typically
+  imposed (decision D7 in the analysis plan).
+\item Separate sanctions by objective (conflict-related) and by type (arms embargoes), where an effect on violence
+  is most plausible.
+\item Report the equally-weighted (reweighted) version of \citet{dube2023} and vary the clean-control window.
+\end{itemize}
+\todo{decide: (a) appendix as a complement to the response functions, (b) main-text robustness section, or
+(c) drop.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig11_lpdid_event_study.png}
+\caption{LP-DiD event study with UCDP violence (extension)}
+\label{fig:lpdid}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig16_gdelt_lpdid_event_study.png}
+\caption{LP-DiD event study with GDELT violence (extension)}
+\label{fig:lpdidgdelt}
+\end{figure}
+
+% =============================================================================
+\section{Discussion and next steps}
+\label{sec:discussion}
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Main specification (D8).} Fixed effects only, or with lagged controls? The sanctions$\rightarrow$
+  violence result needs the controls; the violence$\rightarrow$sanctions result is weakened by them through GDP
+  growth. Proposal: fixed effects only as the main specification, controls one at a time as robustness.
+\item \textbf{Within-year timing.} The sign of the sanction effect depends on whether sanctions can affect
+  violence in the year they are imposed. Monthly data (UCDP GED events and sanction announcement dates) would
+  resolve this and bring the design closer to the daily data of \citet{jaeger2008}.
+\item \textbf{Measurement.} A stricter GDELT incidence definition (top quartile, mass-violence events).
+\item \textbf{Functional form.} Logit, PPML and raw-deaths (capped) versions confirm both directions
+  (Section~\ref{sec:robustness}); no further work needed here beyond a bias-corrected logit.
+\item \textbf{Interpretation.} Rather than a symmetric cycle of violence, the evidence so far suggests that senders
+  respond to violence, while sanctions are followed by a small reduction in full-scale conflict whose sign
+  depends on timing assumptions, and possibly by more low-level violence.
+\end{enumerate}
+
+\paperonly{conclusion.}
+
+% =============================================================================
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% =============================================================================
+\clearpage
+\appendix
+\section{Additional tables and figures}
+
+\input{tables/tab_coefficients}
+\input{tables/tab_lag_grid}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{fig12_irf_no_controls.png}
+\caption{Impulse responses, VAR without controls}
+\label{fig:irfnocontrols}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{fig3_violence_deaths_by_type.png}
+\caption{Deaths in organized violence by type (UCDP)}
+\label{fig:deaths}
+\end{figure}
+
+\end{document}

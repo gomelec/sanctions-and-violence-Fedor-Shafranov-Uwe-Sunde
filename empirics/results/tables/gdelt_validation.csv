@@ -1,0 +1,8 @@
+comparison,value
+"corr(GDELT %, UCDP log deaths), pooled",0.6107407359006152
+"corr(GDELT %, UCDP log deaths), within states",0.4663574465247701
+"corr(GDELT %, UCDP conflict 0/1), pooled",0.5824214680200924
+"corr(GDELT %, UCDP conflict 0/1), within states",0.3788627797793487
+P(GDELT incidence = 1 | UCDP conflict year),0.6402289452166803
+P(GDELT incidence = 1 | no UCDP conflict),0.45764154959557257
+P(UCDP conflict | GDELT incidence = 1),0.2669621547903171

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{GMM panel VAR: specification tests}
+\label{tab:gmm}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+Specification & States & Obs. & Moments & Hansen $J$ (df) & $p$ & Largest root \\
+\midrule
+Incidence, with controls & 174 & 4,739 & 24 & 14.56 (8) & 0.068 & 0.56 \\
+Incidence, FE only & 197 & 5,341 & 16 & 16.50 (8) & 0.036 & 0.57 \\
+Levels, with controls & 174 & 4,739 & 24 & 8.32 (8) & 0.403 & 0.67 \\
+Levels, FE only & 197 & 5,341 & 16 & 7.60 (8) & 0.473 & 0.69 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Two-step GMM with forward orthogonal deviations and collapsed instruments (lags 2--5), variables demeaned by year \citep{abrigo2016}. Hansen $J$: H$_0$ instruments valid \citep{hansen1982}; the number of moment conditions stays well below the number of states \citep{roodman2009}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

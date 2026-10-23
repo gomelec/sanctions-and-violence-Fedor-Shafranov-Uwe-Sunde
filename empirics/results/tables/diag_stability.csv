@@ -1,0 +1,13 @@
+specification,control_set,estimator,largest_root,stable
+incidence,no_controls,GMM,0.5736056696794462,TRUE
+incidence,no_controls,OLS,0.6000653154700673,TRUE
+incidence,no_controls,jackknife,0.7453213643266998,TRUE
+incidence,with_controls,GMM,0.5564914010988948,TRUE
+incidence,with_controls,OLS,0.5740055137332255,TRUE
+incidence,with_controls,jackknife,0.724933110288938,TRUE
+levels,no_controls,GMM,0.6888947834538037,TRUE
+levels,no_controls,OLS,0.6851353267464209,TRUE
+levels,no_controls,jackknife,0.8044185575774092,TRUE
+levels,with_controls,GMM,0.6713945215295729,TRUE
+levels,with_controls,OLS,0.672603372182045,TRUE
+levels,with_controls,jackknife,0.8040319096228334,TRUE

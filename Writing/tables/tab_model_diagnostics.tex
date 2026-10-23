@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Diagnostics of the estimated VARs}
+\label{tab:modeldiag}
+\begin{threeparttable}
+\begin{tabular}{llccccccc}
+\toprule
+ & & \multicolumn{2}{c}{Residual autocorr., $p$} & \multicolumn{2}{c}{Pesaran CD} & \multicolumn{3}{c}{Largest root} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-9}
+Model & Equation & Lag 1 & Lag 2 & \makecell{Mean\\corr.} & $p$ & OLS & JK & GMM \\
+\midrule
+Incidence, with controls & Violence & 0.503 & 0.688 & $-$0.007 & 0.023 & 0.57 & 0.72 & 0.56 \\
+ & Sender & 0.077 & 0.042 & 0.010 & $<$0.001 &  & &  \\
+Incidence, FE only & Violence & 0.566 & 0.804 & $-$0.005 & 0.089 & 0.60 & 0.75 & 0.57 \\
+ & Sender & 0.075 & 0.042 & 0.020 & $<$0.001 &  & &  \\
+Levels, with controls & Violence & 0.428 & 0.769 & 0.018 & $<$0.001 & 0.67 & 0.80 & 0.67 \\
+ & Sender & 0.112 & 0.046 & 0.020 & $<$0.001 &  & &  \\
+Levels, FE only & Violence & 0.532 & 0.725 & 0.017 & $<$0.001 & 0.69 & 0.80 & 0.69 \\
+ & Sender & 0.094 & 0.044 & 0.029 & $<$0.001 &  & &  \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Residual autocorrelation: regression of the FE residual on its own lag, tested against the value $-1/(T-1)$ implied by within-demeaning \citep[section 10.5.4]{wooldridge2010}. Pesaran CD \citep{pesaran2015}: states whose dependent variable varies (constant-outcome states have mechanically identical residuals); mean pairwise residual correlation and $p$-value. Largest root: modulus of the largest eigenvalue of the companion matrix (stable if $<1$), FE-OLS, half-panel jackknife (JK) and GMM.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

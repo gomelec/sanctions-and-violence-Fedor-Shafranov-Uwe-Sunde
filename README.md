@@ -91,7 +91,18 @@ master.py                              runs the full pipeline
 | clean_gdelt | `data/scripts/cleaning/clean_gdelt.py` | GDELT conflict events per state-year |
 | clean_population, clean_gdp | `data/scripts/cleaning/clean_population.py`, `clean_gdp.py` | 2020–23 extensions |
 | process | `data/scripts/processing/process_sanctions_violence.py` | `data/processed/sanctions_violence/sanctions_violence_panel.csv` |
+| prepare_sample | `empirics/scripts/01_prepare_sample.R` | `empirics/results/data/analysis_panel.csv`, sample tables |
 | descriptives | `empirics/scripts/02_descriptives.R` | `empirics/results/figures/descriptives/` |
+| data_diagnostics | `empirics/scripts/03_data_diagnostics.R` | `empirics/results/tables/data_diagnostics.md`, `diag_*.csv` |
+| reaction_functions | `empirics/scripts/04_reaction_functions.R` | `empirics/results/tables/table1_*` (JP Table 1, Granger tests; OLS and half-panel jackknife) |
+| robustness | `empirics/scripts/09_robustness.R` | `robustness_*.md/csv`, figure 17 (logit/PPML, raw and capped deaths incl. IRFs) |
+| pvar_gmm | `empirics/scripts/10_pvar_gmm.R` | `empirics/results/tables/gmm_*` (GMM panel VAR, comparison of estimators) |
+| model_diagnostics | `empirics/scripts/06_model_diagnostics.R` | `empirics/results/tables/model_diagnostics.md` (runs after 10) |
+| empirical_response | `empirics/scripts/07_empirical_response.R` | `empirical_response.md`, figure 10 (JP Fig. 2 response functions) |
+| irf | `empirics/scripts/08_irf.R` | `irf_summary.md`, `irf_results.csv`, figures 12–13 (impulse responses, bootstrap) |
+| gdelt | `empirics/scripts/11_gdelt.R` | `gdelt_results.md`, `gdelt_*.csv`, figures 14–15 (robustness: everything with GDELT violence) |
+| lpdid | `empirics/scripts/12_lpdid.R` | `lpdid.md`, figures 11 and 16 (extension: LP-DiD event study, UCDP and GDELT) |
+| writing_tables | `Writing/scripts/make_tables.py` | `Writing/tables/*.tex` (LaTeX tables for the brief `Writing/main.tex`) |
 
 ## Key references
 
@@ -115,7 +126,7 @@ are logged in `data/README.md`.
 | `create_sanction_data.ipynb` | `clean_gsdb.py` + sanctions part of `process_sanctions_violence.py` |
 | `Create_violence_data.ipynb` | `clean_ucdp_ov.py` + violence part of `process_sanctions_violence.py` |
 | `create_gdelt_data.ipynb` | `clean_gdelt.py` + GDELT part of `process_sanctions_violence.py` |
-| `R files/unit_root_testing.Rmd`, `R files/1st_var.Rmd` | `empirics/scripts/01_unit_root_tests.Rmd`, `02_panel_var.Rmd` |
+| `R files/unit_root_testing.Rmd`, `R files/1st_var.Rmd` | `archive/rmd/legacy_empirics/01_unit_root_tests.Rmd`, `02_panel_var.Rmd` (replaced by the numbered scripts) |
 | other notebooks, old outputs | `archive/` |
 
 </details>

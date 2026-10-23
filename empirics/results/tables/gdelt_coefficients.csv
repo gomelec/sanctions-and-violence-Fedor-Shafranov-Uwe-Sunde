@@ -1,0 +1,289 @@
+sample,sample_label,specification,control_set,estimator,equation,term,estimate,std_error,t_value,p_value
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,gdelt_inc_l1,0.28474510832074656,0.017356767135129934,16.405423089673487,1.749040278086762e-60
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,gdelt_inc_l2,0.10632285226697642,0.016861342717553452,6.305716813186493,2.868631202284255e-10
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,new_sanction_l1,0.012701049801186531,0.022734288203886878,0.5586737392998754,0.5763844047062195
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,new_sanction_l2,-0.0445724203062137,0.02307309476958615,-1.9317920179900154,0.05338518168413881
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,ctrl_stock,0.008764516011411174,0.005504392080867695,1.5922768368690705,0.11132251514419815
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,ctrl_gdp_growth,-0.0956806685552712,0.19393800188811808,-0.49335698843834086,0.6217603678950303
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,ctrl_democracy,-0.2522814386544025,0.11541161614310938,-2.1859276135737997,0.0288209016286499
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,violence,ex_yugo_1991_2016,-0.040953313014127475,0.10571350418511043,-0.3873990681683947,0.698460793541998
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,new_sanction_l1,0.12999421569897998,0.017742167054480906,7.326851071788835,2.3562341375941723e-13
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,new_sanction_l2,-0.013506185117640152,0.01633788774537427,-0.8266787805213157,0.4084191515740645
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,gdelt_inc_l1,-0.007090212021939692,0.009588025444503342,-0.7394861499876801,0.45961184677728506
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,gdelt_inc_l2,-0.0049460289482540125,0.008499885677930252,-0.5818935848862364,0.56063836183990845
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,ctrl_stock,-0.0011264384285880813,0.004374099180727643,-0.2575246655474088,0.7967737768700459
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,ctrl_gdp_growth,-0.4126923386678798,0.15038726823280005,-2.7441973214715927,0.006065906429879646
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,ctrl_democracy,-0.1768323596037873,0.058249574366209055,-3.035770845157778,0.0023992163208748367
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,OLS,sender,ex_yugo_1991_2016,0.10338626672846471,0.02580316531905623,4.006728068052627,6.156567563847011e-5
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,gdelt_inc_l1,0.37821686188740217,0.017356767135129934,21.790743572395737,2.8400180459334397e-105
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,gdelt_inc_l2,0.18749815598692618,0.016861342717553452,11.120001480767707,1.002703286571574e-28
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,new_sanction_l1,0.010759445113757374,0.022734288203886878,0.4732694957178309,0.6360209222011572
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,new_sanction_l2,-0.04742345161336935,0.02307309476958615,-2.0553572066058807,0.03984451560771085
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,ctrl_stock,0.012059669329269702,0.005504392080867695,2.190917571294931,0.02845775794704767
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,ctrl_gdp_growth,-0.10577473906313771,0.19393800188811808,-0.5454049130822677,0.5854750621245322
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,ctrl_democracy,-0.1957719372057647,0.11541161614310938,-1.6962931786953683,0.08983037166423039
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,violence,ex_yugo_1991_2016,0.09415194157515598,0.10571350418511043,0.8906330586704468,0.37312605794534215
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,new_sanction_l1,0.1569312277311925,0.017742167054480906,8.84509920627528,9.144703030327793e-19
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,new_sanction_l2,0.007069133944829005,0.01633788774537427,0.4326834689404988,0.6652447410134885
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,gdelt_inc_l1,-0.004714776301544956,0.009588025444503342,-0.49173589795257167,0.6229060573813379
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,gdelt_inc_l2,-0.0016916476515060862,0.008499885677930252,-0.19902004751645172,0.8422470626264849
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,ctrl_stock,0.014219352590819476,0.004374099180727643,3.250807081254625,0.0011507791635449185
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,ctrl_gdp_growth,-0.20466325957492382,0.15038726823280005,-1.3609081538611656,0.173542716424986
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,ctrl_democracy,-0.19154914553369237,0.058249574366209055,-3.28842137677166,0.0010075092074666664
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,with_controls,jackknife,sender,ex_yugo_1991_2016,0.15486600188945213,0.02580316531905623,6.001821868539517,1.951156945499019e-9
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,violence,gdelt_inc_l1,0.2757443180351129,0.016475503862858565,16.736624283566535,7.089644932132512e-63
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,violence,gdelt_inc_l2,0.09674442589001597,0.015530379831916897,6.22936637333196,4.68325414128701e-10
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,violence,new_sanction_l1,0.03931771569224535,0.021260165997774586,1.8493607103707912,0.06440574474674095
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,violence,new_sanction_l2,-0.02917832057100296,0.021737502478445605,-1.3423032659771055,0.17949768490788565
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,sender,new_sanction_l1,0.13515887447472438,0.01710267551878308,7.902791251946844,2.727261144348713e-15
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,sender,new_sanction_l2,-0.011295665274582454,0.016632264471351712,-0.6791417545120632,0.4970480483147899
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,sender,gdelt_inc_l1,-0.004340336947904759,0.00858941650983428,-0.5053121993717941,0.6133395757458591
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,OLS,sender,gdelt_inc_l2,-0.0020540947593078256,0.007744463415987779,-0.26523396767132035,0.7908292292423187
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,violence,gdelt_inc_l1,0.3684307277712131,0.016475503862858565,22.362334459571965,9.159438506286531e-111
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,violence,gdelt_inc_l2,0.17815820926610546,0.015530379831916897,11.471593817684212,1.8325262760788206e-30
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,violence,new_sanction_l1,0.047143201782837055,0.021260165997774586,2.217442788911986,0.02659284847869874
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,violence,new_sanction_l2,-0.0245103369895755,0.021737502478445605,-1.1275599399645553,0.25950581302213516
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,sender,new_sanction_l1,0.18153707505655844,0.01710267551878308,10.61454243560808,2.5504090225306968e-26
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,sender,new_sanction_l2,0.027425953709039295,0.016632264471351712,1.6489608950290084,0.09915564630819394
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,sender,gdelt_inc_l1,-5.150037890360275e-4,0.00858941650983428,-0.059957948068577675,0.952189126980529
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",incidence,no_controls,jackknife,sender,gdelt_inc_l2,0.002415101701263039,0.007744463415987779,0.31184881011604615,0.7551554273093827
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,gdelt_lev_l1,0.4941026657535634,0.04412762149384539,11.197128896296334,4.211623812620707e-29
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,gdelt_lev_l2,0.1258253523260153,0.026086798207863995,4.8233344438599834,1.411779537694713e-6
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,n_new_cases_l1,0.10635397532761191,0.06461230933182452,1.6460327208151297,0.09975702255081285
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,n_new_cases_l2,-0.07898149750340576,0.052645336462821886,-1.5002562963802588,0.13354802551650516
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,ctrl_stock,0.016322805695699306,0.03355312081165424,0.48647652739442915,0.6266293436383226
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,ctrl_gdp_growth,-1.8835470236791583,1.2802967681589723,-1.4711800189792257,0.14124243931806313
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,ctrl_democracy,-0.33369474870298954,0.6812779311231083,-0.48980707206071267,0.624270425870172
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,violence,ex_yugo_1991_2016,-0.07783093137771546,0.36439377327616634,-0.21359017932155785,0.8308666584428319
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,n_new_cases_l1,0.08785220262062045,0.02034671155998534,4.317759278280335,1.57621199116603e-5
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,n_new_cases_l2,-0.006672263091551397,0.014611217039171563,-0.4566534788760968,0.6479201337125873
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,gdelt_lev_l1,0.003752162868188737,0.0042234396251947075,0.8884139945568077,0.37431810028622964
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,gdelt_lev_l2,6.862796259050922e-4,0.003700570320512445,0.1854523942163753,0.8528742164218788
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,ctrl_stock,-0.023031957899335456,0.013747896296857917,-1.6753077999722337,0.09387385585370564
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,ctrl_gdp_growth,-1.0570537449992896,0.33031677109711866,-3.2001213304682556,0.0013736974630512385
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,ctrl_democracy,-0.453521554750781,0.14594547410011943,-3.1074725512876307,0.0018869450753079553
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,OLS,sender,ex_yugo_1991_2016,0.1150480673214476,0.03688678619257295,3.1189506920126373,0.001814963314839977
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,gdelt_lev_l1,0.5801948763096316,0.04412762149384539,13.148111243443138,1.7447849042820576e-39
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,gdelt_lev_l2,0.18511367654761957,0.026086798207863995,7.096067331552254,1.2835696082293333e-12
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,n_new_cases_l1,0.11801052013722557,0.06461230933182452,1.826440214838444,0.06778397896485322
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,n_new_cases_l2,-0.07912482222298238,0.052645336462821886,-1.5029787544213018,0.13284452269912178
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,ctrl_stock,0.044518424671831966,0.03355312081165424,1.3268042910741427,0.18457343064387824
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,ctrl_gdp_growth,-0.8147360432858042,1.2802967681589723,-0.6363649925144853,0.5245385527203374
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,ctrl_democracy,0.20331139230223172,0.6812779311231083,0.29842650556295935,0.7653776616648764
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,violence,ex_yugo_1991_2016,1.2932462415985175,0.36439377327616634,3.5490349628405795,3.8664573956428516e-4
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,n_new_cases_l1,0.11475559365782761,0.02034671155998534,5.640006903302772,1.700433468643475e-8
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,n_new_cases_l2,0.017818088904590274,0.014611217039171563,1.2194801334359302,0.22266201169660976
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,gdelt_lev_l1,0.006680240204193462,0.0042234396251947075,1.5817060966949403,0.11371668027799539
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,gdelt_lev_l2,0.003392317447150272,0.003700570320512445,0.9167012523303469,0.3592992096868499
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,ctrl_stock,0.02222675614118342,0.013747896296857917,1.6167387112356488,0.10593469401896599
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,ctrl_gdp_growth,-0.5236466967801503,0.33031677109711866,-1.585286435929072,0.11290126944740425
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,ctrl_democracy,-0.4450736236714895,0.14594547410011943,-3.049588391937159,0.0022915518890111856
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,with_controls,jackknife,sender,ex_yugo_1991_2016,0.2056672315415111,0.03688678619257295,5.575634333329956,2.4662950223427374e-8
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,violence,gdelt_lev_l1,0.36244290255583306,0.069404496009005,5.222181895951054,1.768271464344161e-7
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,violence,gdelt_lev_l2,0.1686830322400431,0.02229345752106232,7.566481425354297,3.834689866893643e-14
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,violence,n_new_cases_l1,0.18544199686425417,0.0707873681802015,2.6197046398473165,0.008800595284220745
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,violence,n_new_cases_l2,-0.04206855364311677,0.054504001623663215,-0.7718433947949332,0.44020718653391333
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,sender,n_new_cases_l1,0.08001117931982275,0.020957702111256988,3.8177458051017163,1.3467658061388604e-4
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,sender,n_new_cases_l2,-0.01585240973339875,0.01718320099077525,-0.92255277360190735,0.3562403163999214
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,sender,gdelt_lev_l1,0.003926168760566418,0.0028391282488592078,1.3828782698153894,0.16670219432558042
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,OLS,sender,gdelt_lev_l2,8.822175754408445e-4,0.0026575909244710002,0.3319613892858443,0.7399184141944539
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,violence,gdelt_lev_l1,0.42796656324189436,0.069404496009005,6.166265701091859,6.992155762907361e-10
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,violence,gdelt_lev_l2,0.24489971471869268,0.02229345752106232,10.985272898441945,4.498768889637532e-28
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,violence,n_new_cases_l1,0.22929392053837114,0.0707873681802015,3.2391926191501255,0.0011986859192037135
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,violence,n_new_cases_l2,-0.012855459497872687,0.054504001623663215,-0.23586267273798514,0.8135392339567552
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,sender,n_new_cases_l1,0.13589054923953228,0.020957702111256988,6.4840385896382,8.929936542948222e-11
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,sender,n_new_cases_l2,0.03431803964678415,0.01718320099077525,1.9971854874541528,0.045805036982701094
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,sender,gdelt_lev_l1,0.0073312023479362555,0.0028391282488592078,2.5822018962623514,0.009817213434639796
+ucdp_years,"GDELT, 1991-2019 (years of Table 1)",levels,no_controls,jackknife,sender,gdelt_lev_l2,0.005824110872691586,0.0026575909244710002,2.1915001361057436,0.028415619901669836
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,gdelt_inc_l1,0.32197428400944755,0.015342007798429858,20.986450289928758,8.722144293724307e-98
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,gdelt_inc_l2,0.14446246346265004,0.014782392140325704,9.772603925758599,1.4760861770806578e-22
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,new_sanction_l1,0.014408010411651772,0.020013306353815607,0.7199215440433626,0.47157330245311124
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,new_sanction_l2,-0.029767737958039643,0.020342199650095677,-1.463349021741591,0.14337190026214353
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,ctrl_stock,0.01022406207979027,0.004878134112530172,2.0958960627032233,0.036091412072761765
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,ctrl_gdp_growth,-0.09108268170873535,0.152916773718976,-0.5956356486837949,0.5514186563129386
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,ctrl_democracy,0.025786387934032318,0.06646809849975263,0.38795134080943033,0.6980520432470771
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,violence,ex_yugo_1991_2016,-0.02962875121085459,0.07857297142526652,-0.377085792651173,0.7061098490390026
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,new_sanction_l1,0.14007422270386663,0.01596656663359447,8.772970790673515,1.7401318787925117e-18
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,new_sanction_l2,-0.008845404712938926,0.015783260061649054,-0.5604295106580628,0.5751865073349449
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,gdelt_inc_l1,0.004301735992090746,0.007944343060938785,0.5414841679284692,0.588173907216262
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,gdelt_inc_l2,7.219171334015867e-4,0.006956757649795452,0.10377206879167526,0.9173502326463299
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,ctrl_stock,0.005878912558804027,0.0028554645077902593,2.0588287974741823,0.03951064193633754
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,ctrl_gdp_growth,-0.277601605846417,0.11838376708289082,-2.344929652830222,0.019030669846738374
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,ctrl_democracy,-0.13737331797716165,0.037933792110038465,-3.621396921738504,2.9301655236080163e-4
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,OLS,sender,ex_yugo_1991_2016,0.057924579442340814,0.07000702588269056,0.8274109450014907,0.40800417908517533
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,gdelt_inc_l1,0.3940747369363829,0.015342007798429858,25.685995087078076,1.6760158205337268e-145
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,gdelt_inc_l2,0.20765277422853023,0.014782392140325704,14.047305216728946,8.002149937822557e-45
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,new_sanction_l1,0.01628219357369408,0.020013306353815607,0.8135683972373621,0.415892248428399
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,new_sanction_l2,-0.029848630634762292,0.020342199650095677,-1.4673256161175225,0.14228749852273959
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,ctrl_stock,0.007936406952024529,0.004878134112530172,1.6269349650799378,0.1037509109456298
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,ctrl_gdp_growth,-0.06055278466813219,0.152916773718976,-0.3959852355988987,0.6921159201564472
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,ctrl_democracy,0.04247476907183185,0.06646809849975263,0.6390248860811013,0.5228067426169014
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,violence,ex_yugo_1991_2016,-0.13196678733987618,0.07857297142526652,-1.6795443133443715,0.09304601013412687
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,new_sanction_l1,0.15091292175380855,0.01596656663359447,9.451807969553084,3.3302793918205073e-21
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,new_sanction_l2,0.009540499212679524,0.015783260061649054,0.6044694933375331,0.5455315455154777
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,gdelt_inc_l1,0.0056626985211348235,0.007944343060938785,0.7127963228297018,0.4759718013810565
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,gdelt_inc_l2,0.0027414531460849983,0.006956757649795452,0.39407052596774084,0.6935289708613566
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,ctrl_stock,0.016084251186081065,0.0028554645077902593,5.632796745398206,1.773103867125395e-8
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,ctrl_gdp_growth,-0.11310764055292488,0.11838376708289082,-0.9554320101482185,0.339359272788127
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,ctrl_democracy,-0.07721231266045547,0.037933792110038465,-2.035449354403529,0.04180567959101539
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,with_controls,jackknife,sender,ex_yugo_1991_2016,-0.09827919885999929,0.07000702588269056,-1.4038476513012261,0.16036422085809918
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,violence,gdelt_inc_l1,0.31692534877014605,0.014409703601617054,21.993883950158473,3.295397804425565e-107
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,violence,gdelt_inc_l2,0.13504318190475828,0.013755527041023556,9.817376062873825,9.477838719921283e-23
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,violence,new_sanction_l1,0.037222191098954145,0.018368017642401317,2.0264675167247908,0.04271689821335712
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,violence,new_sanction_l2,-0.01586027827180989,0.019062425313198503,-0.8320178577081951,0.4053988647976735
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,sender,new_sanction_l1,0.1590000092629526,0.0150795110434442,10.544109076539167,5.408300387487726e-26
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,sender,new_sanction_l2,0.0071767426768503464,0.015194632112123192,0.47232092385601815,0.6366977375680074
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,sender,gdelt_inc_l1,0.004335773735041737,0.007213011085199887,0.601104543418511,0.5477703574354977
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,OLS,sender,gdelt_inc_l2,0.002226321531495389,0.006209773087850152,0.3585189828999292,0.7199549644627219
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,violence,gdelt_inc_l1,0.3866661069982736,0.014409703601617054,26.83373077534239,1.3061135428622798e-158
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,violence,gdelt_inc_l2,0.19574524019162787,0.013755527041023556,14.23029736395054,5.942853320903919e-46
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,violence,new_sanction_l1,0.035948108524255735,0.018368017642401317,1.9571033316775555,0.05033532081178539
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,violence,new_sanction_l2,-0.017026473491724883,0.019062425313198503,-0.8931955515616389,0.3717524599133488
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,sender,new_sanction_l1,0.18370653895668787,0.0150795110434442,12.182526238909722,3.8516374311670725e-34
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,sender,new_sanction_l2,0.03877167816879226,0.015194632112123192,2.5516694239578124,0.010720818551165728
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,sender,gdelt_inc_l1,0.0056851805108761215,0.007213011085199887,0.7881840806457839,0.4305890394288887
+full_gdelt,"GDELT, 1981-2021 (full period)",incidence,no_controls,jackknife,sender,gdelt_inc_l2,0.003348927841739992,0.006209773087850152,0.5392995515878671,0.589680178202344
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,gdelt_lev_l1,0.5024193754409734,0.030321093925243153,16.569962042916114,1.1489829580430015e-61
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,gdelt_lev_l2,0.16768860703060126,0.021850953553496803,7.674200881900007,1.6645305367848216e-14
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,n_new_cases_l1,0.05437007834560625,0.06462611264744149,0.8413020080940723,0.4001787659663408
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,n_new_cases_l2,-0.07967976151874223,0.05099396934105776,-1.5625330318145705,0.11816247057428769
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,ctrl_stock,0.039482844392326064,0.02977675097455842,1.325962138248751,0.18485223880599372
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,ctrl_gdp_growth,-1.6208510741288444,1.086475088825418,-1.4918437530685928,0.13574011086268545
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,ctrl_democracy,0.5212429110832789,0.371824858627417,1.4018506266833135,0.1609598567826764
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,violence,ex_yugo_1991_2016,0.18834684345536062,0.2692615522815912,0.6994940118981015,0.4842433539505173
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,n_new_cases_l1,0.10152793839976124,0.025761630030013902,3.94105257631116,8.112484067464809e-5
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,n_new_cases_l2,-0.015679266337476704,0.01274328682192239,-1.2303942112095854,0.21854952003719647
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,gdelt_lev_l1,0.00336224800644883,0.003162663975300022,1.0631063030114904,0.2877337464090621
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,gdelt_lev_l2,6.898118737213186e-4,0.002973998772253792,0.2319475986866521,0.8165787140578583
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,ctrl_stock,4.0509558460635484e-5,0.008723479628902688,0.004643738529109297,0.9962948460397363
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,ctrl_gdp_growth,-0.7217924958724387,0.25900790481541336,-2.7867585600788405,0.0053238128021581505
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,ctrl_democracy,-0.3834344572165137,0.11301825819644121,-3.3926771066499017,6.921317257213487e-4
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,OLS,sender,ex_yugo_1991_2016,0.1346994460379223,0.1874654733434824,0.7185293570892392,0.4724309533374729
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,gdelt_lev_l1,0.5393897826253806,0.030321093925243153,17.789258657858767,8.560496802790382e-71
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,gdelt_lev_l2,0.22210106521636758,0.021850953553496803,10.164364894767935,2.8597968791352067e-24
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,n_new_cases_l1,0.06674985027775612,0.06462611264744149,1.0328619120555862,0.30166852526695775
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,n_new_cases_l2,-0.07759324579193316,0.05099396934105776,-1.5216161203881615,0.12810529593211215
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,ctrl_stock,0.03646055210634204,0.02977675097455842,1.2244637481602452,0.22077733381407336
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,ctrl_gdp_growth,-0.9948176828438315,1.086475088825418,-0.9156378209456447,0.3598568875246477
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,ctrl_democracy,0.6509125579453152,0.371824858627417,1.7505891358317034,0.08001670799967348
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,violence,ex_yugo_1991_2016,-0.6553315638487051,0.2692615522815912,-2.4338103910333455,0.014940819318107574
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,n_new_cases_l1,0.11071247593418274,0.025761630030013902,4.297572622741488,1.7267869421973372e-5
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,n_new_cases_l2,-0.006961279200588873,0.01274328682192239,-0.5462703067008836,0.5848801440351811
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,gdelt_lev_l1,0.004393970347349393,0.003162663975300022,1.3893257018974217,0.16473373176850442
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,gdelt_lev_l2,7.536471314751163e-4,0.002973998772253792,0.25341205198412986,0.7999498154076972
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,ctrl_stock,0.03640309368975068,0.008723479628902688,4.173001512967339,3.0061294470698137e-5
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,ctrl_gdp_growth,-0.2590017922670267,0.25900790481541336,-0.9999764001473583,0.31732192894456496
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,ctrl_democracy,-0.21701628674886464,0.11301825819644121,-1.9201878547062778,0.0548341751719155
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,with_controls,jackknife,sender,ex_yugo_1991_2016,-0.35712504923469196,0.1874654733434824,-1.9050177233455245,0.05677776729897516
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,violence,gdelt_lev_l1,0.4392286760651549,0.0449982163651298,9.761024137070548,1.6547562738034805e-22
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,violence,gdelt_lev_l2,0.16599313067521496,0.029805799168146293,5.56915551026772,2.559769481531698e-8
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,violence,n_new_cases_l1,0.13181698939169867,0.06084669960278135,2.166378624514142,0.030282266007684553
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,violence,n_new_cases_l2,-0.03492120495245857,0.04811526502721428,-0.7257822425524816,0.4679722745614461
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,sender,n_new_cases_l1,0.11398642064398508,0.027731631110056894,4.110339568257412,3.9507769570115105e-5
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,sender,n_new_cases_l2,-0.00655375451262128,0.014262793605688238,-0.4595000596522363,0.6458751092252605
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,sender,gdelt_lev_l1,0.002702920583261992,0.002191315157202618,1.2334695784756389,0.21740061989708653
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,OLS,sender,gdelt_lev_l2,0.0012979054100239018,0.002058758839270216,0.6304310078804471,0.5284126287401084
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,violence,gdelt_lev_l1,0.47273350116807855,0.0449982163651298,10.50560531849016,8.139889059801598e-26
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,violence,gdelt_lev_l2,0.2150565659657916,0.029805799168146293,7.215259176664666,5.383134888989832e-13
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,violence,n_new_cases_l1,0.14231788131758946,0.06084669960278135,2.3389581069584255,0.019337601733366988
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,violence,n_new_cases_l2,-0.030872639141859573,0.04811526502721428,-0.6416391788426776,0.5211074882792588
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,sender,n_new_cases_l1,0.14817091578760505,0.027731631110056894,5.343029236166017,9.140601375021758e-8
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,sender,n_new_cases_l2,0.023540287333912988,0.014262793605688238,1.6504682031242974,0.09884721153646386
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,sender,gdelt_lev_l1,0.0038723734324547067,0.002191315157202618,1.767145825522463,0.07720380967645922
+full_gdelt,"GDELT, 1981-2021 (full period)",levels,no_controls,jackknife,sender,gdelt_lev_l2,0.0023596872626095626,0.002058758839270216,1.1461698269846987,0.2517248898909291
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,gdelt_inc_l1,0.2818527970970725,0.017584628726122133,16.02836212733781,8.098936399735025e-58
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,gdelt_inc_l2,0.1080698144419974,0.016888595419771415,6.398981783617154,1.5641650048884085e-10
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,new_sanction_l1,0.013557672520577435,0.022529573148440077,0.6017722764319728,0.547325731662757
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,new_sanction_l2,-0.045986432546412194,0.02287901322049196,-2.0099832148889925,0.04443296539905462
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,ctrl_stock,0.008975180545807863,0.005482869132117247,1.6369496206344865,0.10164099660514064
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,ctrl_gdp_growth,-0.09244717277882478,0.19193736613304407,-0.481652815401998,0.6300526003627012
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,ctrl_democracy,-0.2692347077631392,0.11714046590482853,-2.2983919833636355,0.021539489372905223
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,violence,ex_yugo_1991_2016,-0.04108365418415581,0.10571101235823697,-0.3886411951569451,0.6975415884336201
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,new_sanction_l1,0.12866529608184327,0.01771584779326423,7.262723047934704,3.793742011012686e-13
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,new_sanction_l2,-0.012937432698713319,0.016381763241800684,-0.7897460430694905,0.42967609597146433
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,gdelt_inc_l1,-0.007221092560600742,0.009549373381507013,-0.7561849633594662,0.44953830684088786
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,gdelt_inc_l2,-0.0038520042186491687,0.00850284485226496,-0.4530253445260834,0.6505304915910624
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,ctrl_stock,-0.0011127829630695966,0.004372629842730703,-0.2544882606332542,0.7991183722833624
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,ctrl_gdp_growth,-0.41050879005702356,0.15169136778350686,-2.706210617356286,0.006805586785166473
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,ctrl_democracy,-0.18415653517094477,0.05837113114905156,-3.15492490115873,0.001605394230269561
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,OLS,sender,ex_yugo_1991_2016,0.10390189379536968,0.025836382654799362,4.021534097230476,5.782033613748209e-5
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,gdelt_inc_l1,0.37580306726179513,0.017584628726122133,21.37111184517283,2.4815281185533127e-101
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,gdelt_inc_l2,0.18973731793673498,0.016888595419771415,11.234641675092188,2.756097738032879e-29
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,new_sanction_l1,0.01191166151690169,0.022529573148440077,0.5287122591457726,0.5970050716690014
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,new_sanction_l2,-0.04958225855815944,0.02287901322049196,-2.1671502210484443,0.030223401607514914
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,ctrl_stock,0.012337607301432449,0.005482869132117247,2.2502100641362923,0.024435613735883814
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,ctrl_gdp_growth,-0.09417649797257865,0.19193736613304407,-0.49066265662569786,0.6236650627660318
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,ctrl_democracy,-0.20896531698452903,0.11714046590482853,-1.783886681433418,0.07444208051302327
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,violence,ex_yugo_1991_2016,0.09505071146985014,0.10571101235823697,0.8991561933750019,0.3685694701864619
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,new_sanction_l1,0.1556240003570452,0.01771584779326423,8.78445119720521,1.5712977991410027e-18
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,new_sanction_l2,0.00784331844526729,0.016381763241800684,0.4787835307773104,0.63209263416109
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,gdelt_inc_l1,-0.0051394265976921205,0.009549373381507013,-0.538195166569249,0.5904423166032011
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,gdelt_inc_l2,-5.673192760405994e-4,0.00850284485226496,-0.06672111345057398,0.9468037256608381
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,ctrl_stock,0.01401520119383678,0.004372629842730703,3.2052109823877295,0.001349635119595999
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,ctrl_gdp_growth,-0.22235053782121206,0.15169136778350686,-1.4658087738950947,0.14270039010944452
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,ctrl_democracy,-0.1997021301246518,0.05837113114905156,-3.421248247095116,6.233440590360262e-4
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,with_controls,jackknife,sender,ex_yugo_1991_2016,0.15688555783359887,0.025836382654799362,6.072272575064058,1.2611263144721487e-9
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,violence,gdelt_inc_l1,0.2857276893223331,0.017078894481972955,16.72987028662325,7.941104367846985e-63
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,violence,gdelt_inc_l2,0.09481163143977664,0.016206059100473114,5.85038169069794,4.904462160993512e-9
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,violence,new_sanction_l1,0.04021168458724993,0.021122680093987035,1.9037207593129688,0.056946561323273984
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,violence,new_sanction_l2,-0.029796649267486142,0.021646846989183517,-1.3764891155915184,0.16867025482255293
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,sender,new_sanction_l1,0.13364115385849407,0.0170692205337371,7.829364767673721,4.90341091864247e-15
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,sender,new_sanction_l2,-0.011325646905857585,0.016768041026213914,-0.6754305340827773,0.4994022715939494
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,sender,gdelt_inc_l1,-0.003742392525360898,0.008934131901480475,-0.4188870912842407,0.6752986515908068
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,OLS,sender,gdelt_inc_l2,-0.0019922218219544222,0.008050968750758595,-0.2474511929718653,0.8045590594490591
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,violence,gdelt_inc_l1,0.3787269492495546,0.017078894481972955,22.175144278179534,5.968385763713802e-109
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,violence,gdelt_inc_l2,0.1761140315388547,0.016206059100473114,10.867171990858239,1.652436026021542e-27
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,violence,new_sanction_l1,0.048635541869664144,0.021122680093987035,2.302527030341626,0.021305468876650392
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,violence,new_sanction_l2,-0.025151944463651855,0.021646846989183517,-1.161921848305195,0.24526721147431568
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,sender,new_sanction_l1,0.18021809316080056,0.0170692205337371,10.558073979101845,4.661275587782467e-26
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,sender,new_sanction_l2,0.027553593706125187,0.016768041026213914,1.643220795026082,0.10033725887981669
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,sender,gdelt_inc_l1,-7.72468377940325e-5,0.008934131901480475,-0.008646261175216354,0.9931013676541994
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",incidence,no_controls,jackknife,sender,gdelt_inc_l2,0.002826109691373202,0.008050968750758595,0.351027283655388,0.7255678798156919
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,gdelt_lev_l1,0.4984771401180669,0.044477341933421066,11.207439978410722,3.748794324205087e-29
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,gdelt_lev_l2,0.1266713812873356,0.027035380193315747,4.685393006555682,2.794232389395959e-6
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,n_new_cases_l1,0.10859147188427701,0.06443922194921177,1.6851766455197759,0.09195449553475306
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,n_new_cases_l2,-0.0819972789349234,0.05254135412684274,-1.5606236325194363,0.11861257940004409
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,ctrl_stock,0.015287345808184808,0.033169196289102885,0.4608898471624161,0.6448776362754484
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,ctrl_gdp_growth,-1.8628247879567583,1.2447200873089246,-1.4965812851820939,0.134502242766217
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,ctrl_democracy,-0.4011416900628158,0.6817134341244504,-0.5884315461349486,0.5562426686401483
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,violence,ex_yugo_1991_2016,-0.07791496779133254,0.36394202795873587,-0.21408620551008917,0.8304798328309833
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,n_new_cases_l1,0.0881390606887638,0.02051591032539495,4.296132089233386,1.7380404408806515e-5
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,n_new_cases_l2,-0.0061682570782771486,0.014631210610764663,-0.4215821398769941,0.6733300448251329
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,gdelt_lev_l1,0.003222079306866407,0.004226823294029136,0.7622933543065206,0.44588493939658114
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,gdelt_lev_l2,0.0011482693071786947,0.0037678473275378804,0.3047547332362422,0.7605529600654573
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,ctrl_stock,-0.022820595718381978,0.013708246323420773,-1.6647348741751598,0.09596566206848171
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,ctrl_gdp_growth,-1.0570289283582543,0.3338804736429736,-3.1658902265981594,0.00154609128143564
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,ctrl_democracy,-0.4819150291423695,0.14447020068627872,-3.3357400131869555,8.507268272938034e-4
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,OLS,sender,ex_yugo_1991_2016,0.1160271203243904,0.03719285807233258,3.1196075359075968,0.0018109214584199093
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,gdelt_lev_l1,0.5856159609440632,0.044477341933421066,13.166613279648821,1.3658854161890768e-39
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,gdelt_lev_l2,0.1860021572160998,0.027035380193315747,6.879953449372506,5.987212209108664e-12
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,n_new_cases_l1,0.11990430114840277,0.06443922194921177,1.8607347749000787,0.06278164044515566
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,n_new_cases_l2,-0.08300951597460397,0.05254135412684274,-1.5798891626242921,0.11413225152127836
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,ctrl_stock,0.042872536362688986,0.033169196289102885,1.2925407052076794,0.19616995882027322
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,ctrl_gdp_growth,-0.7719919350566675,1.2447200873089246,-0.6202132856437693,0.5351173757970331
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,ctrl_democracy,0.12798731507064431,0.6817134341244504,0.18774357180597903,0.8510776721884477
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,violence,ex_yugo_1991_2016,1.2781612991477156,0.36394202795873587,3.5119914737976754,4.4476226747088325e-4
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,n_new_cases_l1,0.11519347426123451,0.02051591032539495,5.614836116662395,1.967486287440498e-8
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,n_new_cases_l2,0.018255249434482368,0.014631210610764663,1.2476923420848975,0.21214374679201353
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,gdelt_lev_l1,0.005994874183851582,0.004226823294029136,1.4182930694831783,0.15610521925630882
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,gdelt_lev_l2,0.003967475485388623,0.0037678473275378804,1.052982018775477,0.2923492332439949
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,ctrl_stock,0.022061855769201916,0.013708246323420773,1.6093857119789903,0.10753202755505638
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,ctrl_gdp_growth,-0.5512801226619266,0.3338804736429736,-1.651130168371043,0.09871199834075858
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,ctrl_democracy,-0.47117495234236495,0.14447020068627872,-3.2613988912878664,0.0011086396212802677
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,with_controls,jackknife,sender,ex_yugo_1991_2016,0.2099217305835721,0.03719285807233258,5.644140877136057,1.6600810398206974e-8
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,violence,gdelt_lev_l1,0.492993843747141,0.0418309407366828,11.785387444438225,4.642802386214425e-32
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,violence,gdelt_lev_l2,0.120947597663719,0.02518680212929721,4.802022783314485,1.570708163847243e-6
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,violence,n_new_cases_l1,0.15007357787803727,0.0655870213582843,2.2881596811391325,0.02212822373641294
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,violence,n_new_cases_l2,-0.05935696204812731,0.04993487928600984,-1.1886874044122748,0.2345626989052035
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,sender,n_new_cases_l1,0.08034194116467128,0.02108576616641075,3.8102452872997596,1.3882898163141335e-4
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,sender,n_new_cases_l2,-0.015258224100194553,0.017217934697899107,-0.886182017060172,0.3755194524072252
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,sender,gdelt_lev_l1,0.004799593221887922,0.0037602735368182033,1.2763947023782611,0.2018160279921929
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,OLS,sender,gdelt_lev_l2,6.875739854164137e-4,0.003601293864578762,0.19092415428221052,0.8485850158766175
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,violence,gdelt_lev_l1,0.5813733128666688,0.0418309407366828,13.898164914011728,6.498622373771304e-44
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,violence,gdelt_lev_l2,0.17923766206021266,0.02518680212929721,7.116332638819756,1.108366151212722e-12
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,violence,n_new_cases_l1,0.1803398321933731,0.0655870213582843,2.7496268081489017,0.005966317240809487
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,violence,n_new_cases_l2,-0.04155845510277455,0.04993487928600984,-0.8322530402995867,0.40526613092835767
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,sender,n_new_cases_l1,0.13663713869324484,0.02108576616641075,6.480065159354057,9.168301557632523e-11
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,sender,n_new_cases_l2,0.03462444125464677,0.017217934697899107,2.0109520602881346,0.044330520635846964
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,sender,gdelt_lev_l1,0.008376638229226357,0.0037602735368182033,2.2276672553758794,0.02590271212315548
+ucdp_years_thick,"GDELT, 1991-2019, state-years with ≥ 100 events",levels,no_controls,jackknife,sender,gdelt_lev_l2,0.0054521146602464,0.003601293864578762,1.5139321769522205,0.13004304215096263

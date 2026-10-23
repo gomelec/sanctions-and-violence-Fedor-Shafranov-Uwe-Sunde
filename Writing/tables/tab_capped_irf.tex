@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Cumulative impulse responses after ten years, levels VAR with capped deaths}
+\label{tab:cappedirf}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \makecell{No same-year\\effect} & \makecell{Cholesky,\\sanctions first} & \makecell{Cholesky,\\violence first} \\
+\midrule
+\multicolumn{4}{l}{\textit{One new sanction case $\rightarrow$ deaths per 100,000}} \\
+\quad with controls & \makecell{$-$0.827\\{\scriptsize[$-$1.985, 0.206]}} & \makecell{1.079$^{\ast}$\\{\scriptsize[0.032, 2.330]}} & \makecell{$-$0.827\\{\scriptsize[$-$1.985, 0.206]}} \\
+\quad FE only & \makecell{$-$0.465\\{\scriptsize[$-$1.587, 0.609]}} & \makecell{1.600$^{\ast}$\\{\scriptsize[0.358, 3.241]}} & \makecell{$-$0.465\\{\scriptsize[$-$1.587, 0.609]}} \\
+\midrule
+\multicolumn{4}{l}{\textit{+1 death per 100,000 $\rightarrow$ new sanction cases}} \\
+\quad with controls & \makecell{0.007\\{\scriptsize[$-$0.002, 0.016]}} & \makecell{0.007\\{\scriptsize[$-$0.002, 0.016]}} & \makecell{0.031$^{\ast}$\\{\scriptsize[0.017, 0.047]}} \\
+\quad FE only & \makecell{0.012$^{\ast}$\\{\scriptsize[0.003, 0.022]}} & \makecell{0.012$^{\ast}$\\{\scriptsize[0.003, 0.022]}} & \makecell{0.036$^{\ast}$\\{\scriptsize[0.023, 0.053]}} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Levels VAR(2) with deaths per 100,000 capped at the 99th percentile (45.6) instead of log deaths; state and year fixed effects. Sum of the responses over years 0--10 to one new sanction case or to one additional death per 100,000; 95\% country-cluster bootstrap intervals in brackets (199 draws); $^{\ast}$ interval excludes zero. Identifications as in Table~\ref{tab:irf}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Granger tests for different lag structures: panel version of Jaeger and Paserman (2008), Table 2}
+\label{tab:laggrid}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Violence $\rightarrow$ sanctions} & \multicolumn{2}{c}{Sanctions $\rightarrow$ violence} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Lags (own, other) & Incidence & Levels & Incidence & Levels \\
+\midrule
+\multicolumn{5}{l}{\textit{A. With lagged controls}} \\
+\quad (1, 1) & 0.011$^{**}$$^{\dagger}$ & 0.047$^{**}$$^{\dagger}$ & 0.861 & 0.361 \\
+\quad (2, 1) & 0.010$^{**}$ & 0.048$^{**}$ & 0.977 & 0.608 \\
+\quad (3, 1) & 0.012$^{**}$ & 0.048$^{**}$ & 0.985$^{\dagger}$ & 0.758 \\
+\quad (1, 2) & 0.030$^{**}$ & 0.139 & 0.104 & 0.028$^{**}$ \\
+\quad (2, 2) & 0.029$^{**}$ & 0.141 & 0.029$^{**}$ & 0.018$^{**}$ \\
+\quad (3, 2) & 0.030$^{**}$ & 0.142 & 0.031$^{**}$ & 0.026$^{**}$$^{\dagger}$ \\
+\quad (1, 3) & 0.067$^{*}$ & 0.242 & 0.210 & 0.051$^{*}$ \\
+\quad (2, 3) & 0.065$^{*}$ & 0.243 & 0.066$^{*}$ & 0.029$^{**}$ \\
+\quad (3, 3) & 0.070$^{*}$ & 0.249 & 0.064$^{*}$ & 0.041$^{**}$ \\
+\midrule
+\multicolumn{5}{l}{\textit{B. State and year FE only}} \\
+\quad (1, 1) & 0.002$^{***}$$^{\dagger}$ & 0.005$^{***}$$^{\dagger}$ & 0.075$^{*}$ & 0.631 \\
+\quad (2, 1) & 0.002$^{***}$ & 0.005$^{***}$ & 0.124 & 0.793 \\
+\quad (3, 1) & 0.002$^{***}$ & 0.004$^{***}$ & 0.139$^{\dagger}$ & 0.853 \\
+\quad (1, 2) & 0.006$^{***}$ & 0.015$^{**}$ & 0.176 & 0.081$^{*}$ \\
+\quad (2, 2) & 0.006$^{***}$ & 0.014$^{**}$ & 0.102 & 0.031$^{**}$ \\
+\quad (3, 2) & 0.005$^{***}$ & 0.014$^{**}$ & 0.101 & 0.040$^{**}$$^{\dagger}$ \\
+\quad (1, 3) & 0.016$^{**}$ & 0.027$^{**}$ & 0.192 & 0.167 \\
+\quad (2, 3) & 0.015$^{**}$ & 0.025$^{**}$ & 0.149 & 0.069$^{*}$ \\
+\quad (3, 3) & 0.013$^{**}$ & 0.027$^{**}$ & 0.185 & 0.086$^{*}$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} $p$-values of the Granger test (FE-OLS, clustered by state) for every combination of own lags and lags of the other variable; common sample with three lags of both variables (1992--2019), so that BIC is comparable. $^{\dagger}$ lowest BIC in the column. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

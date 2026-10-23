@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\scriptsize\setlength{\tabcolsep}{3pt}
+\caption{Robustness: logit and PPML versions of the reaction functions}
+\label{tab:nonlinear}
+\begin{threeparttable}
+\begin{tabular}{llccccccc}
+\toprule
+ & & \multicolumn{2}{c}{Linear (Table~\ref{tab:granger})} & \multicolumn{4}{c}{Nonlinear} & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-8}
+Model & Controls & $\chi^2(2)$ & Sum & $\chi^2(2)$ & Lag $t-1$ & Lag $t-2$ & \makecell{Sum, comparable\\scale} & \makecell{States\\(dropped)} \\
+\midrule
+\multicolumn{9}{l}{\textit{Sanctions $\rightarrow$ violence}} \\
+\quad Logit & with controls & 7.27$^{**}$ & $-$0.035 & 6.44$^{**}$ & 0.022 & $-$0.476 & APE $-$0.046 & 89 (85) \\
+\quad Logit & FE only & 5.01$^{*}$ & 0.002 & 5.69$^{*}$ & 0.322 & $-$0.259 & APE 0.007 & 89 (108) \\
+\quad PPML & with controls & 8.08$^{**}$ & $-$0.050 & 3.94 & $-$0.008 & $-$0.401 & $-$0.410 ($-$34\%) & 113 (61) \\
+\quad PPML & FE only & 7.14$^{**}$ & $-$0.035 & 2.75 & 0.091 & $-$0.383 & $-$0.291 ($-$25\%) & 113 (84) \\
+\quad PPML, winsorised & with controls & 8.08$^{**}$ & $-$0.050 & 12.52$^{***}$ & $-$0.004 & $-$0.166 & $-$0.171 ($-$16\%) & 113 (61) \\
+\quad PPML, winsorised & FE only & 7.14$^{**}$ & $-$0.035 & 11.99$^{***}$ & 0.023 & $-$0.141 & $-$0.117 ($-$11\%) & 113 (84) \\
+\midrule
+\multicolumn{9}{l}{\textit{Violence $\rightarrow$ sanctions}} \\
+\quad Logit & with controls & 6.11$^{**}$ & 0.055 & 5.48$^{*}$ & 0.293 & 0.221 & APE 0.046 & 155 (19) \\
+\quad Logit & FE only & 9.86$^{***}$ & 0.070 & 10.21$^{***}$ & 0.402 & 0.273 & APE 0.058 & 165 (32) \\
+\quad PPML & with controls & 2.79 & 0.030 & 1.54 & 0.011 & 0.060 & 0.071 (+7\%) & 155 (19) \\
+\quad PPML & FE only & 7.30$^{**}$ & 0.045 & 7.43$^{**}$ & 0.127 & 0.011 & 0.137 (+15\%) & 165 (32) \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Same samples, two lags, controls, state and year fixed effects and clustering as Table~\ref{tab:granger}; fixed effects as dummies. Logit: incidence equations (conflict 0/1, new sanction 0/1); APE = sum of the two lag coefficients $\times$ mean $\hat p(1-\hat p)$, an approximate average partial effect comparable to the linear-probability sum. PPML \citep{santossilva2006}: levels equations with untransformed outcomes (deaths per 100,000, also winsorised at the 99th percentile; number of new cases), right-hand side as in the levels VAR; sum in log points and implied proportional change. States whose outcome never varies carry no information with fixed effects and are dropped. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

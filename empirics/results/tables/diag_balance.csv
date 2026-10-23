@@ -1,0 +1,198 @@
+gwcode,gw_name,complete_years,balanced
+2,United States of America,31,TRUE
+20,Canada,31,TRUE
+31,Bahamas,31,TRUE
+40,Cuba,31,TRUE
+41,Haiti,31,TRUE
+42,Dominican Republic,31,TRUE
+51,Jamaica,31,TRUE
+52,Trinidad and Tobago,31,TRUE
+53,Barbados,31,TRUE
+54,Dominica,31,TRUE
+55,Grenada,31,TRUE
+56,Saint Lucia,31,TRUE
+57,Saint Vincent and the Grenadines,31,TRUE
+58,Antigua & Barbuda,31,TRUE
+60,Saint Kitts and Nevis,31,TRUE
+70,Mexico,31,TRUE
+80,Belize,31,TRUE
+90,Guatemala,31,TRUE
+91,Honduras,31,TRUE
+92,El Salvador,31,TRUE
+93,Nicaragua,31,TRUE
+94,Costa Rica,31,TRUE
+95,Panama,31,TRUE
+100,Colombia,31,TRUE
+101,Venezuela,31,TRUE
+110,Guyana,31,TRUE
+115,Surinam,31,TRUE
+130,Ecuador,31,TRUE
+135,Peru,31,TRUE
+140,Brazil,31,TRUE
+145,Bolivia,31,TRUE
+150,Paraguay,31,TRUE
+155,Chile,31,TRUE
+160,Argentina,31,TRUE
+165,Uruguay,31,TRUE
+200,United Kingdom,31,TRUE
+205,Ireland,31,TRUE
+210,Netherlands,31,TRUE
+211,Belgium,31,TRUE
+212,Luxembourg,31,TRUE
+220,France,31,TRUE
+221,Monaco,31,TRUE
+223,Liechtenstein,31,TRUE
+225,Switzerland,31,TRUE
+230,Spain,31,TRUE
+232,Andorra,31,TRUE
+235,Portugal,31,TRUE
+260,German Federal Republic,31,TRUE
+290,Poland,31,TRUE
+305,Austria,31,TRUE
+310,Hungary,31,TRUE
+316,Czech Republic,27,FALSE
+317,Slovakia,27,FALSE
+325,Italy/Sardinia,31,TRUE
+331,San Marino,31,TRUE
+338,Malta,31,TRUE
+339,Albania,31,TRUE
+340,Serbia,14,FALSE
+341,Montenegro,14,FALSE
+343,Macedonia (Former Yugoslav Republic of),29,FALSE
+344,Croatia,28,FALSE
+345,Yugoslavia,17,FALSE
+346,Bosnia-Herzegovina,28,FALSE
+347,Kosovo,12,FALSE
+349,Slovenia,28,FALSE
+350,Greece,31,TRUE
+352,Cyprus,31,TRUE
+355,Bulgaria,31,TRUE
+359,Moldova,29,FALSE
+360,Rumania,31,TRUE
+365,Russia (Soviet Union),31,TRUE
+366,Estonia,29,FALSE
+367,Latvia,29,FALSE
+368,Lithuania,29,FALSE
+369,Ukraine,29,FALSE
+370,Belarus (Byelorussia),29,FALSE
+371,Armenia,29,FALSE
+372,Georgia,29,FALSE
+373,Azerbaijan,29,FALSE
+375,Finland,31,TRUE
+380,Sweden,31,TRUE
+385,Norway,31,TRUE
+390,Denmark,31,TRUE
+395,Iceland,31,TRUE
+396,Abkhazia,12,FALSE
+397,South Ossetia,12,FALSE
+402,Cape Verde,31,TRUE
+403,Sao Tome and Principe,31,TRUE
+404,Guinea-Bissau,31,TRUE
+411,Equatorial Guinea,31,TRUE
+420,Gambia,31,TRUE
+432,Mali,31,TRUE
+433,Senegal,31,TRUE
+434,Benin,31,TRUE
+435,Mauritania,31,TRUE
+436,Niger,31,TRUE
+437,Ivory Coast,31,TRUE
+438,Guinea,31,TRUE
+439,Burkina Faso (Upper Volta),31,TRUE
+450,Liberia,31,TRUE
+451,Sierra Leone,31,TRUE
+452,Ghana,31,TRUE
+461,Togo,31,TRUE
+471,Cameroon,31,TRUE
+475,Nigeria,31,TRUE
+481,Gabon,31,TRUE
+482,Central African Republic,31,TRUE
+483,Chad,31,TRUE
+484,Congo,31,TRUE
+490,"Congo, Democratic Republic of (Zaire)",31,TRUE
+500,Uganda,31,TRUE
+501,Kenya,31,TRUE
+510,Tanzania/Tanganyika,31,TRUE
+516,Burundi,31,TRUE
+517,Rwanda,31,TRUE
+520,Somalia,31,TRUE
+522,Djibouti,31,TRUE
+530,Ethiopia,31,TRUE
+531,Eritrea,27,FALSE
+540,Angola,31,TRUE
+541,Mozambique,31,TRUE
+551,Zambia,31,TRUE
+552,Zimbabwe (Rhodesia),31,TRUE
+553,Malawi,31,TRUE
+560,South Africa,31,TRUE
+565,Namibia,30,FALSE
+570,Lesotho,31,TRUE
+571,Botswana,31,TRUE
+572,Swaziland,31,TRUE
+580,Madagascar,31,TRUE
+581,Comoros,31,TRUE
+590,Mauritius,31,TRUE
+591,Seychelles,31,TRUE
+600,Morocco,31,TRUE
+615,Algeria,31,TRUE
+616,Tunisia,31,TRUE
+620,Libya,31,TRUE
+625,Sudan,31,TRUE
+630,Iran (Persia),31,TRUE
+640,Turkey (Ottoman Empire),31,TRUE
+645,Iraq,31,TRUE
+651,Egypt,31,TRUE
+652,Syria,31,TRUE
+660,Lebanon,31,TRUE
+663,Jordan,31,TRUE
+666,Israel,31,TRUE
+670,Saudi Arabia,31,TRUE
+678,Yemen (Arab Republic of Yemen),31,TRUE
+690,Kuwait,31,TRUE
+692,Bahrain,31,TRUE
+694,Qatar,31,TRUE
+696,United Arab Emirates,31,TRUE
+698,Oman,31,TRUE
+700,Afghanistan,31,TRUE
+701,Turkmenistan,29,FALSE
+702,Tajikistan,29,FALSE
+703,Kyrgyz Republic,29,FALSE
+704,Uzbekistan,29,FALSE
+705,Kazakhstan,29,FALSE
+710,China,31,TRUE
+712,Mongolia,31,TRUE
+713,Taiwan,31,TRUE
+731,"Korea, People's Republic of",31,TRUE
+732,"Korea, Republic of",31,TRUE
+740,Japan,31,TRUE
+750,India,31,TRUE
+760,Bhutan,31,TRUE
+770,Pakistan,31,TRUE
+771,Bangladesh,31,TRUE
+775,Myanmar (Burma),31,TRUE
+780,Sri Lanka (Ceylon),31,TRUE
+781,Maldives,31,TRUE
+790,Nepal,31,TRUE
+800,Thailand,31,TRUE
+811,Cambodia (Kampuchea),31,TRUE
+812,Laos,31,TRUE
+816,"Vietnam, Democratic Republic of",31,TRUE
+820,Malaysia,31,TRUE
+830,Singapore,31,TRUE
+835,Brunei,31,TRUE
+840,Philippines,31,TRUE
+850,Indonesia,31,TRUE
+860,East Timor,18,FALSE
+900,Australia,31,TRUE
+910,Papua New Guinea,31,TRUE
+920,New Zealand,31,TRUE
+935,Vanuatu,31,TRUE
+940,Solomon Islands,31,TRUE
+950,Fiji,31,TRUE
+970,Kiribati,31,TRUE
+971,Nauru,31,TRUE
+972,Tonga,31,TRUE
+973,Tuvalu,31,TRUE
+983,Marshall Islands,31,TRUE
+986,Palau,26,FALSE
+987,Federated States of Micronesia,31,TRUE
+990,Samoa/Western Samoa,31,TRUE

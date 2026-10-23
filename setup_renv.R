@@ -19,7 +19,7 @@ PKGS <- c(
   # data pipeline (data/scripts/cleaning/clean_base.R)
   "tidyverse", "here", "peacesciencer", "countrycode", "states",
   # analysis (empirics/scripts)
-  "data.table", "plm", "panelvar", "fixest", "modelsummary",
+  "data.table", "plm", "panelvar", "fixest", "modelsummary", "sandwich", "urca",
   # reports
   "rmarkdown", "knitr"
 )

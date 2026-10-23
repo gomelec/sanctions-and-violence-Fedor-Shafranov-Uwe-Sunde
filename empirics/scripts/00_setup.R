@@ -29,6 +29,12 @@ MANUAL_EXCLUDE <- tibble(
 )
 set.seed(20261020)            # reproducible bootstrap / jitter
 
+# --- main specification (empirics/ANALYSIS_PLAN.md, sections 2-3) -------------
+VAR_LAGS     <- 2             # lags p in both reaction functions (decision D3)
+MAX_LAGS     <- 3             # longest lag used anywhere (lag grid R1); 01 keeps these pre-sample years
+CONFLICT_MIN_DEATHS <- 25     # violence incidence: >= 25 organized-violence deaths (D1)
+CONTROLS     <- c("ctrl_stock", "ctrl_gdp_growth", "ctrl_democracy", "ex_yugo_1991_2016")   # lagged, built in 01
+
 # --- analysis packages: loaded on demand by the estimation scripts -------------
 ANALYSIS_PKGS <- c("data.table", "plm", "panelvar", "fixest", "modelsummary")
 use_analysis_packages <- function(pkgs = ANALYSIS_PKGS) {

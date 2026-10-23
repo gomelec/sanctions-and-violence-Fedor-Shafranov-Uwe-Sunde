@@ -1,0 +1,5 @@
+variable,almost constant,constant,testable
+n_new_cases,64,31,102
+new_sanction,64,31,102
+viol_inc,34,100,63
+viol_lev,22,78,97

@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Robustness: raw instead of log deaths in the levels VAR}
+\label{tab:rawdeaths}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \makecell{log(1+deaths)\\(Table~\ref{tab:granger})} & \makecell{Raw\\deaths} & \makecell{Capped at p99\\(45.6)} & \makecell{Capped at p95\\(6.2)} \\
+\midrule
+\multicolumn{5}{l}{\textit{Sanctions $\rightarrow$ violence}} \\
+\quad with controls & \makecell{8.08$^{**}$\\{\scriptsize [$-$0.050]}} & \makecell{0.55\\{\scriptsize [$-$2.534]}} & \makecell{6.63$^{**}$\\{\scriptsize [$-$0.338]}} & \makecell{7.41$^{**}$\\{\scriptsize [$-$0.096]}} \\
+\quad FE only & \makecell{7.14$^{**}$\\{\scriptsize [$-$0.035]}} & \makecell{4.18\\{\scriptsize [0.563]}} & \makecell{5.68$^{*}$\\{\scriptsize [$-$0.186]}} & \makecell{5.82$^{*}$\\{\scriptsize [$-$0.067]}} \\
+\midrule
+\multicolumn{5}{l}{\textit{Violence $\rightarrow$ sanctions}} \\
+\quad with controls & \makecell{2.79\\{\scriptsize [0.030]}} & \makecell{289.58$^{***}$\\{\scriptsize [0.0001]}} & \makecell{4.55\\{\scriptsize [0.0029]}} & \makecell{1.99\\{\scriptsize [0.0168]}} \\
+\quad FE only & \makecell{7.30$^{**}$\\{\scriptsize [0.045]}} & \makecell{323.10$^{***}$\\{\scriptsize [0.0001]}} & \makecell{13.94$^{***}$\\{\scriptsize [0.0048]}} & \makecell{4.32\\{\scriptsize [0.0236]}} \\
+\midrule
+Largest root (OLS) & 0.67--0.69 & 0.17--0.18 & 0.57--0.58 & 0.69--0.70 \\
+Mean of violence variable & 0.29 & 5.02 & 1.42 & 0.56 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} FE-OLS levels VAR(2) as in Table~\ref{tab:granger}, with deaths per 100,000 instead of $\log(1+$deaths per 100,000$)$ as the violence variable (outcome and lags), as in the raw-count specification of \citet{jaeger2008}. Caps at the 99th and 95th percentile of all state-years 1989--2019 (deaths per 100,000 in parentheses). Granger $\chi^2(2)$; sum of the two cross-lag coefficients in brackets (sanctions$\rightarrow$violence: deaths per 100,000 per new case; violence$\rightarrow$sanctions: new cases per death per 100,000). Jackknife versions in \texttt{robustness\_raw\_deaths.csv}. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

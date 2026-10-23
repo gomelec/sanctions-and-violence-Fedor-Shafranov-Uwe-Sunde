@@ -8,7 +8,8 @@ Usage (from the project folder):
     uv run python master.py --stage cleaning    # one stage only
     uv run python master.py --only clean_gsdb   # one step only
     uv run python master.py --skip-r            # skip R steps (reuse existing data/clean/base/base.csv)
-    uv run python master.py --stage empirics    # render the estimation notebooks
+    uv run python master.py --stage empirics    # empirics only: sample, descriptives, reaction functions
+    uv run python master.py --only reaction_functions   # e.g. re-run Table 1 only
     uv run python master.py --list              # show the steps without running anything
 
 Each step runs in a fresh process with the project folder as working directory.
@@ -43,8 +44,20 @@ STEPS = [
     ("cleaning",   "clean_population",           "data/scripts/cleaning/clean_population.py"),
     ("cleaning",   "clean_gdp",                  "data/scripts/cleaning/clean_gdp.py"),
     ("processing", "process_sanctions_violence", "data/scripts/processing/process_sanctions_violence.py"),
-    # empirics: for now only the descriptive figures (estimation scripts follow later)
-    ("empirics",   "descriptives",               "empirics/scripts/02_descriptives.R"),
+    # empirics (all scripts source 00_setup.R; estimation scripts also source functions.R)
+    ("empirics",   "prepare_sample",             "empirics/scripts/01_prepare_sample.R"),       # variables, sample, exclusion log
+    ("empirics",   "descriptives",               "empirics/scripts/02_descriptives.R"),         # figures 1-9, flow summary table
+    ("empirics",   "data_diagnostics",           "empirics/scripts/03_data_diagnostics.R"),     # unit roots, persistence, balance, lag criteria
+    ("empirics",   "reaction_functions",         "empirics/scripts/04_reaction_functions.R"),   # JP Table 1, Granger tests (OLS + jackknife)
+    ("empirics",   "robustness",                 "empirics/scripts/09_robustness.R"),          # robustness: R3 logit / PPML, R10 raw / capped deaths incl. IRF bootstrap (~1 min; needs 04)
+    ("empirics",   "pvar_gmm",                   "empirics/scripts/10_pvar_gmm.R"),            # GMM panel VAR, robustness R8 (needs 04)
+    # 06 runs after 10 on purpose: its stability table also covers the GMM estimates
+    ("empirics",   "model_diagnostics",          "empirics/scripts/06_model_diagnostics.R"),   # residual autocorrelation, CD test, stability
+    ("empirics",   "empirical_response",         "empirics/scripts/07_empirical_response.R"),  # JP Fig. 2 response functions
+    ("empirics",   "irf",                        "empirics/scripts/08_irf.R"),                 # impulse responses, bootstrap (~10 min)
+    ("empirics",   "gdelt",                      "empirics/scripts/11_gdelt.R"),               # GDELT robustness R12: all of the above with GDELT (~17 min; needs 04)
+    ("empirics",   "lpdid",                      "empirics/scripts/12_lpdid.R"),               # EXTENSION: LP-DiD event study, UCDP + GDELT (needs 01, 11)
+    ("empirics",   "writing_tables",             "Writing/scripts/make_tables.py"),             # LaTeX tables for Writing/main.tex from the CSV results
 ]
 DATA_STAGES = ["collection", "cleaning", "processing"]
 CHECK_SCRIPT = "data/scripts/checks/check_replication.py"

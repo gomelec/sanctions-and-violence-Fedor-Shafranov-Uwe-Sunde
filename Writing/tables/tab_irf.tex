@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Cumulative impulse responses after ten years}
+\label{tab:irf}
+\begin{threeparttable}
+\begin{tabular}{llccc}
+\toprule
+ & & \makecell{No same-year\\effect} & \makecell{Cholesky,\\sanctions first} & \makecell{Cholesky,\\violence first} \\
+\midrule
+\multicolumn{5}{l}{\textit{Shock: new sanction; response: violence}} \\
+\quad Incidence & with controls & \makecell{$-$0.077$^{\ast}$\\{\scriptsize[$-$0.154, $-$0.006]}} & \makecell{0.031\\{\scriptsize[$-$0.072, 0.124]}} & \makecell{$-$0.077$^{\ast}$\\{\scriptsize[$-$0.154, $-$0.006]}} \\
+\quad Incidence & FE only & \makecell{0.004\\{\scriptsize[$-$0.069, 0.083]}} & \makecell{0.118$^{\ast}$\\{\scriptsize[0.016, 0.223]}} & \makecell{0.004\\{\scriptsize[$-$0.069, 0.083]}} \\
+\quad Levels & with controls & \makecell{$-$0.150\\{\scriptsize[$-$0.300, 0.006]}} & \makecell{0.177$^{\ast}$\\{\scriptsize[0.023, 0.355]}} & \makecell{$-$0.150\\{\scriptsize[$-$0.300, 0.006]}} \\
+\quad Levels & FE only & \makecell{$-$0.107\\{\scriptsize[$-$0.256, 0.061]}} & \makecell{0.239$^{\ast}$\\{\scriptsize[0.061, 0.477]}} & \makecell{$-$0.107\\{\scriptsize[$-$0.256, 0.061]}} \\
+\midrule
+\multicolumn{5}{l}{\textit{Shock: violence; response: new sanctions}} \\
+\quad Incidence & with controls & \makecell{0.120$^{\ast}$\\{\scriptsize[0.038, 0.210]}} & \makecell{0.120$^{\ast}$\\{\scriptsize[0.038, 0.210]}} & \makecell{0.214$^{\ast}$\\{\scriptsize[0.106, 0.306]}} \\
+\quad Incidence & FE only & \makecell{0.159$^{\ast}$\\{\scriptsize[0.066, 0.260]}} & \makecell{0.159$^{\ast}$\\{\scriptsize[0.066, 0.260]}} & \makecell{0.257$^{\ast}$\\{\scriptsize[0.145, 0.369]}} \\
+\quad Levels & with controls & \makecell{0.091\\{\scriptsize[$-$0.016, 0.217]}} & \makecell{0.091\\{\scriptsize[$-$0.016, 0.217]}} & \makecell{0.339$^{\ast}$\\{\scriptsize[0.189, 0.495]}} \\
+\quad Levels & FE only & \makecell{0.137$^{\ast}$\\{\scriptsize[0.021, 0.260]}} & \makecell{0.137$^{\ast}$\\{\scriptsize[0.021, 0.260]}} & \makecell{0.385$^{\ast}$\\{\scriptsize[0.240, 0.541]}} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Sum of the responses over years 0--10 to a one-unit shock (one new sanction / one conflict year in the incidence VAR; one new case / one unit of $\log(1+$deaths per 100,000$)$ in the levels VAR). 95\% country-cluster bootstrap intervals in brackets (199 draws); $^{\ast}$ interval excludes zero. No same-year effect: the identification of \citet[fn.~12]{jaeger2008}; Cholesky orderings allow a same-year effect in one direction (rescaled to a unit own shock). For a sanction shock, ``no same-year effect'' coincides with ``violence first''; for a violence shock, with ``sanctions first''.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
