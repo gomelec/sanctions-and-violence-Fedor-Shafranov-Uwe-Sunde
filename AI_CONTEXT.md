@@ -1,6 +1,6 @@
 # AI context: sanctions & violence project (handoff for the next session)
 
-Last updated **23 Oct 2026** at the end of a long session (20–23 Oct). Read this first, then:
+Last updated **23 Oct 2026** (evening: controls revision, see section 8/10). Read this first, then:
 `empirics/notes/README.md` (headline findings + index of result notes), `empirics/ANALYSIS_PLAN.md` (design,
 decisions D1–D8, robustness list R1–R12, change log), `data/README.md` (all data decisions + change log),
 `papers/README.md` (literature notes), `Writing/README.md` (advisor brief).
@@ -113,13 +113,12 @@ from `../empirics/results/figures/`.
 - **Violence → sanctions (robust in UCDP):** Granger p=0.007 (incidence) / 0.026 (levels) without controls;
   weakens with controls mainly via GDP growth (likely bad control, D8); 11/12 IRF versions significant;
   logit/PPML same. **Not found with GDELT** (but GDELT median-split incidence tracks UCDP poorly: 64% vs 46%).
-- **Sanctions → violence:** significant **negative effect at t−2, conditional on controls**: −3.5 pp conflict
-  probability (mean 0.23), Granger p=0.026 (incidence) / 0.018 (levels); jackknife and GMM same; logit APE −0.046
-  (p=0.040); PPML winsorised deaths −11 to −16% (p=0.002); capped raw deaths significant. Without controls the
-  incidence sum ≈ 0. Cumulative IRF (no same-year effect): −0.077 [−0.154, −0.006] (incidence, controls); other
-  versions negative but insignificant; year-by-year responses significant at h=2–4 in several versions. If
-  sanctions may act within the same year (Cholesky, sanctions first) → positive. **Corrected in the session:** it
-  is NOT "weak/fragile" and NOT evidence that sanctions provoke violence.
+- **Sanctions → violence (revised 23 Oct after 09 part 4, master run 16:50):** negative effect at t−2 on **log
+  deaths** in every control version (sum −0.035 FE only p=0.028, −0.050 with controls p=0.018), jackknife, GMM,
+  PPML winsorised (−11 to −16%, p=0.002); weaker without ex-Yugoslav states (FE only −0.024, p=0.08). Cumulative
+  levels IRF negative but insignificant. The **incidence** effect (−3.5 pp, p=0.026) exists only with the sanction
+  stock in t−1 as control, which mechanically contains the tested lags → **not a finding**; same for logit APE −0.046
+  and the incidence IRF −0.077. With a same-year effect (Cholesky, sanctions first) the IRF is positive.
 - **Timing:** violence rises before and peaks in the sanction year, normal after ~2 years (response functions).
   Annual data cannot order within-year events → main identification limit.
 - **GDELT:** incidence estimate same sign/size (−0.032) but insignificant; reported low-level violence *rises* after sanctions.
@@ -139,8 +138,11 @@ from `../empirics/results/figures/`.
 
 ## 10. Next steps (agreed priority, 23 Oct)
 
-1. **Same-sample control check (decides D8):** FE-only model on the 174-state controls sample; controls one at a
-   time on that sample → new part of `09_robustness.R`.
+1. **DONE 23 Oct (master run 16:50):** `ex_yugo_1991_2016` removed from CONTROLS; 09 part 4 (same-sample control
+   check, D8) and part 5 (Yugoslavia R9); notes, ANALYSIS_PLAN, main.tex (new section 7.5, Tables 12–13 via
+   make_tables.py `controls_check()`, `yugoslavia()`) updated. **Open: user/advisor decision D8** — proposal FE only
+   as main specification (would require switching Table 1 / IRF / brief ordering), stock dated t−3 if a stock
+   control is used. Summary box in main.tex now spills onto page 2.
 2. **Leave-one-country-out** Granger tests/coefficients + most influential sanction events.
 3. **Anticipation (JP Table 4 analogue)** — no direct proxy exists; plan agreed in the last exchange:
    (a) text argument on bias direction (expected escalation → biases S→V upward, our negative estimate conservative;
@@ -168,5 +170,6 @@ hand with `fixest::feols` and compare.
   OV-CY v26.1 (deaths, per 100,000; missing before 1989), GDELT 1.0 (1979–2021, own crosswalk/assignments),
   peacesciencer/isard democracy (isard 0.2.0, B11), GDP/population extended to 2023 (`gdp_ext`, `pop_ext`).
 - Yugoslavia: cases attributed per republic (`data/README_yugoslavia.md`), dummies `ex_yugo`, `ex_yugo_1991_2016`.
+  `ex_yugo_1991_2016` is **no longer a control** (removed 23 Oct, see ANALYSIS_PLAN change log); R9 in 09 part 5.
 - Known gaps: GDP 2020–23 missing for 12 states; GDELT ends 2021; UCDP starts 1989; GSDB group cases kept as coded.
 - Data replication check: `master.py --check` against `archive/baseline`; after intentional changes the user runs `--set-baseline`.

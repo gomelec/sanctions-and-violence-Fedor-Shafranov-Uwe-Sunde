@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Robustness: attribution of Yugoslav sanction cases}
+\label{tab:yugoslavia}
+\begin{threeparttable}
+\begin{tabular}{llcccc}
+\toprule
+ & & \multicolumn{2}{c}{Incidence} & \multicolumn{2}{c}{Levels} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+Version & Controls & $\chi^2(2)$ & Sum (SE) & $\chi^2(2)$ & Sum (SE) \\
+\midrule
+\multicolumn{6}{l}{\textit{Sanctions $\rightarrow$ violence}} \\
+\quad Main (Table~\ref{tab:granger}) & FE only & 5.01$^{*}$ & 0.002 (0.017) & 7.14$^{**}$ & $-$0.035 (0.025) \\
+\quad Main (Table~\ref{tab:granger}) & with controls & 7.27$^{**}$ & $-$0.035 (0.020) & 8.08$^{**}$ & $-$0.050 (0.025) \\
+\quad Without ex-Yugoslav states & FE only & 3.96 & 0.010 (0.016) & 5.06$^{*}$ & $-$0.024 (0.022) \\
+\quad Without ex-Yugoslav states & with controls & 5.30$^{*}$ & $-$0.029 (0.019) & 6.25$^{**}$ & $-$0.040 (0.024) \\
+\quad Ex-Yugoslav states one cluster & FE only & 4.91$^{*}$ & 0.002 (0.017) & 5.35$^{*}$ & $-$0.035 (0.025) \\
+\quad Ex-Yugoslav states one cluster & with controls & 6.68$^{**}$ & $-$0.035 (0.020) & 6.35$^{**}$ & $-$0.050 (0.025) \\
+\midrule
+\multicolumn{6}{l}{\textit{Violence $\rightarrow$ sanctions}} \\
+\quad Main (Table~\ref{tab:granger}) & FE only & 9.86$^{***}$ & 0.070 (0.022) & 7.30$^{**}$ & 0.045 (0.020) \\
+\quad Main (Table~\ref{tab:granger}) & with controls & 6.22$^{**}$ & 0.056 (0.022) & 2.82 & 0.031 (0.019) \\
+\quad Without ex-Yugoslav states & FE only & 9.13$^{**}$ & 0.069 (0.023) & 6.30$^{**}$ & 0.046 (0.021) \\
+\quad Without ex-Yugoslav states & with controls & 5.92$^{*}$ & 0.055 (0.023) & 2.68 & 0.033 (0.020) \\
+\quad Ex-Yugoslav states one cluster & FE only & 9.88$^{***}$ & 0.070 (0.022) & 7.35$^{**}$ & 0.045 (0.020) \\
+\quad Ex-Yugoslav states one cluster & with controls & 6.24$^{**}$ & 0.056 (0.022) & 2.83 & 0.031 (0.019) \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} FE-OLS VAR(2) as in Table~\ref{tab:granger}. GSDB cases against Yugoslavia are attributed to its successor states, so one case can appear in several states. Ex-Yugoslav states: Yugoslavia/FRY, Serbia, Montenegro, Macedonia, Croatia, Bosnia-Herzegovina, Kosovo, Slovenia. \emph{One cluster}: standard errors clustered by state, except that the ex-Yugoslav states form a single cluster. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

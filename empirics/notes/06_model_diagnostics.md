@@ -44,7 +44,7 @@ Fixed-effects residuals are demeaned within each state, which mechanically creat
   ρ − ρ₀ ≈ 0.036 explains about 0.1% of the residual variance. Plausible source: sanction episodes in which
   senders follow up a few years later (D3: P(new | new last year) = 0.30).
 - **What would fix it:** a third own lag in the sender equation. The lag grid (script 04, rows (3, ·)) already
-  shows that adding own lags leaves the violence → sanctions test practically unchanged (e.g. 7.07 → 6.99
+  shows that adding own lags leaves the violence → sanctions test practically unchanged (e.g. 7.17 → 7.09
   incidence with controls).
 - **Why it matters for GMM:** instruments are lags 2–5 of the variables. Serial correlation in the errors
   would make them invalid. For the levels specification, Hansen J does not reject (script 10). For incidence
@@ -94,7 +94,7 @@ Largest modulus of the companion-matrix eigenvalues (stable if < 1):
 | Specification | Controls | OLS | Jackknife | GMM |
 |---|---|---|---|---|
 | Incidence | no | 0.600 | 0.745 | 0.574 |
-| Incidence | yes | 0.574 | 0.725 | 0.556 |
+| Incidence | yes | 0.574 | 0.725 | 0.557 |
 | Levels | no | 0.685 | 0.804 | 0.689 |
 | Levels | yes | 0.673 | 0.804 | 0.671 |
 

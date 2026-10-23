@@ -11,7 +11,8 @@ they form a bivariate VAR(2):
 
 - S = new sanction (0/1) or number of new cases.
 - V = conflict (≥ 25 deaths, 0/1) or log(1 + deaths per 100k).
-- Controls: sanction stock, GDP growth, democracy, ex-Yugoslavia dummy, all at t−1.
+- Controls: sanction stock, GDP growth, democracy, all at t−1. (The ex-Yugoslavia dummy was removed on
+  2026-10-23; numbers below are from the master run of 2026-10-23 16:50.)
 - FE-OLS, standard errors clustered by state.
 
 A "reaction function" is one of these equations: how each side reacts to the other's past. It is not an
@@ -25,8 +26,8 @@ impulse response; those come from combining both equations (script 08).
 |---|---|---|---|---|---|
 | Sanctions → violence | incidence | **7.27 (0.026)**, −0.035 | 5.01 (0.082), +0.002 | **7.87 (0.020)** | 4.85 (0.088) |
 | Sanctions → violence | levels | **8.08 (0.018)**, −0.050 | **7.14 (0.028)**, −0.035 | **7.84 (0.020)** | **6.18 (0.045)** |
-| Violence → sanctions | incidence | **6.11 (0.047)**, +0.055 | **9.86 (0.007)**, +0.070 | 3.80 (0.149) | **11.29 (0.004)** |
-| Violence → sanctions | levels | 2.79 (0.248), +0.030 | **7.30 (0.026)**, +0.045 | 3.77 (0.152) | **22.78 (< 0.001)** |
+| Violence → sanctions | incidence | **6.22 (0.045)**, +0.056 | **9.86 (0.007)**, +0.070 | 3.93 (0.140) | **11.29 (0.004)** |
+| Violence → sanctions | levels | 2.82 (0.244), +0.031 | **7.30 (0.026)**, +0.045 | 3.86 (0.145) | **22.78 (< 0.001)** |
 
 ### Sanctions → violence
 
@@ -34,8 +35,10 @@ impulse response; those come from combining both equations (script 08).
   a 3.5 pp lower conflict probability (mean 0.23) and about 4.4% fewer deaths per capita. The t−1 coefficient
   is zero.
 - With controls the sum is negative (−0.035 / −0.050). Without controls the incidence sum is ≈ 0 because the
-  t−1 coefficient turns slightly positive (+0.020). The *sign* is therefore fragile, even though the joint
-  test usually rejects.
+  t−1 coefficient turns slightly positive (+0.020). **The same-sample control check (09, part 4) shows that the
+  incidence result comes from the sanction-stock control in t−1**, which mechanically contains the tested lags;
+  with FE only or the stock dated t−3 the incidence sum is ≈ 0. The levels result (−0.035 to −0.050) holds in
+  every control version.
 - The jackknife does not change this direction: the bias correction mainly affects own persistence.
 
 ### Violence → sanctions
@@ -47,14 +50,13 @@ impulse response; those come from combining both equations (script 08).
   plausibly a *bad control* (a channel of violence rather than a confounder). This is decision D8: the
   proposed main specification is FE only, with controls as robustness.
 - The jackknife without controls makes it stronger (22.78 in levels). With controls it is insignificant
-  (p ≈ 0.15).
+  (p ≈ 0.14).
 
 ### Other coefficients worth noting
 
 - **Own persistence:** violence 0.35 + 0.13 (incidence, OLS) → 0.45 + 0.21 (jackknife). The Nickell bias is
   visible. New sanctions 0.13 at t−1: senders follow up.
-- **GDP growth:** lowers both sanctions and violence. **Democracy:** fewer new sanctions. **Ex-Yugoslavia:**
-  +10 pp new sanctions (ICTY-era cases).
+- **GDP growth:** lowers both sanctions and violence. **Democracy:** fewer new sanctions.
 - **Sample:** with controls 174 states / 4,913 obs (microstates lack V-Dem). Without controls 197 / 5,538.
   Part of the difference between panels A and B is sample, not controls.
 
@@ -63,8 +65,8 @@ impulse response; those come from combining both equations (script 08).
 Granger χ² for every combination of 1–3 own lags and 1–3 lags of the other variable, on a common sample.
 
 - **Violence → sanctions:** significant at 5% in all 9 combinations without controls (OLS: p ≤ 0.027). With
-  controls: incidence significant with 1–2 violence lags (p ≈ 0.01–0.03; with 3 lags p ≈ 0.07); levels only with
-  one violence lag (p ≈ 0.048). BIC prefers
+  controls: incidence significant with 1–2 violence lags (p ≈ 0.01–0.03; with 3 lags p ≈ 0.06–0.07); levels only with
+  one violence lag (p ≈ 0.046–0.048). BIC prefers
   (1, 1). Senders react to *last year's* violence.
 - **Sanctions → violence:** with one sanction lag never significant at 5% (with controls p = 0.36–0.99). With two or more lags,
   significant in most cells. The effect is a *t−2 effect*, which a 1-lag model misses entirely. BIC prefers
@@ -74,10 +76,10 @@ Granger χ² for every combination of 1–3 own lags and 1–3 lags of the other
 
 ## Interpretation so far
 
-- Senders respond predictably to violence. Violence responds to sanctions with a two-year delay: with controls,
-  a significant **reduction** in conflict (−3.5 pp at t−2; sums −0.035 / −0.050, p = 0.026 / 0.018), robust to the
-  jackknife and GMM. Without controls the incidence sum is ≈ 0, so the reduction is conditional on the
-  controls (see decision D8).
+- Senders respond predictably to violence. Violence responds to sanctions with a two-year delay: log deaths are
+  lower at t−2 in every specification (sums −0.035 to −0.050, p ≈ 0.02–0.03), robust to the jackknife and GMM.
+  The conflict-incidence reduction (−3.5 pp at t−2) appears only with the sanction-stock control in t−1, which is
+  mechanical (09 part 4); it should not be reported as a finding (decision D8).
 - Annual data cannot separate within-year ordering. If sanctions are imposed *in response to* escalation
   within the same year, the contemporaneous correlation is positive and the lagged effect may partly be
   reversion. Scripts 07 and 08 deal with this.

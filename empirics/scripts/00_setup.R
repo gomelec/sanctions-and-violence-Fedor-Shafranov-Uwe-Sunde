@@ -33,7 +33,10 @@ set.seed(20261020)            # reproducible bootstrap / jitter
 VAR_LAGS     <- 2             # lags p in both reaction functions (decision D3)
 MAX_LAGS     <- 3             # longest lag used anywhere (lag grid R1); 01 keeps these pre-sample years
 CONFLICT_MIN_DEATHS <- 25     # violence incidence: >= 25 organized-violence deaths (D1)
-CONTROLS     <- c("ctrl_stock", "ctrl_gdp_growth", "ctrl_democracy", "ex_yugo_1991_2016")   # lagged, built in 01
+# Lagged controls, built in 01. ex_yugo_1991_2016 was removed on 2026-10-23: with state FE it was identified
+# only from 2017-19 in 7 states and did not address the Yugoslavia attribution issue; that issue is now a
+# robustness check (09_robustness.R, part 5). See empirics/ANALYSIS_PLAN.md, change log.
+CONTROLS     <- c("ctrl_stock", "ctrl_gdp_growth", "ctrl_democracy")
 
 # --- analysis packages: loaded on demand by the estimation scripts -------------
 ANALYSIS_PKGS <- c("data.table", "plm", "panelvar", "fixest", "modelsummary")

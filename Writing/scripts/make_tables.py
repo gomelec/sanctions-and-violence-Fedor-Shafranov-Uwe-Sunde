@@ -152,7 +152,7 @@ def granger() -> None:
         "coefficients in brackets (negative in Panel A = less violence after new sanctions). Incidence: new "
         "sanction (0/1) and conflict with $\\geq$ 25 deaths (0/1), linear probability models. Levels: number of new "
         "cases and $\\log(1+$deaths per 100,000$)$. Controls (lagged): sanction stock, GDP per capita growth, V-Dem "
-        "polyarchy, ex-Yugoslavia dummy. FE-OLS and jackknife: standard errors clustered by state; jackknife = "
+        "polyarchy (the ex-Yugoslavia dummy of earlier versions is dropped, Section~\\ref{sec:data}). FE-OLS and jackknife: standard errors clustered by state; jackknife = "
         "$2\\hat\\beta - (\\hat\\beta_{1991-2005} + \\hat\\beta_{2006-2019})/2$ \\citep{dhaene2015}. GMM: forward "
         "orthogonal deviations, collapsed instruments (lags 2--5), year-demeaned; its Wald test ignores the "
         "covariance of the two lag coefficients (approximate). 1991--2019. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.",
@@ -169,7 +169,7 @@ def coefficients() -> None:
     variables = {"incidence": {"sanction": "new_sanction", "violence": "viol_inc"},
                  "levels": {"sanction": "n_new_cases", "violence": "viol_lev"}}
     controls = {"ctrl_stock": "Sanction stock", "ctrl_gdp_growth": "GDP growth",
-                "ctrl_democracy": "Democracy", "ex_yugo_1991_2016": "Ex-Yugoslavia"}
+                "ctrl_democracy": "Democracy"}
 
     def cells(control_set, term_of):
         estimates, errors = [], []
@@ -596,6 +596,84 @@ def capped_irf() -> None:
         size="\\footnotesize"))
 
 
+
+# ---------------------------------------------------------------------------
+# 14. Same-sample control check (decision D8, script 09 part 4)
+# ---------------------------------------------------------------------------
+def controls_check() -> None:
+    file = RESULTS / "robustness_controls.csv"
+    if not file.exists():
+        print("robustness_controls.csv not found (run 09_robustness.R): table skipped")
+        return
+    results = pd.read_csv(file)
+    versions = [("FE only", "common controls sample", "FE only"),
+                ("stock t-1", "common controls sample", "Sanction stock, $t-1$"),
+                ("stock t-3", "common controls sample", "Sanction stock, $t-3$"),
+                ("GDP growth", "common controls sample", "GDP growth"),
+                ("democracy", "common controls sample", "Democracy"),
+                ("all controls", "common controls sample", "All controls (Table~\\ref{tab:granger})"),
+                ("all, stock t-3", "common controls sample", "All controls, stock $t-3$"),
+                ("FE only", "full sample (Table 1 B)", "FE only, full sample (197 states)")]
+    body = [" & \\multicolumn{2}{c}{Incidence} & \\multicolumn{2}{c}{Levels} \\\\",
+            "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}",
+            "Controls & $\\chi^2(2)$ & Sum (SE) & $\\chi^2(2)$ & Sum (SE) \\\\", "\\midrule"]
+    for equation in ["violence", "sender"]:
+        body.append(f"\\multicolumn{{5}}{{l}}{{\\textit{{{DIRECTION[equation]}}}}} \\\\")
+        for version, sample, label in versions:
+            cells = []
+            for spec in ["incidence", "levels"]:
+                r = results[(results.version == version) & (results["sample"] == sample)
+                            & (results.equation == equation) & (results.specification == spec)].iloc[0]
+                cells.append(f"{r.chi2:.2f}{stars(r.p_value)} & {num(r.sum_cross_lags)} ({r.sum_cross_se:.3f})")
+            body.append(f"\\quad {label} & " + " & ".join(cells) + " \\\\")
+        if equation == "violence":
+            body.append("\\midrule")
+    n = results[results["sample"] == "common controls sample"].iloc[0]
+    write("tab_controls", table(
+        "Same-sample control check (decision D8)", "tab:controls", "lcccc", body,
+        f"FE-OLS VAR(2) with state and year fixed effects as in Table~\\ref{{tab:granger}}; all rows except the last "
+        f"on one common sample ({int(n.n_obs):,} observations, {int(n.n_states)} states: all controls available, "
+        "including the sanction stock in $t-3$). Sanction stock in $t-1$ = cases in force in $t-1$; it equals the stock "
+        "in $t-3$ plus the new cases of $t-1$ and $t-2$ (minus lifted cases), i.e.\\ it contains the tested sanction "
+        "lags. Sum = sum of the two cross-lag coefficients. Standard errors clustered by state. "
+        "$^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$."))
+
+
+# ---------------------------------------------------------------------------
+# 15. Yugoslavia attribution (robustness R9, script 09 part 5)
+# ---------------------------------------------------------------------------
+def yugoslavia() -> None:
+    file = RESULTS / "robustness_yugoslavia.csv"
+    if not file.exists():
+        print("robustness_yugoslavia.csv not found (run 09_robustness.R): table skipped")
+        return
+    results = pd.read_csv(file)
+    labels = {"main": "Main (Table~\\ref{tab:granger})", "without ex-Yugoslavia": "Without ex-Yugoslav states",
+              "ex-Yugoslavia one cluster": "Ex-Yugoslav states one cluster"}
+    body = [" & & \\multicolumn{2}{c}{Incidence} & \\multicolumn{2}{c}{Levels} \\\\",
+            "\\cmidrule(lr){3-4}\\cmidrule(lr){5-6}",
+            "Version & Controls & $\\chi^2(2)$ & Sum (SE) & $\\chi^2(2)$ & Sum (SE) \\\\", "\\midrule"]
+    for equation in ["violence", "sender"]:
+        body.append(f"\\multicolumn{{6}}{{l}}{{\\textit{{{DIRECTION[equation]}}}}} \\\\")
+        for version, label in labels.items():
+            for controls in ["no_controls", "with_controls"]:
+                cells = []
+                for spec in ["incidence", "levels"]:
+                    r = results[(results.version == version) & (results.control_set == controls)
+                                & (results.equation == equation) & (results.specification == spec)].iloc[0]
+                    cells.append(f"{r.chi2:.2f}{stars(r.p_value)} & {num(r.sum_cross_lags)} ({r.sum_cross_se:.3f})")
+                body.append(f"\\quad {label} & {CONTROL_LABEL[controls]} & " + " & ".join(cells) + " \\\\")
+        if equation == "violence":
+            body.append("\\midrule")
+    write("tab_yugoslavia", table(
+        "Robustness: attribution of Yugoslav sanction cases", "tab:yugoslavia", "llcccc", body,
+        "FE-OLS VAR(2) as in Table~\\ref{tab:granger}. GSDB cases against Yugoslavia are attributed to its successor "
+        "states, so one case can appear in several states. Ex-Yugoslav states: Yugoslavia/FRY, Serbia, Montenegro, "
+        "Macedonia, Croatia, Bosnia-Herzegovina, Kosovo, Slovenia. \\emph{One cluster}: standard errors clustered by "
+        "state, except that the ex-Yugoslav states form a single cluster. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.",
+        size="\\footnotesize"))
+
+
 if __name__ == "__main__":
     descriptives()
     granger()
@@ -610,3 +688,5 @@ if __name__ == "__main__":
     nonlinear()
     raw_deaths()
     capped_irf()
+    controls_check()
+    yugoslavia()

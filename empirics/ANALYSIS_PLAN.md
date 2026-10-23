@@ -78,7 +78,7 @@ and is thin before 2013 (historical backfile); missing for the GDR, South Yemen,
 and after 2021 (G7).
 
 **Controls X_it** (lagged one year so they are predetermined): `n_cases_received` (stock in force), log `gdp_ext`
-growth, `v2x_polyarchy`, `ex_yugo_1991_2016`.
+growth, `v2x_polyarchy` (`ex_yugo_1991_2016` removed 2026-10-23, see change log; Yugoslavia handled in R9).
 
 ## 3. Main specification (JP eq. 1–2, Table 1)
 
@@ -228,7 +228,7 @@ All scripts start with `source(here::here("empirics", "scripts", "00_setup.R"))`
 | 06 | `06_model_diagnostics.R` | residual autocorrelation, cross-sectional dependence of residuals (Pesaran CD), stability across specifications | — (appendix) | done |
 | 07 | `07_empirical_response.R` | model-free response functions (raw and two-way FE) | Figures 2A/2B | done |
 | 08 | `08_irf.R` | impulse responses (simple, both Cholesky orderings), cumulative effects, country-cluster bootstrap | Section V | done |
-| 09 | `09_robustness.R` | **done (2026-10-22): R3 logit / PPML; R10 raw deaths (uncapped, p99, p95); R10 dynamics (IRFs + response function, deaths capped at p99, fig17)**; planned: same-sample control check and controls one at a time (D8), leave-one-country-out, anticipation (objective split, GDELT coerce, R6), time aggregation, splits (sender, type, objective), Driscoll–Kraay, to 2023, lifting | Tables 3–4, R1–R12 | partly done |
+| 09 | `09_robustness.R` | **done (2026-10-22): R3 logit / PPML; R10 raw deaths (uncapped, p99, p95); R10 dynamics (IRFs + response function, deaths capped at p99, fig17); 2026-10-23: part 4 same-sample control check (D8), part 5 Yugoslavia (R9)**; planned: leave-one-country-out, anticipation (objective split, GDELT coerce, R6), time aggregation, splits (sender, type, objective), Driscoll–Kraay, to 2023, lifting | Tables 3–4, R1–R12 | partly done |
 | 10 | `10_pvar_gmm.R` | GMM panel VAR (FOD, collapsed instruments lags 2–5, year-demeaned), Hansen, Andrews–Lu | R8 | done |
 | 11 | `11_gdelt.R` | GDELT robustness: sample + validation against UCDP, stationarity, Table 1 (OLS + jackknife, incl. thin-coverage check), lag grid, LP-DiD, cumulative IRFs with bootstrap; on 1991–2019 and 1981–2021 | R12 | done |
 | 12 | `12_lpdid.R` | **extension, not base case:** LP-DiD event study with clean controls (Dube et al.), UCDP and GDELT | — | done |
@@ -239,9 +239,14 @@ heterogeneous panel Granger test; an LP-DiD event study (non-absorbing treatment
 **extension** (`12_lpdid.R`), not part of the Jaeger & Paserman base case; GMM Wald tests are approximate because `panelvar` does not store the full
 coefficient covariance (only standard errors). The old notebooks are in `archive/rmd/legacy_empirics/`.
 
-**Open (D8):** main specification with or without controls. Results so far: sanctions → violence is robust to the
-controls; violence → sanctions weakens mainly with lagged GDP growth (possible bad control). Proposal: FE only as
-the main specification (as JP), controls one at a time as robustness.
+**Open (D8):** main specification with or without controls. Same-sample check (09 part 4, container test run of
+2026-10-23, to be confirmed by the Mac run): the sample difference (174 vs 197 states) does not matter. **Sanctions →
+violence, incidence:** the negative sum (−0.035) appears only when the sanction stock in t−1 is controlled for; FE only,
+GDP growth, democracy or the stock in t−3 give sums of −0.009 to 0.000. The stock in t−1 contains the tested lags
+(it is a function of new cases in t−1 and t−2), so the incidence result is largely mechanical. **Levels:** −0.035 to
+−0.050 and significant in every version. **Violence → sanctions:** incidence significant in every version; levels lost
+with GDP growth (as before). Proposal unchanged: FE only as the main specification; stock in t−3 if a stock control is
+wanted.
 
 **Extension (not part of this plan):** monthly frequency with UCDP GED events and dated sanction impositions
 (UN Security Council resolution dates, EU Official Journal), to match JP's daily design more closely.
@@ -312,3 +317,5 @@ re-analysis of JP).
 | 2026-10-22 | R10 (raw deaths per 100k in the linear levels VAR, uncapped and capped at p99 / p95) implemented in `09_robustness.R`; sample to 2023 still open | user request |
 | 2026-10-22 | R10 dynamics: cumulative IRFs (bootstrap) and response function of the levels VAR with deaths capped at p99 (`09_robustness.R` part 3, fig17) | user request: magnitudes in deaths |
 | 2026-10-23 | Script table updated (03/06/08 done; 09 parts listed); next steps agreed: same-sample control check (D8), leave-one-country-out, anticipation via objective split | end-of-session update |
+| 2026-10-23 | `ex_yugo_1991_2016` removed from `CONTROLS` (00_setup.R). Reason: with state FE it is identified only from 2017–19 in 7 ex-Yugoslav states (Yugoslavia/FRY itself: always 1, absorbed), all with zero new sanctions and zero conflict; it cannot handle the real issue, the attribution of one GSDB case to several successor states. Replaced by R9 in `09_robustness.R` part 5 (drop the ex-Yugoslav states; ex-Yugoslav states as one cluster). Changes all "with controls" results slightly (test run: S → V incidence 7.27, p = 0.026, unchanged; V → S incidence 6.22 instead of 6.11). | review of the controls |
+| 2026-10-23 | `09_robustness.R` part 4 (D8): same-sample control check — FE only, each control alone, sanction stock in t−1 vs t−3, all controls, on one common sample (4,888 obs., 174 states). | decision D8; stock in t−1 contains the tested sanction lags |

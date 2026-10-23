@@ -32,9 +32,9 @@ assumptions are shown:
 | Spec | Controls | Simple / sanctions first | Violence first |
 |---|---|---|---|
 | Incidence | no | 0.159 [0.066, 0.260] * | 0.257 [0.145, 0.369] * |
-| Incidence | yes | 0.120 [0.038, 0.210] * | 0.214 [0.106, 0.306] * |
+| Incidence | yes | 0.121 [0.039, 0.211] * | 0.215 [0.107, 0.306] * |
 | Levels | no | 0.137 [0.021, 0.260] * | 0.385 [0.240, 0.541] * |
-| Levels | yes | 0.091 [−0.016, 0.217] | 0.339 [0.189, 0.495] * |
+| Levels | yes | 0.091 [−0.016, 0.218] | 0.340 [0.192, 0.496] * |
 
 ## Meaning
 
@@ -44,7 +44,9 @@ assumptions are shown:
 - **Sanctions → violence depends on the timing assumption:**
   - *Without* a same-year effect, the cumulative response is negative in three of four versions and
     significant for incidence with controls: −0.077 [−0.154, −0.006], i.e. about 0.08 fewer conflict-years over
-    10 years (mean conflict probability 0.23 per year). Levels with controls: −0.150 [−0.300, 0.006], just
+    10 years (mean conflict probability 0.23 per year). **Caveat (09 part 4):** this incidence version relies on
+    the sanction-stock control in t−1, which mechanically contains the sanction lags; without it the incidence
+    response is ≈ 0. Levels with controls: −0.150 [−0.300, 0.006], just
     insignificant. Without controls, incidence: ≈ 0.
   - *With* a same-year effect (sanctions first), it is positive and significant (+0.12 to +0.24). The
     contemporaneous residual correlation is positive (sanctions and violence spike together, see script 07).

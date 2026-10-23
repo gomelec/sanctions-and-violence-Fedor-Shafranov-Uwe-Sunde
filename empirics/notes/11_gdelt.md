@@ -17,8 +17,8 @@ half of all years "violent" and is a noisy incidence measure.
 |---|---|---|
 | Sanctions → violence, incidence | −0.035 (0.026) | −0.032 (0.146) |
 | Sanctions → violence, levels | −0.050 (0.018) | +0.027 (0.027) |
-| Violence → sanctions, incidence | +0.055 (0.047) | −0.012 (0.487) |
-| Violence → sanctions, levels | +0.030 (0.248) | +0.004 (0.528) |
+| Violence → sanctions, incidence | +0.056 (0.045) | −0.013 (0.447) |
+| Violence → sanctions, levels | +0.031 (0.244) | +0.004 (0.533) |
 
 - **Sanctions → violence.** Incidence: same sign and size as UCDP, not significant. Levels: positive and
   significant (without controls +0.143, p = 0.004); the LP-DiD extension (12) shows the violent share up
