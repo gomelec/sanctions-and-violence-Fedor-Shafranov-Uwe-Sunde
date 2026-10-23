@@ -125,7 +125,9 @@ A panel of **Gleditsch–Ward states × years, 1950–2023** (11,989 state-years
 | Organized violence | UCDP Organized Violence Country-Year, v26.1 | 1989–2023 | battle-related deaths by type (state-based, non-state, one-sided), victims (parties, civilians), per 100,000 |
 | Conflict events | GDELT 1.0 (CAMEO roots 17–20) | 1979–2021 | coerce, assault, fight, mass violence (per 1,000 events) |
 | Armed conflicts | UCDP/PRIO ACD via `peacesciencer` | 1950–2023 | number of conflicts by type |
-| Democracy | V-Dem, Polity via `peacesciencer` | to 2020–23 | `v2x_polyarchy`, `polity2` |
+| Democracy | V-Dem via `peacesciencer` | 1950–2023 | `v2x_polyarchy` (174 states; microstates not covered; used as control) |
+| | Polity via `peacesciencer` | 1950–2018 | `polity2` (161 states) |
+| | Extended UDS via `peacesciencer` | 1950–2023 | `euds`, `aeuds` (all 197 states) |
 | GDP, population | Anders, Fariss & Markowitz (2020) simulated series via `peacesciencer`; extended with World Bank WDI and UN WPP 2024 (via Our World in Data) | 1950–2023 | `gdp_ext`, `pop_ext` |
 
 Every cleaning and construction decision (e.g. how GSDB's "Yugoslavia" cases are attributed to the successor
